@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>driderSDK</b></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html">DepthStencilState</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacedrider_s_d_k.html">driderSDK</a></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html">DepthStencilState</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,16 +84,135 @@ Inheritance diagram for driderSDK::DepthStencilState:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5f7a951c302f12324959deb87961a8df"><td class="memItemLeft" align="right" valign="top"><a id="a5f7a951c302f12324959deb87961a8df"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a> &amp;desc)=0</td></tr>
+<tr class="memitem:a5f7a951c302f12324959deb87961a8df"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html#a5f7a951c302f12324959deb87961a8df">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a> &amp;desc)=0</td></tr>
 <tr class="separator:a5f7a951c302f12324959deb87961a8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7d79e954f00f7469086f1fec6185d04"><td class="memItemLeft" align="right" valign="top"><a id="ae7d79e954f00f7469086f1fec6185d04"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext, UInt32 refValue) const =0</td></tr>
+<tr class="memitem:ae7d79e954f00f7469086f1fec6185d04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html#ae7d79e954f00f7469086f1fec6185d04">set</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext, UInt32 refValue) const =0</td></tr>
 <tr class="separator:ae7d79e954f00f7469086f1fec6185d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98479b767ad37af3a5e6203fcef44933"><td class="memItemLeft" align="right" valign="top"><a id="a98479b767ad37af3a5e6203fcef44933"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()=0</td></tr>
+<tr class="memitem:a98479b767ad37af3a5e6203fcef44933"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html#a98479b767ad37af3a5e6203fcef44933">release</a> ()=0</td></tr>
 <tr class="separator:a98479b767ad37af3a5e6203fcef44933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5f7a951c302f12324959deb87961a8df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7a951c302f12324959deb87961a8df">&#9670;&nbsp;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::DepthStencilState::create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a detph stencil state that describes the behavior of the deth stencil</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>The device to create the depth stencil state</td></tr>
+    <tr><td class="paramname">desc</td><td>The descriptor of the depth stencil state</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_depth_stencil_state.html#a279a62df1aacd62ed19b2305afd679cd">driderSDK::D3DDepthStencilState</a>.</p>
+
+</div>
+</div>
+<a id="a98479b767ad37af3a5e6203fcef44933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98479b767ad37af3a5e6203fcef44933">&#9670;&nbsp;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DepthStencilState::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Release the allocated memory </p>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_depth_stencil_state.html#a0f02f10da24bd6f92a46166b7dae4526">driderSDK::D3DDepthStencilState</a>.</p>
+
+</div>
+</div>
+<a id="ae7d79e954f00f7469086f1fec6185d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7d79e954f00f7469086f1fec6185d04">&#9670;&nbsp;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DepthStencilState::set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>deviceContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>refValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the depth stencil state</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceContext</td><td>The device context set the state</td></tr>
+    <tr><td class="paramname">refValue</td><td>Ther reference value to perform against when doing a depth-stencil test </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_depth_stencil_state.html#ae2f609a86ea372d943df0dcda4ea2747">driderSDK::D3DDepthStencilState</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>F:/projectsVS2017/Drider-Engine/Graphics/Include/<a class="el" href="dr__depth__stencil__state_8h_source.html">dr_depth_stencil_state.h</a></li>
 </ul>

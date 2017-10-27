@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>driderSDK</b></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacedrider_s_d_k.html">driderSDK</a></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,40 +84,756 @@ Inheritance diagram for driderSDK::Device:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac450ff9e7d96a2d362aff792a1aa857f"><td class="memItemLeft" align="right" valign="top"><a id="ac450ff9e7d96a2d362aff792a1aa857f"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> ()=0</td></tr>
-<tr class="separator:ac450ff9e7d96a2d362aff792a1aa857f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1964b83d52280b2bdf23d572300d119a"><td class="memItemLeft" align="right" valign="top"><a id="a1964b83d52280b2bdf23d572300d119a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()=0</td></tr>
+<tr class="memitem:ab8f6b0370cd32b48e64a75be0b7d17a5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#ab8f6b0370cd32b48e64a75be0b7d17a5">~Device</a> ()</td></tr>
+<tr class="separator:ab8f6b0370cd32b48e64a75be0b7d17a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b25bdfc04e78434a677af06b7ab354"><td class="memItemLeft" align="right" valign="top"><a id="a29b25bdfc04e78434a677af06b7ab354"></a>
+virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>createDeviceAndDeviceContext</b> (<a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext)=0</td></tr>
+<tr class="separator:a29b25bdfc04e78434a677af06b7ab354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1964b83d52280b2bdf23d572300d119a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#a1964b83d52280b2bdf23d572300d119a">release</a> ()=0</td></tr>
 <tr class="separator:a1964b83d52280b2bdf23d572300d119a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06eed3a522990c8ad0e7a32ac3f49002"><td class="memItemLeft" align="right" valign="top"><a id="a06eed3a522990c8ad0e7a32ac3f49002"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>createVertexBuffer</b> (const <a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a> &amp;desc, char *initialData, <a class="el" href="classdrider_s_d_k_1_1_vertex_buffer.html">VertexBuffer</a> &amp;vertexBuffer)=0</td></tr>
+<tr class="memitem:a06eed3a522990c8ad0e7a32ac3f49002"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#a06eed3a522990c8ad0e7a32ac3f49002">createVertexBuffer</a> (const <a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a> &amp;desc, char *initialData, <a class="el" href="classdrider_s_d_k_1_1_vertex_buffer.html">VertexBuffer</a> &amp;vertexBuffer)=0</td></tr>
 <tr class="separator:a06eed3a522990c8ad0e7a32ac3f49002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a143c736cddcdae328074b4d1fc4b765f"><td class="memItemLeft" align="right" valign="top"><a id="a143c736cddcdae328074b4d1fc4b765f"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>createIndexBuffer</b> (const <a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a> &amp;desc, char *initialData, <a class="el" href="classdrider_s_d_k_1_1_index_buffer.html">IndexBuffer</a> &amp;indexBuffer)=0</td></tr>
+<tr class="memitem:a143c736cddcdae328074b4d1fc4b765f"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#a143c736cddcdae328074b4d1fc4b765f">createIndexBuffer</a> (const <a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a> &amp;desc, char *initialData, <a class="el" href="classdrider_s_d_k_1_1_index_buffer.html">IndexBuffer</a> &amp;indexBuffer)=0</td></tr>
 <tr class="separator:a143c736cddcdae328074b4d1fc4b765f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b83b69b84c474a813652835a42806b9"><td class="memItemLeft" align="right" valign="top"><a id="a5b83b69b84c474a813652835a42806b9"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>createConstantBuffer</b> (const <a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a> &amp;desc, char *initialData, <a class="el" href="classdrider_s_d_k_1_1_constant_buffer.html">ConstantBuffer</a> &amp;constantBuffer)=0</td></tr>
+<tr class="memitem:a5b83b69b84c474a813652835a42806b9"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#a5b83b69b84c474a813652835a42806b9">createConstantBuffer</a> (const <a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a> &amp;desc, char *initialData, <a class="el" href="classdrider_s_d_k_1_1_constant_buffer.html">ConstantBuffer</a> &amp;constantBuffer)=0</td></tr>
 <tr class="separator:a5b83b69b84c474a813652835a42806b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a21a24645296cfe452c4c483535bd7"><td class="memItemLeft" align="right" valign="top"><a id="ac5a21a24645296cfe452c4c483535bd7"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>createShaderFromMemory</b> (const char *shaderBuffer, size_t bufferSize, <a class="el" href="classdrider_s_d_k_1_1_shader.html">Shader</a> &amp;shader)=0</td></tr>
+<tr class="memitem:ac5a21a24645296cfe452c4c483535bd7"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#ac5a21a24645296cfe452c4c483535bd7">createShaderFromMemory</a> (const char *shaderBuffer, size_t bufferSize, <a class="el" href="classdrider_s_d_k_1_1_shader.html">Shader</a> &amp;shader)=0</td></tr>
 <tr class="separator:ac5a21a24645296cfe452c4c483535bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96484677203d0624bc30654b82540fc0"><td class="memItemLeft" align="right" valign="top"><a id="a96484677203d0624bc30654b82540fc0"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>createBlendState</b> ()=0</td></tr>
-<tr class="separator:a96484677203d0624bc30654b82540fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d73d62941aea870732b4c763cfb4de6"><td class="memItemLeft" align="right" valign="top"><a id="a0d73d62941aea870732b4c763cfb4de6"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>createSamplerState</b> ()=0</td></tr>
-<tr class="separator:a0d73d62941aea870732b4c763cfb4de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8765fa7402966766e81437d07bf521b0"><td class="memItemLeft" align="right" valign="top"><a id="a8765fa7402966766e81437d07bf521b0"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>createRasteizerState</b> ()=0</td></tr>
-<tr class="separator:a8765fa7402966766e81437d07bf521b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e91a598aaf18532b9f8f3cc05fbdf94"><td class="memItemLeft" align="right" valign="top"><a id="a8e91a598aaf18532b9f8f3cc05fbdf94"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>createTexture</b> (const char *buffer, const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;desc, <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture)=0</td></tr>
-<tr class="separator:a8e91a598aaf18532b9f8f3cc05fbdf94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f7c6182810ebbbae4cb2c9edc916c83"><td class="memItemLeft" align="right" valign="top"><a id="a1f7c6182810ebbbae4cb2c9edc916c83"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>createDepthStencilState</b> ()=0</td></tr>
-<tr class="separator:a1f7c6182810ebbbae4cb2c9edc916c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b31469511c0d1f0c41feb3c5812f960"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#a0b31469511c0d1f0c41feb3c5812f960">createTextureFromMemory</a> (const char *buffer, const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;desc, <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture)=0</td></tr>
+<tr class="separator:a0b31469511c0d1f0c41feb3c5812f960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af343e9ef11dcf5ae2cfa83fdc39e14da"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#af343e9ef11dcf5ae2cfa83fdc39e14da">createEmptyTexture</a> (const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;desc, <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture)=0</td></tr>
+<tr class="separator:af343e9ef11dcf5ae2cfa83fdc39e14da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9808980df33a1242faee36604fd695f7"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#a9808980df33a1242faee36604fd695f7">createRenderTarget</a> (const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;desc, <a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> &amp;renderTarget, UInt32 _numColorTextures)=0</td></tr>
+<tr class="separator:a9808980df33a1242faee36604fd695f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ff2876be1f3c0b78c73af7e039235d"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#a37ff2876be1f3c0b78c73af7e039235d">createDepthStencil</a> (const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;desc, <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;depthStencil)=0</td></tr>
+<tr class="separator:a37ff2876be1f3c0b78c73af7e039235d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679160b916a6560e1903e3095140c30d"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#a679160b916a6560e1903e3095140c30d">createSamplerState</a> (const <a class="el" href="structdrider_s_d_k_1_1_dr_sample_desc.html">DrSampleDesc</a> &amp;desc, <a class="el" href="classdrider_s_d_k_1_1_sampler_state.html">SamplerState</a> &amp;state)=0</td></tr>
+<tr class="separator:a679160b916a6560e1903e3095140c30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7731f80543c83668cda10bf1becdccf"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#aa7731f80543c83668cda10bf1becdccf">createRasteizerState</a> (const <a class="el" href="structdrider_s_d_k_1_1_dr_rasterizer_desc.html">DrRasterizerDesc</a> &amp;desc, <a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html">RasterizerState</a> &amp;state)=0</td></tr>
+<tr class="separator:aa7731f80543c83668cda10bf1becdccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a9ed6e6f2735bf5c327616f3f5472f"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#af5a9ed6e6f2735bf5c327616f3f5472f">createDepthStencilState</a> (const <a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a> &amp;desc, <a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html">DepthStencilState</a> &amp;state)=0</td></tr>
+<tr class="separator:af5a9ed6e6f2735bf5c327616f3f5472f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651aed563bee095892ec05b1c0526c2d"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#a651aed563bee095892ec05b1c0526c2d">createInputLayout</a> (const <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> *inputDescArray, UInt32 arraySize, <a class="el" href="classdrider_s_d_k_1_1_input_layout.html">InputLayout</a> &amp;layout)=0</td></tr>
+<tr class="separator:a651aed563bee095892ec05b1c0526c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3add77fc5cfaf3e6a453a001654cafe0"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device.html#a3add77fc5cfaf3e6a453a001654cafe0">createSwapChain</a> (const <a class="el" href="structdrider_s_d_k_1_1_dr_swap_chain_desc.html">DrSwapChainDesc</a> &amp;desc, <a class="el" href="classdrider_s_d_k_1_1_swap_chain.html">SwapChain</a> &amp;swapChain)=0</td></tr>
+<tr class="separator:a3add77fc5cfaf3e6a453a001654cafe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab8f6b0370cd32b48e64a75be0b7d17a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f6b0370cd32b48e64a75be0b7d17a5">&#9670;&nbsp;</a></span>~Device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual driderSDK::Device::~Device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Class virtual destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5b83b69b84c474a813652835a42806b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b83b69b84c474a813652835a42806b9">&#9670;&nbsp;</a></span>createConstantBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createConstantBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>initialData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_constant_buffer.html">ConstantBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>constantBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a constant buffer</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a></td><td>Describes the buffer parameters</td></tr>
+    <tr><td class="paramname">initialData</td><td>The initial data of the buffer</td></tr>
+    <tr><td class="paramname">out</td><td>constantBuffer The constantBuffer taht will be filled out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#a99c3f52204854fab219f26b94eb5a285">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="a37ff2876be1f3c0b78c73af7e039235d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ff2876be1f3c0b78c73af7e039235d">&#9670;&nbsp;</a></span>createDepthStencil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createDepthStencil </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;&#160;</td>
+          <td class="paramname"><em>depthStencil</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a depth stencil</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Describes the depth stencil parameters</td></tr>
+    <tr><td class="paramname">out</td><td>depthStencil The <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> object taht will be filled out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#ab50c4d6ae3a7ad147ecc0a8f497a1cea">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="af5a9ed6e6f2735bf5c327616f3f5472f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a9ed6e6f2735bf5c327616f3f5472f">&#9670;&nbsp;</a></span>createDepthStencilState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createDepthStencilState </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html">DepthStencilState</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a deth stencil state</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Describes the state parameters</td></tr>
+    <tr><td class="paramname">out</td><td>state The <a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html">DepthStencilState</a> object taht will be filled out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#af588849c7bb6cf98b7f80d1942cccb91">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="af343e9ef11dcf5ae2cfa83fdc39e14da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af343e9ef11dcf5ae2cfa83fdc39e14da">&#9670;&nbsp;</a></span>createEmptyTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createEmptyTexture </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a texture without initial data</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Describes the texture parameters</td></tr>
+    <tr><td class="paramname">out</td><td>texture The texture object taht will be filled out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#a75b6cf40c708ad2f4a77fb40049c5d66">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="a143c736cddcdae328074b4d1fc4b765f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a143c736cddcdae328074b4d1fc4b765f">&#9670;&nbsp;</a></span>createIndexBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createIndexBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>initialData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_index_buffer.html">IndexBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>indexBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a vertex buffer</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a></td><td>Describes the buffer parameters</td></tr>
+    <tr><td class="paramname">initialData</td><td>The initial data of the buffer</td></tr>
+    <tr><td class="paramname">out</td><td>indexBuffer The indexbuffer taht will be filled</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#aef9b932ebc2a53ebc118b857fbf7fc34">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="a651aed563bee095892ec05b1c0526c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a651aed563bee095892ec05b1c0526c2d">&#9670;&nbsp;</a></span>createInputLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createInputLayout </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> *&#160;</td>
+          <td class="paramname"><em>inputDescArray</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>arraySize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_input_layout.html">InputLayout</a> &amp;&#160;</td>
+          <td class="paramname"><em>layout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a input layout</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputDescArray</td><td>An array of <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> that describes the input layout parameters</td></tr>
+    <tr><td class="paramname">arraySize</td><td>The size of the input desc array</td></tr>
+    <tr><td class="paramname">out</td><td>layout The <a class="el" href="classdrider_s_d_k_1_1_input_layout.html">InputLayout</a> object taht will be filled out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#a6fb27ed6c67bea5c31f48afc9d6a8514">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="aa7731f80543c83668cda10bf1becdccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7731f80543c83668cda10bf1becdccf">&#9670;&nbsp;</a></span>createRasteizerState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createRasteizerState </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_rasterizer_desc.html">DrRasterizerDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html">RasterizerState</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a sampler rasterizer state</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Describes the state parameters</td></tr>
+    <tr><td class="paramname">out</td><td>state The <a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html">RasterizerState</a> object taht will be filled out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#aff0584b0cd6d43432dc55b9d58e655b5">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="a9808980df33a1242faee36604fd695f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9808980df33a1242faee36604fd695f7">&#9670;&nbsp;</a></span>createRenderTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createRenderTarget </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderTarget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>_numColorTextures</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a render target</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Describes the render target parameters</td></tr>
+    <tr><td class="paramname">_numColorTextures</td><td>The number of textures the RR will have</td></tr>
+    <tr><td class="paramname">out</td><td>renderTarget The <a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> object taht will be filled out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#a22a7e2aacfae398e6982bbfca6bb21bc">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="a679160b916a6560e1903e3095140c30d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a679160b916a6560e1903e3095140c30d">&#9670;&nbsp;</a></span>createSamplerState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createSamplerState </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_sample_desc.html">DrSampleDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_sampler_state.html">SamplerState</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a sampler state</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Describes the sampler parameters</td></tr>
+    <tr><td class="paramname">out</td><td>state The <a class="el" href="classdrider_s_d_k_1_1_sampler_state.html">SamplerState</a> object taht will be filled out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#ae2670b02026022001551c9fce263bfb9">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="ac5a21a24645296cfe452c4c483535bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5a21a24645296cfe452c4c483535bd7">&#9670;&nbsp;</a></span>createShaderFromMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createShaderFromMemory </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>shaderBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufferSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_shader.html">Shader</a> &amp;&#160;</td>
+          <td class="paramname"><em>shader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a shader from a plain text buffer</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shaderBuffer</td><td>The plain text shader buffer</td></tr>
+    <tr><td class="paramname">bufferSize</td><td>The plain text shader buffer size</td></tr>
+    <tr><td class="paramname">out</td><td>shader The shader object taht will be filled out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#a2c9989b93e8fcccefd0471bd61f573f7">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="a3add77fc5cfaf3e6a453a001654cafe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3add77fc5cfaf3e6a453a001654cafe0">&#9670;&nbsp;</a></span>createSwapChain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createSwapChain </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_swap_chain_desc.html">DrSwapChainDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_swap_chain.html">SwapChain</a> &amp;&#160;</td>
+          <td class="paramname"><em>swapChain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a swap chain</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Describes the swap chain parameters</td></tr>
+    <tr><td class="paramname">out</td><td>layout The <a class="el" href="classdrider_s_d_k_1_1_swap_chain.html">SwapChain</a> object taht will be filled out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#a3fe9a956969d1b67e9c5b6e078594c67">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="a0b31469511c0d1f0c41feb3c5812f960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b31469511c0d1f0c41feb3c5812f960">&#9670;&nbsp;</a></span>createTextureFromMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createTextureFromMemory </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a texture from a memory buffer</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The texture data</td></tr>
+    <tr><td class="paramname">desc</td><td>Describes the texture parameters</td></tr>
+    <tr><td class="paramname">out</td><td>texture The texture object taht will be filled out</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#a6759bb13fe0e672ec733670a96981da6">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="a06eed3a522990c8ad0e7a32ac3f49002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06eed3a522990c8ad0e7a32ac3f49002">&#9670;&nbsp;</a></span>createVertexBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Device::createVertexBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>initialData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>vertexBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a vertex buffer</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a></td><td>Describes the buffer parameters</td></tr>
+    <tr><td class="paramname">initialData</td><td>The initial data of the buffer</td></tr>
+    <tr><td class="paramname">out</td><td>vertexBuffer The vertexbuffer taht will be filled</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#ac052eb4924a55b1d4fcc533f4221c3a6">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
+<a id="a1964b83d52280b2bdf23d572300d119a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1964b83d52280b2bdf23d572300d119a">&#9670;&nbsp;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::Device::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Release the allocated memory </p>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device.html#a7f1e28a2b8f068aa7f13a25a7e448e3a">driderSDK::D3DDevice</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>F:/projectsVS2017/Drider-Engine/Graphics/Include/<a class="el" href="dr__device_8h_source.html">dr_device.h</a></li>
 </ul>

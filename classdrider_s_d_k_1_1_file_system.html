@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>driderSDK</b></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_file_system.html">FileSystem</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacedrider_s_d_k.html">driderSDK</a></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_file_system.html">FileSystem</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -87,11 +87,9 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:abcb04df92e81100acc994b350937dfa0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#abcb04df92e81100acc994b350937dfa0">load</a> (const std::string filename, std::string &amp;bufferOut)</td></tr>
 <tr class="separator:abcb04df92e81100acc994b350937dfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a281e08938aacf3976388707d64ec2131"><td class="memItemLeft" align="right" valign="top"><a id="a281e08938aacf3976388707d64ec2131"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (const std::string filename, const std::string &amp;bufferToSave)</td></tr>
+<tr class="memitem:a281e08938aacf3976388707d64ec2131"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a281e08938aacf3976388707d64ec2131">save</a> (const std::string filename, const std::string &amp;bufferToSave)</td></tr>
 <tr class="separator:a281e08938aacf3976388707d64ec2131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f83e2117187bde7c81b127af4e2823a"><td class="memItemLeft" align="right" valign="top"><a id="a3f83e2117187bde7c81b127af4e2823a"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>append</b> (const std::string filename, const std::string &amp;bufferToAppend)</td></tr>
+<tr class="memitem:a3f83e2117187bde7c81b127af4e2823a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a3f83e2117187bde7c81b127af4e2823a">append</a> (const std::string filename, const std::string &amp;bufferToAppend)</td></tr>
 <tr class="separator:a3f83e2117187bde7c81b127af4e2823a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -137,6 +135,46 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>append</b> (co
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3f83e2117187bde7c81b127af4e2823a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f83e2117187bde7c81b127af4e2823a">&#9670;&nbsp;</a></span>append()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool driderSDK::FileSystem::append </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>bufferToAppend</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>TEST::append The Append operation is identical in structure to Save, except that the file is opened for appending. The input buffer is written at the end of an already existing file. If the file does not exist, it is created and the buffer is written.</p>
+<p>Param filename The name of the file to save.</p>
+<p>Param bufferToSave The info to be saved.</p>
+<p>Return Boolean value is true if the save is successful. If the returned value is false, one of the following conditions has occurred: The input buffer is null. The file cannot be opened for writing (the file might exist and be set to read-only). </p>
+
+</div>
+</div>
 <a id="abcb04df92e81100acc994b350937dfa0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcb04df92e81100acc994b350937dfa0">&#9670;&nbsp;</a></span>load()</h2>
 
@@ -170,11 +208,52 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>append</b> (co
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::load</p>
 <p>The Load operation determines how many bytes are in the file and returns the amount in riSize.</p>
 <p>Param filename The name of the file to load.</p>
 <p>Param bufferOut The output where the file will be loaded</p>
 <p>Return Boolean value is true if the load is successful, in which case the outputs racBuffer and riSize are valid.</p>
 <p>If the returned value is false, one of the following conditions has occurred: The file does not exist. The file cannot be opened for reading (the file attributes might not allow this). </p>
+
+</div>
+</div>
+<a id="a281e08938aacf3976388707d64ec2131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a281e08938aacf3976388707d64ec2131">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool driderSDK::FileSystem::save </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>bufferToSave</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>TEST::save The Save operation writes the input buffer to disk.</p>
+<p>Param filename The name of the file to save.</p>
+<p>Param bufferToSave The info to be saved.</p>
+<p>Return Boolean value is true if the save is successful. If the returned value is false, one of the following conditions has occurred: The input buffer is null. The file cannot be opened for writing (the file might exist and be set to read-only). </p>
 
 </div>
 </div>

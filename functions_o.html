@@ -72,6 +72,7 @@ $(function() {
 : <a class="el" href="classdrider_s_d_k_1_1_matrix3x3.html#a1f87d06481dd44a084679132d0986ff0">driderSDK::Matrix3x3</a>
 , <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a7895bd13e9b7ee8079148550ef70114b">driderSDK::Matrix4x4</a>
 , <a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html#a308f6fe8d904bafea034dd30325e95ee">driderSDK::MatrixNxM&lt; _rows, _cols &gt;</a>
+, <a class="el" href="classdrider_s_d_k_1_1_plane.html#a8e8e7ac10a3a8445bef69e7a97aa9bc8">driderSDK::Plane</a>
 , <a class="el" href="classdrider_s_d_k_1_1_quaternion.html#a74b6f31134648edcad2196d302df7e45">driderSDK::Quaternion</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#a36f16bb1ff56c8a314998fb9175ce6b1">driderSDK::Vector2D</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d_i.html#a4051fbfa49c68244923ab95561429b2d">driderSDK::Vector2DI</a>
@@ -81,8 +82,7 @@ $(function() {
 </li>
 <li>operator*()
 : <a class="el" href="classdrider_s_d_k_1_1_matrix3x3.html#a660dee4001fe8d6b2d23474f6686795b">driderSDK::Matrix3x3</a>
-, <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a4b849aa71a259d8f29ee8c6c6d4bbcc2">driderSDK::Matrix4x4</a>
-, <a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html#aa90e6b889b38164908ca36a23e86b89a">driderSDK::MatrixNxM&lt; _rows, _cols &gt;</a>
+, <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#af64771d563aacb2f4a9363f3e771c4e2">driderSDK::Matrix4x4</a>
 , <a class="el" href="classdrider_s_d_k_1_1_quaternion.html#ad7ea7df44436b84bf9d7935b7bbd7e45">driderSDK::Quaternion</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#afe338951b29249c5f16e8bbb894e839d">driderSDK::Vector2D</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d_i.html#aaf7f593093466f1b1d90fcb7364c0d67">driderSDK::Vector2DI</a>
@@ -130,7 +130,7 @@ $(function() {
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#a744ef3bf8ca1b1cbf1b3c44c37cdd4c3">driderSDK::Vector2D</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d_i.html#a5b131ff8b63123a93339bbef39f33b88">driderSDK::Vector2DI</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html#a04bdf7e8cb2ccc0b88dc521a6d5f0293">driderSDK::Vector3D</a>
-, <a class="el" href="classdrider_s_d_k_1_1_vector4_d.html#a2e055397526cc3a8980533c80729a899">driderSDK::Vector4D</a>
+, <a class="el" href="classdrider_s_d_k_1_1_vector4_d.html#a1f3b703db359083ab5061689b4721b9f">driderSDK::Vector4D</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector_n.html#a9b24d5c039771a9869459252cf906ea1">driderSDK::VectorN&lt; _elements &gt;</a>
 </li>
 <li>operator-=()
@@ -165,19 +165,21 @@ $(function() {
 </li>
 <li>operator=()
 : <a class="el" href="classdrider_s_d_k_1_1_degree.html#a4320abb846750e3ea3de34895e56dc03">driderSDK::Degree</a>
-, <a class="el" href="classdrider_s_d_k_1_1_matrix3x3.html#ad7aa13dc64134d397c93c6998b0670eb">driderSDK::Matrix3x3</a>
+, <a class="el" href="classdrider_s_d_k_1_1_matrix3x3.html#a8c2749cb12be0bc75796b3f6232557d8">driderSDK::Matrix3x3</a>
 , <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a99921a1d4775e7c8166084ea427d9d62">driderSDK::Matrix4x4</a>
+, <a class="el" href="classdrider_s_d_k_1_1_plane.html#a17bc82b2e68e62c492b6698c84a90039">driderSDK::Plane</a>
 , <a class="el" href="classdrider_s_d_k_1_1_quaternion.html#aceeb1acfa0cd64e06eccc0507e82cfe3">driderSDK::Quaternion</a>
 , <a class="el" href="classdrider_s_d_k_1_1_radian.html#aca76d9162983d1a6cc372abdc0ae4c33">driderSDK::Radian</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#abc274607e1dd8c481c1059540236a480">driderSDK::Vector2D</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d_i.html#aeca5f2fe0ee64fadce1fbeceec369dbf">driderSDK::Vector2DI</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html#a6f290466b4c2583b0687861372bd6bd2">driderSDK::Vector3D</a>
-, <a class="el" href="classdrider_s_d_k_1_1_vector4_d.html#a98eb14acc45ecbb0214fdaa25923aa9e">driderSDK::Vector4D</a>
+, <a class="el" href="classdrider_s_d_k_1_1_vector4_d.html#aee40bd46d6e0e9a380801473c1f02510">driderSDK::Vector4D</a>
 </li>
 <li>operator==()
 : <a class="el" href="classdrider_s_d_k_1_1_matrix3x3.html#a3a1249e4c52b0e5967b27485b22209c5">driderSDK::Matrix3x3</a>
 , <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#abacae6ac316fc50d9e764adee8334e85">driderSDK::Matrix4x4</a>
 , <a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html#a20df7eaed663a20c7689e1de68b13b0f">driderSDK::MatrixNxM&lt; _rows, _cols &gt;</a>
+, <a class="el" href="classdrider_s_d_k_1_1_plane.html#afe19f5d245e70e16181cfab7172a2301">driderSDK::Plane</a>
 , <a class="el" href="classdrider_s_d_k_1_1_quaternion.html#afb9477e41228f72c7ab89cd8518ebaf2">driderSDK::Quaternion</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#ad9fa11860ae9a0368362fa6daf6d70e7">driderSDK::Vector2D</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d_i.html#af39cc02d75229674130819b0463e30a8">driderSDK::Vector2DI</a>
@@ -189,12 +191,12 @@ $(function() {
 : <a class="el" href="classdrider_s_d_k_1_1_matrix3x3.html#ac87724e79ec1218c1f62c98416b47401">driderSDK::Matrix3x3</a>
 , <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#abd08c323cb8a119b12544a60b0ddc0d5">driderSDK::Matrix4x4</a>
 , <a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html#a043966a6ae4d2bca20bdb7193cdc7364">driderSDK::MatrixNxM&lt; _rows, _cols &gt;</a>
-, <a class="el" href="classdrider_s_d_k_1_1_quaternion.html#a2696c16d8a92e9d7c1c2fd9fd4ab38e6">driderSDK::Quaternion</a>
+, <a class="el" href="classdrider_s_d_k_1_1_quaternion.html#a908fc09af4881337c4a71be136284d8f">driderSDK::Quaternion</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#a9549658acaa74f9c20584b0d7861ad34">driderSDK::Vector2D</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d_i.html#a6fe14bb9838352ef1d17720ef3e70cc3">driderSDK::Vector2DI</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html#a4c95ea388014386f69157eb38007c709">driderSDK::Vector3D</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector4_d.html#a4d6a9f0699d9b9af0579daf1c3c1714a">driderSDK::Vector4D</a>
-, <a class="el" href="classdrider_s_d_k_1_1_vector_n.html#a8f090f0b90344080de98745f8f2bc6fb">driderSDK::VectorN&lt; _elements &gt;</a>
+, <a class="el" href="classdrider_s_d_k_1_1_vector_n.html#a39f258b71bfa7e6d5d87f855206e4e28">driderSDK::VectorN&lt; _elements &gt;</a>
 </li>
 <li>operator^()
 : <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html#a174bcd0e5030b457337a74c90ab061fe">driderSDK::Vector3D</a>
@@ -205,6 +207,9 @@ $(function() {
 , <a class="el" href="classdrider_s_d_k_1_1_vector2_d_i.html#a9a101d51a408b48cbc846073b54bf30e">driderSDK::Vector2DI</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html#a4681c3fae6e11a1bc33100f638a8bb25">driderSDK::Vector3D</a>
 , <a class="el" href="classdrider_s_d_k_1_1_vector4_d.html#a40c293b7041c65fd20f8741b4c3c312d">driderSDK::Vector4D</a>
+</li>
+<li>origin
+: <a class="el" href="classdrider_s_d_k_1_1_ray.html#a19e9f70cb5ea9b4f3e7ba4e90b94da8a">driderSDK::Ray</a>
 </li>
 </ul>
 </div><!-- contents -->

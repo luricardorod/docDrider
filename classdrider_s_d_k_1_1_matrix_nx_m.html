@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>driderSDK</b></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html">MatrixNxM</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacedrider_s_d_k.html">driderSDK</a></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html">MatrixNxM</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -102,8 +102,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a437229488a712e6e1da52915cfa8bdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adade639467244032a0d1753abaa59b72"><td class="memItemLeft" align="right" valign="top">FORCEINLINE <a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html">MatrixNxM</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html#adade639467244032a0d1753abaa59b72">operator/=</a> (float scalar)</td></tr>
 <tr class="separator:adade639467244032a0d1753abaa59b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa90e6b889b38164908ca36a23e86b89a"><td class="memItemLeft" align="right" valign="top">FORCEINLINE <a class="el" href="classdrider_s_d_k_1_1_vector_n.html">VectorN</a>&lt; _rows &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html#aa90e6b889b38164908ca36a23e86b89a">operator*</a> (const <a class="el" href="classdrider_s_d_k_1_1_vector_n.html">VectorN</a>&lt; _cols &gt; &amp;rhs)</td></tr>
-<tr class="separator:aa90e6b889b38164908ca36a23e86b89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20df7eaed663a20c7689e1de68b13b0f"><td class="memItemLeft" align="right" valign="top">FORCEINLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html#a20df7eaed663a20c7689e1de68b13b0f">operator==</a> (const <a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html">MatrixNxM</a> &amp;rhs)</td></tr>
 <tr class="separator:a20df7eaed663a20c7689e1de68b13b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a308f6fe8d904bafea034dd30325e95ee"><td class="memItemLeft" align="right" valign="top">FORCEINLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html#a308f6fe8d904bafea034dd30325e95ee">operator!=</a> (const <a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html">MatrixNxM</a> &amp;rhs)</td></tr>
@@ -175,7 +173,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructor using a scalar value.</p>
+<p>TEST::constructorOneFloat Constructor using a scalar value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_scalar</td><td>All the elements of the matrix are initialized to this value. </td></tr>
@@ -210,7 +208,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructor using a vector.</p>
+<p>TEST::constructorOneVector Constructor using a vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_vec</td><td>All the rows of the matrix are initialized to this vector. </td></tr>
@@ -245,7 +243,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the number of columns in the matrix.</p>
+<p>TEST::cols Gets the number of columns in the matrix.</p>
 <dl class="section return"><dt>Returns</dt><dd>The number of columns in the matrix. </dd></dl>
 
 </div>
@@ -275,7 +273,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Overload of binary operator ==.</p>
+<p>TEST::operatorInequality Overload of binary operator ==.</p>
 <p>This overload performs a memberwise inequality comparision.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -284,43 +282,6 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if a row of *this matrix is unequal to a row of rhs matrix, false otherwise. </dd></dl>
-
-</div>
-</div>
-<a id="aa90e6b889b38164908ca36a23e86b89a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa90e6b889b38164908ca36a23e86b89a">&#9670;&nbsp;</a></span>operator*()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;SizeT _rows, SizeT _cols&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">FORCEINLINE <a class="el" href="classdrider_s_d_k_1_1_vector_n.html">VectorN</a>&lt;_rows&gt; <a class="el" href="classdrider_s_d_k_1_1_matrix_nx_m.html">driderSDK::MatrixNxM</a>&lt; _rows, _cols &gt;::operator* </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector_n.html">VectorN</a>&lt; _cols &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Overload of binary operator *.</p>
-<p>This overload performs the matrix-vector product.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>Right side operand (a vector with M (number of _cols of (*this)) elements.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The transformed vector. </dd></dl>
 
 </div>
 </div>
@@ -349,7 +310,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Overload of binary operator *=.</p>
+<p>TEST::assignByMultiplicationFloat Overload of binary operator *=.</p>
 <p>This overload performs the multiplication assignment by scalar to each row of the matrix.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -386,7 +347,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Overload of binary operator /=.</p>
+<p>TEST::assignByDivisionFloat Overload of binary operator /=.</p>
 <p>This overload performs the division assignment by scalar to each row of the matrix.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -423,7 +384,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Overload of binary operator ==.</p>
+<p>TEST::operatorEquality Overload of binary operator ==.</p>
 <p>This overload performs a memberwise equality comparision.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -460,7 +421,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets a reference to the specified row (Vector) from the matrix.</p>
+<p>TEST::operatorBrackets Gets a reference to the specified row (Vector) from the matrix.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">row</td><td>The index of the row.</td></tr>
@@ -502,7 +463,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets a const reference to the specified row (Vector) from the matrix.</p>
+<p>TEST::operatorBrackets Gets a const reference to the specified row (Vector) from the matrix.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">row</td><td>The index of the row.</td></tr>
@@ -543,7 +504,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets a pointer to the first element of the matrix.</p>
+<p>TEST::ptr Gets a pointer to the first element of the matrix.</p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the first element of the matrix. </dd></dl>
 
 </div>
@@ -572,7 +533,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets a constant pointer to the first element of the matrix.</p>
+<p>TEST::ptr Gets a constant pointer to the first element of the matrix.</p>
 <dl class="section return"><dt>Returns</dt><dd>A constant pointer to the first element of the matrix. </dd></dl>
 
 </div>
@@ -601,7 +562,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the number of rows in the matrix.</p>
+<p>TEST::rows Gets the number of rows in the matrix.</p>
 <dl class="section return"><dt>Returns</dt><dd>The number of rows in the matrix. </dd></dl>
 
 </div>
@@ -630,7 +591,7 @@ template&lt;SizeT _rows, SizeT _cols&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the transposed matrix.</p>
+<p>TEST::transpose Gets the transposed matrix.</p>
 <dl class="section return"><dt>Returns</dt><dd>The matrix transposed. </dd></dl>
 
 </div>

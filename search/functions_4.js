@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['face',['Face',['../classdrider_s_d_k_1_1_face.html#a9d32b9363e133d3d209fb76ded62b964',1,'driderSDK::Face']]],
   ['fast_5facos',['fast_aCos',['../structdrider_s_d_k_1_1_math.html#a95344b3e95ffadaff537496fec0ed86d',1,'driderSDK::Math']]],
   ['fast_5fasin',['fast_aSin',['../structdrider_s_d_k_1_1_math.html#a178023ce94bf4acbaea82b3a2541b941',1,'driderSDK::Math']]],
   ['fast_5fatan',['fast_aTan',['../structdrider_s_d_k_1_1_math.html#a6dfb1ac975ea477e9c79151b4d3b5a04',1,'driderSDK::Math']]],
@@ -12,5 +11,8 @@ var searchData=
   ['fast_5ftan',['fast_tan',['../structdrider_s_d_k_1_1_math.html#a63ee90c1db4bc0dd9e730f2cfafaf8a4',1,'driderSDK::Math']]],
   ['filesystem',['FileSystem',['../classdrider_s_d_k_1_1_file_system.html#afc691cb65f0c6b9c836d5ff756e8695a',1,'driderSDK::FileSystem']]],
   ['floor',['floor',['../structdrider_s_d_k_1_1_math.html#a14e73719d2870c36b2f8db5342812be1',1,'driderSDK::Math']]],
-  ['frustrum',['Frustrum',['../classdrider_s_d_k_1_1_frustrum.html#a4a79e8234bbf25c8cf850f01a6485a1a',1,'driderSDK::Frustrum']]]
+  ['frustrum',['Frustrum',['../classdrider_s_d_k_1_1_frustrum.html#a29699fd374b8ca67fec026417f62cb7b',1,'driderSDK::Frustrum::Frustrum()'],['../classdrider_s_d_k_1_1_frustrum.html#a4a79e8234bbf25c8cf850f01a6485a1a',1,'driderSDK::Frustrum::Frustrum(const Matrix4x4 &amp;ViewProjection)']]],
+  ['frustrumfrustrum',['frustrumFrustrum',['../structdrider_s_d_k_1_1_intersect.html#ac5987744cf7a7b1c11b430f6611b9379',1,'driderSDK::Intersect']]],
+  ['frustrumplane',['frustrumPlane',['../structdrider_s_d_k_1_1_intersect.html#ac8619206d10d1aa8fbc37f93c69e6064',1,'driderSDK::Intersect']]],
+  ['frustrumsphere',['frustrumSphere',['../structdrider_s_d_k_1_1_intersect.html#a77e5606355cca6c14ca233a112fe53c0',1,'driderSDK::Intersect']]]
 ];

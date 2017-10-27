@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>driderSDK</b></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacedrider_s_d_k.html">driderSDK</a></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,52 +84,700 @@ Inheritance diagram for driderSDK::DeviceContext:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0db79e887d650aba1469e7f07297d5d5"><td class="memItemLeft" align="right" valign="top"><a id="a0db79e887d650aba1469e7f07297d5d5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> ()=0</td></tr>
-<tr class="separator:a0db79e887d650aba1469e7f07297d5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc20e48354b2c42e52d4bb3daf322db0"><td class="memItemLeft" align="right" valign="top"><a id="abc20e48354b2c42e52d4bb3daf322db0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()=0</td></tr>
+<tr class="memitem:a14223c8c8143245edcf4ea356c7a5fcd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a14223c8c8143245edcf4ea356c7a5fcd">~DeviceContext</a> ()</td></tr>
+<tr class="separator:a14223c8c8143245edcf4ea356c7a5fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc20e48354b2c42e52d4bb3daf322db0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#abc20e48354b2c42e52d4bb3daf322db0">release</a> ()=0</td></tr>
 <tr class="separator:abc20e48354b2c42e52d4bb3daf322db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3df9c9a7f3f694b738bb25692895489e"><td class="memItemLeft" align="right" valign="top"><a id="a3df9c9a7f3f694b738bb25692895489e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>generateMipMaps</b> (const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture)=0</td></tr>
-<tr class="separator:a3df9c9a7f3f694b738bb25692895489e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dbd0ab003532db6529fcfbd3fd4be3c"><td class="memItemLeft" align="right" valign="top"><a id="a0dbd0ab003532db6529fcfbd3fd4be3c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateTextureFromMemory</b> (const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture, const char *databuffer, size_t bufferSize)=0</td></tr>
-<tr class="separator:a0dbd0ab003532db6529fcfbd3fd4be3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120b32e4e2f0de249d961a1eb6ab8e14"><td class="memItemLeft" align="right" valign="top"><a id="a120b32e4e2f0de249d961a1eb6ab8e14"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateBufferFromMemory</b> (const <a class="el" href="classdrider_s_d_k_1_1_buffer.html">Buffer</a> &amp;buffer, const char *dataBuffer, size_t bufferSize)=0</td></tr>
-<tr class="separator:a120b32e4e2f0de249d961a1eb6ab8e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a094386f278bcd231cdeefbc85a23a5b0"><td class="memItemLeft" align="right" valign="top"><a id="a094386f278bcd231cdeefbc85a23a5b0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setRenderTargets</b> () const =0</td></tr>
-<tr class="separator:a094386f278bcd231cdeefbc85a23a5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2bb9731dfc026aa780a834714f7771"><td class="memItemLeft" align="right" valign="top"><a id="a1c2bb9731dfc026aa780a834714f7771"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setTexture</b> (<a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> *texture) const =0</td></tr>
-<tr class="separator:a1c2bb9731dfc026aa780a834714f7771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3bad3687b2defb1d51278a8c41f1783"><td class="memItemLeft" align="right" valign="top"><a id="ae3bad3687b2defb1d51278a8c41f1783"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setShader</b> (const <a class="el" href="classdrider_s_d_k_1_1_shader.html">Shader</a> &amp;shader) const =0</td></tr>
+<tr class="memitem:a094540f35b492c327bb23e5dc68b1abc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a094540f35b492c327bb23e5dc68b1abc">generateMipMaps</a> (const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture) const =0</td></tr>
+<tr class="separator:a094540f35b492c327bb23e5dc68b1abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777305216fc0ebac2db60fd04c43fbd5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a777305216fc0ebac2db60fd04c43fbd5">updateTextureFromMemory</a> (<a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture, const char *databuffer, size_t bufferSize) const =0</td></tr>
+<tr class="separator:a777305216fc0ebac2db60fd04c43fbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd031df62c41baf38e7850d8d82c635"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a8bd031df62c41baf38e7850d8d82c635">updateBufferFromMemory</a> (<a class="el" href="classdrider_s_d_k_1_1_buffer.html">Buffer</a> &amp;buffer, const char *dataBuffer, size_t bufferSize) const =0</td></tr>
+<tr class="separator:a8bd031df62c41baf38e7850d8d82c635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7650e16660bbf568527d4dbd6f648359"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a7650e16660bbf568527d4dbd6f648359">setRenderTarget</a> (const <a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> &amp;renderTarget, const <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;depthStencil) const =0</td></tr>
+<tr class="separator:a7650e16660bbf568527d4dbd6f648359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02479767c9a24f4b9c7afc33c4164cef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a02479767c9a24f4b9c7afc33c4164cef">setTexture</a> (const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture, UInt32 slot) const =0</td></tr>
+<tr class="separator:a02479767c9a24f4b9c7afc33c4164cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3bad3687b2defb1d51278a8c41f1783"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#ae3bad3687b2defb1d51278a8c41f1783">setShader</a> (const <a class="el" href="classdrider_s_d_k_1_1_shader.html">Shader</a> &amp;shader) const =0</td></tr>
 <tr class="separator:ae3bad3687b2defb1d51278a8c41f1783"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74e1a885e3901f6eae0779348c613f7b"><td class="memItemLeft" align="right" valign="top"><a id="a74e1a885e3901f6eae0779348c613f7b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setIndexBuffer</b> (const <a class="el" href="classdrider_s_d_k_1_1_index_buffer.html">IndexBuffer</a> &amp;indexBuffer, UInt32 offset) const =0</td></tr>
+<tr class="memitem:a74e1a885e3901f6eae0779348c613f7b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a74e1a885e3901f6eae0779348c613f7b">setIndexBuffer</a> (const <a class="el" href="classdrider_s_d_k_1_1_index_buffer.html">IndexBuffer</a> &amp;indexBuffer, UInt32 offset) const =0</td></tr>
 <tr class="separator:a74e1a885e3901f6eae0779348c613f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5f73e44195694466c066c9b36c08444"><td class="memItemLeft" align="right" valign="top"><a id="ae5f73e44195694466c066c9b36c08444"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setVertexBuffer</b> (const <a class="el" href="classdrider_s_d_k_1_1_vertex_buffer.html">VertexBuffer</a> &amp;buffer, UInt32 stride, UInt32 offset) const =0</td></tr>
+<tr class="memitem:ae5f73e44195694466c066c9b36c08444"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#ae5f73e44195694466c066c9b36c08444">setVertexBuffer</a> (const <a class="el" href="classdrider_s_d_k_1_1_vertex_buffer.html">VertexBuffer</a> &amp;buffer, UInt32 stride, UInt32 offset) const =0</td></tr>
 <tr class="separator:ae5f73e44195694466c066c9b36c08444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bada3aee39700b878adbc80051868cb"><td class="memItemLeft" align="right" valign="top"><a id="a8bada3aee39700b878adbc80051868cb"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setConstantBuffer</b> (DR_SHADER_TYPE_FLAG::E typeFlag) const =0</td></tr>
-<tr class="separator:a8bada3aee39700b878adbc80051868cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe65fcd98f7af8e320d32a934528603e"><td class="memItemLeft" align="right" valign="top"><a id="abe65fcd98f7af8e320d32a934528603e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>clearDepthStencilView</b> (<a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;depthstencil, DR_DEPTH_STENCIL_CLEAR_TYPE::E clearType, float depthValue, UInt32 stencilValue)=0</td></tr>
-<tr class="separator:abe65fcd98f7af8e320d32a934528603e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1bc91e31a6d2234cf5ec7e4b5921c4a"><td class="memItemLeft" align="right" valign="top"><a id="aa1bc91e31a6d2234cf5ec7e4b5921c4a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>clearRenderTargetView</b> (<a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> &amp;renderTarget, const float colorRGBA[4])=0</td></tr>
-<tr class="separator:aa1bc91e31a6d2234cf5ec7e4b5921c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83e88e57151ee4faee7a5c1bec8be9a5"><td class="memItemLeft" align="right" valign="top"><a id="a83e88e57151ee4faee7a5c1bec8be9a5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setPrimitiveTopology</b> (DR_PRIMITIVE_TOPOLOGY::E topology)=0</td></tr>
-<tr class="separator:a83e88e57151ee4faee7a5c1bec8be9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a07b2e03852496c1a4c457afcab23a"><td class="memItemLeft" align="right" valign="top"><a id="a56a07b2e03852496c1a4c457afcab23a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> ()=0</td></tr>
-<tr class="separator:a56a07b2e03852496c1a4c457afcab23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1682338081ea9b0e22aad8f95bacb066"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a1682338081ea9b0e22aad8f95bacb066">setConstantBuffer</a> (const <a class="el" href="classdrider_s_d_k_1_1_constant_buffer.html">ConstantBuffer</a> &amp;buffer, DR_SHADER_TYPE_FLAG::E typeFlag) const =0</td></tr>
+<tr class="separator:a1682338081ea9b0e22aad8f95bacb066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa793a1a9bc676377ed4bbb5765689945"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#aa793a1a9bc676377ed4bbb5765689945">clearDepthStencilView</a> (<a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;depthstencil, DR_DEPTH_STENCIL_CLEAR_TYPE::E clearType, float depthValue, UInt32 stencilValue) const =0</td></tr>
+<tr class="separator:aa793a1a9bc676377ed4bbb5765689945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa22593de94a629ddae64678b2b629cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#afa22593de94a629ddae64678b2b629cf">clearRenderTargetView</a> (<a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> &amp;renderTarget, const float colorRGBA[4]) const =0</td></tr>
+<tr class="separator:afa22593de94a629ddae64678b2b629cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54206ce3022fae1f51f15f92421e3226"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a54206ce3022fae1f51f15f92421e3226">setPrimitiveTopology</a> (DR_PRIMITIVE_TOPOLOGY::E topology) const =0</td></tr>
+<tr class="separator:a54206ce3022fae1f51f15f92421e3226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb8d1fd21331ff3b97f5fe6ba0b50f6c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#afb8d1fd21331ff3b97f5fe6ba0b50f6c">draw</a> (UInt32 indexCount, UInt32 startIndexLocation, UInt32 startVertexLocation) const =0</td></tr>
+<tr class="separator:afb8d1fd21331ff3b97f5fe6ba0b50f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a14223c8c8143245edcf4ea356c7a5fcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14223c8c8143245edcf4ea356c7a5fcd">&#9670;&nbsp;</a></span>~DeviceContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual driderSDK::DeviceContext::~DeviceContext </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Class virtual destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa793a1a9bc676377ed4bbb5765689945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa793a1a9bc676377ed4bbb5765689945">&#9670;&nbsp;</a></span>clearDepthStencilView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::clearDepthStencilView </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;&#160;</td>
+          <td class="paramname"><em>depthstencil</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DR_DEPTH_STENCIL_CLEAR_TYPE::E&#160;</td>
+          <td class="paramname"><em>clearType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>depthValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>stencilValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clear the depth stencil</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">depthstencil</td><td>The depth stencil to clear</td></tr>
+    <tr><td class="paramname">clearType</td><td>specifies wich buffer clear depth, stencil or both</td></tr>
+    <tr><td class="paramname">depthValue</td><td>The value to set on depth</td></tr>
+    <tr><td class="paramname">stencilValue</td><td>The value to set on stencil </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a99b522d34e403088d6a489b8ea30bea7">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="afa22593de94a629ddae64678b2b629cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa22593de94a629ddae64678b2b629cf">&#9670;&nbsp;</a></span>clearRenderTargetView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::clearRenderTargetView </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderTarget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>colorRGBA</em>[4]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clear a render target</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderTarget</td><td>The renderTarget to clear</td></tr>
+    <tr><td class="paramname">colorRGBA</td><td>The color of the clear </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a5bf68d8c4bb597385e60cb6e89be9962">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="afb8d1fd21331ff3b97f5fe6ba0b50f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb8d1fd21331ff3b97f5fe6ba0b50f6c">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::draw </td>
+          <td>(</td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>indexCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>startIndexLocation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>startVertexLocation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Draw the primitives</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indexCount</td><td>The number of index to use</td></tr>
+    <tr><td class="paramname">startIndexLocation</td><td>The start index location</td></tr>
+    <tr><td class="paramname">startVertexLocation</td><td>The start vertex location </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a363bab660db318ffdf3fc344886803c2">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="a094540f35b492c327bb23e5dc68b1abc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a094540f35b492c327bb23e5dc68b1abc">&#9670;&nbsp;</a></span>generateMipMaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::generateMipMaps </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generate mip maps of the texture</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>The texture to generate mipmaps </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a5e12c15a44a7bbdbeb5644aa0080c7ee">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="abc20e48354b2c42e52d4bb3daf322db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc20e48354b2c42e52d4bb3daf322db0">&#9670;&nbsp;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Release the allocated memory </p>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a33d47c4b6ca7ca3d729bd8dc6d662c7f">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="a1682338081ea9b0e22aad8f95bacb066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1682338081ea9b0e22aad8f95bacb066">&#9670;&nbsp;</a></span>setConstantBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::setConstantBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_constant_buffer.html">ConstantBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DR_SHADER_TYPE_FLAG::E&#160;</td>
+          <td class="paramname"><em>typeFlag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the constant buffer to all shaders specifyed on typeFlag</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer to set</td></tr>
+    <tr><td class="paramname">typeFlag</td><td>Bit flag that specifyes the shaders to set the constant buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#adbbbad4167222057c48f61fb9e55c12f">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="a74e1a885e3901f6eae0779348c613f7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74e1a885e3901f6eae0779348c613f7b">&#9670;&nbsp;</a></span>setIndexBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::setIndexBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_index_buffer.html">IndexBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>indexBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the index buffer to the current context</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indexBuffer</td><td>The index buffer to set</td></tr>
+    <tr><td class="paramname">offset</td><td>The offset of the first element </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a76e31fcbfdd2a20f89841f6ebb0f96e4">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="a54206ce3022fae1f51f15f92421e3226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54206ce3022fae1f51f15f92421e3226">&#9670;&nbsp;</a></span>setPrimitiveTopology()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::setPrimitiveTopology </td>
+          <td>(</td>
+          <td class="paramtype">DR_PRIMITIVE_TOPOLOGY::E&#160;</td>
+          <td class="paramname"><em>topology</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the tipe of topology to use on the draw</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">topology</td><td>The topology to use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a70f33596cc562ad451b0d5c5ada159c8">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="a7650e16660bbf568527d4dbd6f648359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7650e16660bbf568527d4dbd6f648359">&#9670;&nbsp;</a></span>setRenderTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::setRenderTarget </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderTarget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;&#160;</td>
+          <td class="paramname"><em>depthStencil</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the render target and depth stencil</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderTarget</td><td>The render targt to set</td></tr>
+    <tr><td class="paramname">depthStencil</td><td>The depth stencil to set with the render target </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#aa577e70cf1d3b91192ac0f41fca83784">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="ae3bad3687b2defb1d51278a8c41f1783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3bad3687b2defb1d51278a8c41f1783">&#9670;&nbsp;</a></span>setShader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::setShader </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_shader.html">Shader</a> &amp;&#160;</td>
+          <td class="paramname"><em>shader</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the shader to the current context</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shader</td><td>The shader to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a622c0e945b7fbb54d9ab61ad8c2d53e1">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="a02479767c9a24f4b9c7afc33c4164cef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02479767c9a24f4b9c7afc33c4164cef">&#9670;&nbsp;</a></span>setTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::setTexture </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>slot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the texture to the shader</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>The texture to set</td></tr>
+    <tr><td class="paramname">slot</td><td>The slot where the texture will be placed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#aa857f3521f90b88b434b9119c3534f1a">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="ae5f73e44195694466c066c9b36c08444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f73e44195694466c066c9b36c08444">&#9670;&nbsp;</a></span>setVertexBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::setVertexBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vertex_buffer.html">VertexBuffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>stride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the vertex buffer to the current context</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer to set</td></tr>
+    <tr><td class="paramname">stride</td><td>The size of one vertex data in bytes</td></tr>
+    <tr><td class="paramname">offset</td><td>The offset of the first element </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a78305e379013824513127c7dbc23bd48">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="a8bd031df62c41baf38e7850d8d82c635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd031df62c41baf38e7850d8d82c635">&#9670;&nbsp;</a></span>updateBufferFromMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::updateBufferFromMemory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_buffer.html">Buffer</a> &amp;&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dataBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update the data of the texture</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>The buffer to update</td></tr>
+    <tr><td class="paramname">databuffer</td><td>The buffer with new data</td></tr>
+    <tr><td class="paramname">buffer</td><td>size The size of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a9e067031cebdbf38fcf969e9a36f73ca">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
+<a id="a777305216fc0ebac2db60fd04c43fbd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a777305216fc0ebac2db60fd04c43fbd5">&#9670;&nbsp;</a></span>updateTextureFromMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::DeviceContext::updateTextureFromMemory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>databuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update the data of the texture</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">texture</td><td>The <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> to update</td></tr>
+    <tr><td class="paramname">databuffer</td><td>The buffer with new data</td></tr>
+    <tr><td class="paramname">buffer</td><td>size The size of the buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a6b10e3df392e59a75f86cef312b51f08">driderSDK::D3DDeviceContext</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>F:/projectsVS2017/Drider-Engine/Graphics/Include/<a class="el" href="dr__device__context_8h_source.html">dr_device_context.h</a></li>
 </ul>

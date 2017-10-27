@@ -61,18 +61,21 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>driderSDK</b></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacedrider_s_d_k.html">driderSDK</a></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_render_target-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::RenderTarget Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="dr__render__target_8h_source.html">dr_render_target.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for driderSDK::RenderTarget:</div>
 <div class="dyncontent">
@@ -85,22 +88,186 @@ Inheritance diagram for driderSDK::RenderTarget:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a83c9328a24d2f3908975edce19a21562"><td class="memItemLeft" align="right" valign="top"><a id="a83c9328a24d2f3908975edce19a21562"></a>
-virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;desc)=0</td></tr>
-<tr class="separator:a83c9328a24d2f3908975edce19a21562"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcf0cbe62017f4f295c969021c6cb86c"><td class="memItemLeft" align="right" valign="top"><a id="afcf0cbe62017f4f295c969021c6cb86c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext, const <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;depthStencil) const =0</td></tr>
+<tr class="memitem:a08a55c0362ee31fe29fed378b100e1ab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_render_target.html#a08a55c0362ee31fe29fed378b100e1ab">~RenderTarget</a> ()</td></tr>
+<tr class="separator:a08a55c0362ee31fe29fed378b100e1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3570d15f759fc4ab3d89f4af0592a7"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_render_target.html#a6a3570d15f759fc4ab3d89f4af0592a7">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;desc, UInt32 _numColorTextures)=0</td></tr>
+<tr class="separator:a6a3570d15f759fc4ab3d89f4af0592a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf0cbe62017f4f295c969021c6cb86c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_render_target.html#afcf0cbe62017f4f295c969021c6cb86c">set</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext, const <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;depthStencil) const =0</td></tr>
 <tr class="separator:afcf0cbe62017f4f295c969021c6cb86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3adee5b8c8239ca3a83b9b779cd3165c"><td class="memItemLeft" align="right" valign="top"><a id="a3adee5b8c8239ca3a83b9b779cd3165c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()=0</td></tr>
+<tr class="memitem:a3adee5b8c8239ca3a83b9b779cd3165c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_render_target.html#a3adee5b8c8239ca3a83b9b779cd3165c">release</a> ()=0</td></tr>
 <tr class="separator:a3adee5b8c8239ca3a83b9b779cd3165c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a987b7fed8ed043559aa0d1d0f3db4466"><td class="memItemLeft" align="right" valign="top"><a id="a987b7fed8ed043559aa0d1d0f3db4466"></a>
-std::unique_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>colorTexture</b></td></tr>
-<tr class="separator:a987b7fed8ed043559aa0d1d0f3db4466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb79c329e4b65f8bf668647b5077e7f8"><td class="memItemLeft" align="right" valign="top"><a id="aeb79c329e4b65f8bf668647b5077e7f8"></a>
+std::vector&lt; <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>colorTextures</b></td></tr>
+<tr class="separator:aeb79c329e4b65f8bf668647b5077e7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a0ac6dd69b7dacd640869392b26eabfd3"><td class="memItemLeft" align="right" valign="top"><a id="a0ac6dd69b7dacd640869392b26eabfd3"></a>
+UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b></td></tr>
+<tr class="separator:a0ac6dd69b7dacd640869392b26eabfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for render target</p>
+<p>Sample usage: RenderTarget* = new <a class="el" href="classdrider_s_d_k_1_1_d3_d_render_target.html">D3DRenderTarget</a>; </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a08a55c0362ee31fe29fed378b100e1ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a55c0362ee31fe29fed378b100e1ab">&#9670;&nbsp;</a></span>~RenderTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual driderSDK::RenderTarget::~RenderTarget </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Class virtual destructor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6a3570d15f759fc4ab3d89f4af0592a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3570d15f759fc4ab3d89f4af0592a7">&#9670;&nbsp;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::RenderTarget::create </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UInt32&#160;</td>
+          <td class="paramname"><em>_numColorTextures</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a render target on this object</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>The device to create the depth stencil</td></tr>
+    <tr><td class="paramname">desc</td><td>The descriptor of the depth stencil</td></tr>
+    <tr><td class="paramname">_numColorTextures</td><td>The number of textures to create for the render target</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_render_target.html#ac463664c07afdc565c1a6fd5b39aa2d1">driderSDK::D3DRenderTarget</a>.</p>
+
+</div>
+</div>
+<a id="a3adee5b8c8239ca3a83b9b779cd3165c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3adee5b8c8239ca3a83b9b779cd3165c">&#9670;&nbsp;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::RenderTarget::release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Release the allocated memory </p>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_render_target.html#a1121a5ab3bf2a1692b8363d6e4790243">driderSDK::D3DRenderTarget</a>.</p>
+
+</div>
+</div>
+<a id="afcf0cbe62017f4f295c969021c6cb86c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf0cbe62017f4f295c969021c6cb86c">&#9670;&nbsp;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::RenderTarget::set </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>deviceContext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;&#160;</td>
+          <td class="paramname"><em>depthStencil</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the render target and depth stencil</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceContext</td><td>The device context to set the shader</td></tr>
+    <tr><td class="paramname">depthStencil</td><td>The depth stencil to set with the render target </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_render_target.html#a89c990bcea6668be03f080c5769053ae">driderSDK::D3DRenderTarget</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>F:/projectsVS2017/Drider-Engine/Graphics/Include/<a class="el" href="dr__render__target_8h_source.html">dr_render_target.h</a></li>
 </ul>

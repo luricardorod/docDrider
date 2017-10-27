@@ -61,7 +61,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>driderSDK</b></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacedrider_s_d_k.html">driderSDK</a></li><li class="navelem"><a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -110,8 +110,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a40b514bad03b4e125589f02cef0b959d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae95f88c74b48df9b181c8e985e0b350c"><td class="memItemLeft" align="right" valign="top">const float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#ae95f88c74b48df9b181c8e985e0b350c">ptr</a> () const</td></tr>
 <tr class="separator:ae95f88c74b48df9b181c8e985e0b350c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ab14d80b2f25615c744f4e967677ee8"><td class="memItemLeft" align="right" valign="top"><a id="a1ab14d80b2f25615c744f4e967677ee8"></a>
-float &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (const SizeT index)</td></tr>
+<tr class="memitem:a1ab14d80b2f25615c744f4e967677ee8"><td class="memItemLeft" align="right" valign="top">float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#a1ab14d80b2f25615c744f4e967677ee8">operator[]</a> (const SizeT index)</td></tr>
 <tr class="separator:a1ab14d80b2f25615c744f4e967677ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9549658acaa74f9c20584b0d7861ad34"><td class="memItemLeft" align="right" valign="top">const float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#a9549658acaa74f9c20584b0d7861ad34">operator[]</a> (const SizeT index) const</td></tr>
 <tr class="separator:a9549658acaa74f9c20584b0d7861ad34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,7 +211,7 @@ union {</td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TEST:forceInit</p>
+<p>TEST::forceInit</p>
 <p>Default constructor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -266,7 +265,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TEST::constructForVector2DI</p>
+<p>TEST::copyConstructor</p>
 <p>Copy constructor. </p>
 
 </div>
@@ -296,7 +295,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TEST::constructorFor2Int32</p>
+<p>TEST::constructorFor2Floats</p>
 <p>Initialize constructor with values.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -390,6 +389,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::distanceSqr</p>
 <p>Computes the squared distance between two vectors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -416,7 +416,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TEST:: dot</p>
+<p>TEST::dot</p>
 <p>Computes the dot product between this vector and the vector parameter. This operatios is commutative.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -453,6 +453,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::equals</p>
 <p>Check's if the other vector is equal to this vector with an error range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -539,6 +540,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorNotEqual</p>
 <p>Checks if the values of the vectors aren't equal.</p>
 <dl class="section return"><dt>Returns</dt><dd>Flag if vectors aren't equal. </dd></dl>
 
@@ -559,6 +561,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorMultiplication</p>
 <p>Multiplies elements of the vector with the elements of the other vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -585,6 +588,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorMultiplicationScalar</p>
 <p>Multiplies elements of the vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -611,6 +615,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorMultiplicationEqual</p>
 <p>Multiplies elements of the vector with the elements of the other vector, and stores the result in this vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -637,6 +642,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorMultiplicationEqualScalar</p>
 <p>Multiplies elements of the vector and stores it in the vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -663,6 +669,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorAdd</p>
 <p>Adds elements of the vector with the elements of the other vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -689,6 +696,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorAddEqual</p>
 <p>Adds elements of the vector with the elements of the other vector and stores it in this vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -715,6 +723,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorMinus</p>
 <p>Substracts elements of the vector with the elements of the other vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -740,6 +749,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorNegate</p>
 <p>Returns this vector with negated values. </p>
 
 </div>
@@ -759,6 +769,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorMinusEqual</p>
 <p>Substracts elements of the vector with the elements of the other vector and stores it in this vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -785,6 +796,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorDivisionScalar</p>
 <p>Divide elements of the vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -811,6 +823,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorDivisionEqualScalar</p>
 <p>Divide elements of the vector and stores it in the vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -837,6 +850,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorEqual</p>
 <p>Set the x, y values of this vector with the x, y of the other vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -863,13 +877,47 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorEqualEqual</p>
 <p>Checks if the values of the vectors are equal.</p>
 <dl class="section return"><dt>Returns</dt><dd>Flag if vectors are equal. </dd></dl>
 
 </div>
 </div>
+<a id="a1ab14d80b2f25615c744f4e967677ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab14d80b2f25615c744f4e967677ee8">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float &amp; driderSDK::Vector2D::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const SizeT&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::operatorBrackets</p>
+<p>Gets a reference to the specified element from the vector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the element.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A const reference to the element at the [index] position.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">out_of_range</td><td>If the index is greater than number of elements in the vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9549658acaa74f9c20584b0d7861ad34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9549658acaa74f9c20584b0d7861ad34">&#9670;&nbsp;</a></span>operator[]()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9549658acaa74f9c20584b0d7861ad34">&#9670;&nbsp;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -883,6 +931,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorBracketsPtr</p>
 <p>Gets a reference to the specified element from the vector.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -915,6 +964,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::operatorOr</p>
 <p>Computes the dot product between this vector and the vector parameter. This operatios is commutative.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -940,20 +990,8 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets a reference to the specified element from the vector.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>The index of the element.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A const reference to the element at the [index] position.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">out_of_range</td><td>If the index is greater than number of elements in the vector. Gets a pointer to the first element of the matrix.</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>TEST::opPtr</p>
+<p>Gets a pointer to the first element of the matrix.</p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the first element of the matrix. </dd></dl>
 
 </div>
@@ -972,6 +1010,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>TEST::constOpPtr</p>
 <p>Gets a constant pointer to the first element of the matrix.</p>
 <dl class="section return"><dt>Returns</dt><dd>A constant pointer to the first element of the matrix. </dd></dl>
 

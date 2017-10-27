@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['d3dcommandbuffer',['D3DCommandBuffer',['../classdrider_s_d_k_1_1_d3_d_command_buffer.html#a31046210ae341e4b2774502d435e1c35',1,'driderSDK::D3DCommandBuffer']]],
+  ['d3dconstantbuffer',['D3DConstantBuffer',['../classdrider_s_d_k_1_1_d3_d_constant_buffer.html#a2a7d19f7cb715ce15ae617ac5518e758',1,'driderSDK::D3DConstantBuffer']]],
+  ['d3dindexbuffer',['D3DIndexBuffer',['../classdrider_s_d_k_1_1_d3_d_index_buffer.html#af9171f542ce75271a8fd97e7aa01a0cd',1,'driderSDK::D3DIndexBuffer']]],
+  ['d3dvertexbuffer',['D3DVertexBuffer',['../classdrider_s_d_k_1_1_d3_d_vertex_buffer.html#a9bbddeea6158512eeaaf762194ac2ccc',1,'driderSDK::D3DVertexBuffer']]],
   ['decode',['decode',['../structdrider_s_d_k_1_1_codec.html#adb811b04bd37f79f931d6705fd7aeb00',1,'driderSDK::Codec']]],
   ['degree',['Degree',['../classdrider_s_d_k_1_1_degree.html#aa02a04e5e7f0c5d15e4362bfc2022286',1,'driderSDK::Degree::Degree()'],['../classdrider_s_d_k_1_1_degree.html#ab8798b0761abe03fd0d28abbac62a17c',1,'driderSDK::Degree::Degree(Degree &amp;&amp;V)=default'],['../classdrider_s_d_k_1_1_degree.html#a94a3842a811edb51f578d4f6da487e3b',1,'driderSDK::Degree::Degree(const Degree &amp;V)'],['../classdrider_s_d_k_1_1_degree.html#ada0c9ad7f00c36d1209fc1e7794911d7',1,'driderSDK::Degree::Degree(float value)']]],
   ['determinant',['determinant',['../classdrider_s_d_k_1_1_matrix3x3.html#a5f9caa3838c81426ab99b408de64a3dd',1,'driderSDK::Matrix3x3::determinant()'],['../classdrider_s_d_k_1_1_matrix4x4.html#a91d8bd9e3887c79f4d6ab78984a1139d',1,'driderSDK::Matrix4x4::determinant()']]],
@@ -10,5 +14,6 @@ var searchData=
   ['divx2',['divX2',['../structdrider_s_d_k_1_1_math.html#a3192a644fe4aeb8e92586a1ce46f46be',1,'driderSDK::Math']]],
   ['divx4',['divX4',['../structdrider_s_d_k_1_1_math.html#a3efb6f8d9f0b62bc474aeeec132742cd',1,'driderSDK::Math']]],
   ['dot',['dot',['../classdrider_s_d_k_1_1_vector2_d.html#af12eaa67f2debd35b66eda9964017d93',1,'driderSDK::Vector2D::dot()'],['../classdrider_s_d_k_1_1_vector2_d_i.html#a84ebc56e4ad5fb4f6452b658af317e16',1,'driderSDK::Vector2DI::dot()'],['../classdrider_s_d_k_1_1_vector3_d.html#ac49c5b28ee95fbe6d7fae02f00008b6d',1,'driderSDK::Vector3D::dot()'],['../classdrider_s_d_k_1_1_vector4_d.html#aa8d1f7fff12b2ac119cadc3938652fed',1,'driderSDK::Vector4D::dot()'],['../classdrider_s_d_k_1_1_vector_n.html#ad48030d3daf764a398547631a348055a',1,'driderSDK::VectorN::dot()']]],
-  ['dot3',['dot3',['../classdrider_s_d_k_1_1_vector4_d.html#a0cecb8327a36dbc2050e002151c2cc84',1,'driderSDK::Vector4D']]]
+  ['dot3',['dot3',['../classdrider_s_d_k_1_1_vector4_d.html#a0cecb8327a36dbc2050e002151c2cc84',1,'driderSDK::Vector4D']]],
+  ['draw',['draw',['../classdrider_s_d_k_1_1_d3_d_device_context.html#a363bab660db318ffdf3fc344886803c2',1,'driderSDK::D3DDeviceContext::draw()'],['../classdrider_s_d_k_1_1_device_context.html#afb8d1fd21331ff3b97f5fe6ba0b50f6c',1,'driderSDK::DeviceContext::draw()']]]
 ];

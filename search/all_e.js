@@ -1,10 +1,4 @@
 var searchData=
 [
-  ['tan',['tan',['../structdrider_s_d_k_1_1_math.html#a7d746ca10ffc6794b43008fd7f9c4dfc',1,'driderSDK::Math']]],
-  ['texture',['Texture',['../classdrider_s_d_k_1_1_texture.html',1,'driderSDK::Texture'],['../classdrider_s_d_k_1_1_texture.html#a576ebb2285bd69ffba72db5e3908a7aa',1,'driderSDK::Texture::Texture()']]],
-  ['todegree',['toDegree',['../classdrider_s_d_k_1_1_radian.html#a2b848dd9f60fbdb8e113620e9933f3d8',1,'driderSDK::Radian']]],
-  ['toradian',['toRadian',['../classdrider_s_d_k_1_1_degree.html#a5904a76d6c28c10ca432ee46db1997a8',1,'driderSDK::Degree']]],
-  ['transpose',['transpose',['../classdrider_s_d_k_1_1_matrix3x3.html#abcfaffa382d58cb3f0be5d9dd7c50dcf',1,'driderSDK::Matrix3x3::transpose()'],['../classdrider_s_d_k_1_1_matrix4x4.html#a646a2c43fc8c748fd58e5d9b707b1d27',1,'driderSDK::Matrix4x4::transpose()'],['../classdrider_s_d_k_1_1_matrix_nx_m.html#a905c8727dad2b8dc8c0e90a87489dd9a',1,'driderSDK::MatrixNxM::transpose()']]],
-  ['truncate2float',['truncate2Float',['../structdrider_s_d_k_1_1_math.html#a28b9d2c0bff027f5748e2fc52c0db60a',1,'driderSDK::Math']]],
-  ['truncate2int',['truncate2Int',['../structdrider_s_d_k_1_1_math.html#ac0693a87badc94fb49da7cc7ad0d8ff9',1,'driderSDK::Math']]]
+  ['quaternion',['Quaternion',['../classdrider_s_d_k_1_1_quaternion.html',1,'driderSDK::Quaternion'],['../classdrider_s_d_k_1_1_quaternion.html#ae022b897e4f962cf3a7f5a155ad01234',1,'driderSDK::Quaternion::Quaternion()'],['../classdrider_s_d_k_1_1_quaternion.html#ab20b2c4c1ceb4d02629464575d3d1d1f',1,'driderSDK::Quaternion::Quaternion(Math::FORCE_INIT k)'],['../classdrider_s_d_k_1_1_quaternion.html#a644b649dee7047182a31d10d087062ca',1,'driderSDK::Quaternion::Quaternion(Quaternion &amp;&amp;Q)=default'],['../classdrider_s_d_k_1_1_quaternion.html#ad90008123c45fcdf2a92ba25028101dd',1,'driderSDK::Quaternion::Quaternion(const Quaternion &amp;Q)'],['../classdrider_s_d_k_1_1_quaternion.html#a92a0ef44e9637ef97f077e1996880c71',1,'driderSDK::Quaternion::Quaternion(float _x, float _y, float _z, float _w)'],['../classdrider_s_d_k_1_1_quaternion.html#a37b6c7f77f46a41325b179c0d1edb27b',1,'driderSDK::Quaternion::Quaternion(const Vector4D &amp;V)']]]
 ];

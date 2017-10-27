@@ -5,7 +5,6 @@ var searchData=
   ['vector3d',['Vector3D',['../classdrider_s_d_k_1_1_vector3_d.html',1,'driderSDK']]],
   ['vector4d',['Vector4D',['../classdrider_s_d_k_1_1_vector4_d.html',1,'driderSDK']]],
   ['vectorn',['VectorN',['../classdrider_s_d_k_1_1_vector_n.html',1,'driderSDK']]],
-  ['vertex',['Vertex',['../structdrider_s_d_k_1_1_vertex.html',1,'driderSDK']]],
   ['vertexbuffer',['VertexBuffer',['../classdrider_s_d_k_1_1_vertex_buffer.html',1,'driderSDK']]],
   ['vertexshader',['VertexShader',['../classdrider_s_d_k_1_1_vertex_shader.html',1,'driderSDK']]]
 ];
