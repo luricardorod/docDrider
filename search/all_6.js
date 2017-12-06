@@ -2,6 +2,20 @@ var searchData=
 [
   ['generatemipmaps',['generateMipMaps',['../classdrider_s_d_k_1_1_d3_d_device_context.html#a5e12c15a44a7bbdbeb5644aa0080c7ee',1,'driderSDK::D3DDeviceContext::generateMipMaps()'],['../classdrider_s_d_k_1_1_d3_d_texture.html#aa6c5007b62e59cc5387fa19e23d2fa5c',1,'driderSDK::D3DTexture::generateMipMaps()'],['../classdrider_s_d_k_1_1_device_context.html#a094540f35b492c327bb23e5dc68b1abc',1,'driderSDK::DeviceContext::generateMipMaps()'],['../classdrider_s_d_k_1_1_texture.html#a92cedd35f170c9392b5d73b177f9915b',1,'driderSDK::Texture::generateMipMaps()']]],
   ['geometryshader',['GeometryShader',['../classdrider_s_d_k_1_1_geometry_shader.html',1,'driderSDK']]],
-  ['getbackbuffer',['getBackBuffer',['../classdrider_s_d_k_1_1_d3_d_swap_chain.html#a14a764969bb2354e257632dea887e18a',1,'driderSDK::D3DSwapChain::getBackBuffer()'],['../classdrider_s_d_k_1_1_swap_chain.html#a6b9118931451dfa7a4b991945f4e2042',1,'driderSDK::SwapChain::getBackBuffer()']]],
-  ['getreference',['getReference',['../classdrider_s_d_k_1_1_resource_manager.html#af9e76712269e4a3d4b5d2d2c1f6b3330',1,'driderSDK::ResourceManager']]]
+  ['getactivecamera',['getActiveCamera',['../classdrider_s_d_k_1_1_camera_manager.html#ac296b1a48f928659655812fcd53e0c0d',1,'driderSDK::CameraManager']]],
+  ['getasstring',['GetAsString',['../classdrider_s_d_k_1_1_file.html#ab168ef27deb65904086154645bb17954',1,'driderSDK::File']]],
+  ['getbackbuffer',['getBackBuffer',['../classdrider_s_d_k_1_1_d3_d_swap_chain.html#a539f3c87384543c2ee3819474a562c9f',1,'driderSDK::D3DSwapChain::getBackBuffer()'],['../classdrider_s_d_k_1_1_swap_chain.html#a2a685f20f5fe3f7b442d27cbb9d8ea2c',1,'driderSDK::SwapChain::getBackBuffer()']]],
+  ['getfileextension',['GetFileExtension',['../classdrider_s_d_k_1_1_file_system.html#a9ceafa03f641b8ec850cdbb9af9e8f73',1,'driderSDK::FileSystem']]],
+  ['getmaxpoint',['getMaxPoint',['../classdrider_s_d_k_1_1_a_a_b_b.html#a9e947e472158ce24c0761a0a2ba81e7f',1,'driderSDK::AABB']]],
+  ['getminpoint',['getMinPoint',['../classdrider_s_d_k_1_1_a_a_b_b.html#a7f0c28aaca4fd93e0597de8473325fa2',1,'driderSDK::AABB']]],
+  ['getname',['getName',['../classdrider_s_d_k_1_1_camera.html#accd5da406170c20b8f63922d6e0725de',1,'driderSDK::Camera']]],
+  ['getpoint',['GetPoint',['../classdrider_s_d_k_1_1_line.html#a74af98c56b681bdcea073956e4e36758',1,'driderSDK::Line']]],
+  ['getreference',['getReference',['../classdrider_s_d_k_1_1_resource_manager.html#aa69a26b9005f52a4deec9aa7a37647ee',1,'driderSDK::ResourceManager']]],
+  ['getrotation',['getRotation',['../classdrider_s_d_k_1_1_transform.html#a394b3644a8b4b890ad6475173dea06de',1,'driderSDK::Transform']]],
+  ['gettransformmatrix',['getTransformMatrix',['../classdrider_s_d_k_1_1_transform.html#a0df8652634aa52972d9ea95727e15dfe',1,'driderSDK::Transform']]],
+  ['gettype',['getType',['../classdrider_s_d_k_1_1_codec_model.html#ac93d882778354099c8928c5da8e7db4e',1,'driderSDK::CodecModel::getType()'],['../classdrider_s_d_k_1_1_codec_texture.html#aca8061b39a841646c31517afa58ea772',1,'driderSDK::CodecTexture::getType()']]],
+  ['getvp',['getVP',['../classdrider_s_d_k_1_1_camera.html#a57c16de696b81c05b90bf815ca90102c',1,'driderSDK::Camera']]],
+  ['getworkingpath',['GetWorkingPath',['../classdrider_s_d_k_1_1_file_system.html#a36033b0a75ee005e23a79273fe5e883c',1,'driderSDK::FileSystem']]],
+  ['grahamscan',['GrahamScan',['../classdrider_s_d_k_1_1_convex_hull.html#a6c16f7f1843769ede283da9f41808a29',1,'driderSDK::ConvexHull']]],
+  ['graphicsapi',['GraphicsAPI',['../classdrider_s_d_k_1_1_graphics_a_p_i.html',1,'driderSDK']]]
 ];

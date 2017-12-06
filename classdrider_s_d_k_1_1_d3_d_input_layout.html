@@ -85,8 +85,14 @@ Inheritance diagram for driderSDK::D3DInputLayout:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad27403b964dd843fa8cdf40e4f3d0f8c"><td class="memItemLeft" align="right" valign="top">DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_input_layout.html#ad27403b964dd843fa8cdf40e4f3d0f8c">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> *inputDescArray, UInt32 arraySize) override</td></tr>
-<tr class="separator:ad27403b964dd843fa8cdf40e4f3d0f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c45ae3d01b82072f82802b4a18f0a6"><td class="memItemLeft" align="right" valign="top"><a id="ab9c45ae3d01b82072f82802b4a18f0a6"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> () override</td></tr>
+<tr class="separator:ab9c45ae3d01b82072f82802b4a18f0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6225340e5cafcda7e6be5110009a1e4"><td class="memItemLeft" align="right" valign="top"><a id="ae6225340e5cafcda7e6be5110009a1e4"></a>
+void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> () override</td></tr>
+<tr class="separator:ae6225340e5cafcda7e6be5110009a1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe676146e56cb7f350d9290d263fff97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_input_layout.html#abe676146e56cb7f350d9290d263fff97">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const std::vector&lt; <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> &gt; &amp;inputDescArray, const <a class="el" href="classdrider_s_d_k_1_1_shader_bytecode.html">ShaderBytecode</a> &amp;shader) override</td></tr>
+<tr class="separator:abe676146e56cb7f350d9290d263fff97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab824555982f154dc7aa4b448ff80aa98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_input_layout.html#ab824555982f154dc7aa4b448ff80aa98">set</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext) const override</td></tr>
 <tr class="separator:ab824555982f154dc7aa4b448ff80aa98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb8f906a02b78cd028d326e04d6b9b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_input_layout.html#a0cb8f906a02b78cd028d326e04d6b9b1">release</a> () override</td></tr>
@@ -97,13 +103,17 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a44f1c6f9e9386f0a1c957763f0520ea4"><td class="memItemLeft" align="right" valign="top"><a id="a44f1c6f9e9386f0a1c957763f0520ea4"></a>
-Microsoft::WRL::ComPtr&lt; ID3D11InputLayout &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>APILayout</b></td></tr>
-<tr class="separator:a44f1c6f9e9386f0a1c957763f0520ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4165e137f891995d6068bd6001a5855"><td class="memItemLeft" align="right" valign="top"><a id="ab4165e137f891995d6068bd6001a5855"></a>
+ID3D11InputLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>APILayout</b></td></tr>
+<tr class="separator:ab4165e137f891995d6068bd6001a5855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classdrider_s_d_k_1_1_input_layout"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdrider_s_d_k_1_1_input_layout')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdrider_s_d_k_1_1_input_layout.html">driderSDK::InputLayout</a></td></tr>
+<tr class="memitem:a030d2af27aa3d2c22fde70ca9ab3309d inherit pub_attribs_classdrider_s_d_k_1_1_input_layout"><td class="memItemLeft" align="right" valign="top"><a id="a030d2af27aa3d2c22fde70ca9ab3309d"></a>
+std::vector&lt; <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_descriptorVec</b></td></tr>
+<tr class="separator:a030d2af27aa3d2c22fde70ca9ab3309d inherit pub_attribs_classdrider_s_d_k_1_1_input_layout"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad27403b964dd843fa8cdf40e4f3d0f8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad27403b964dd843fa8cdf40e4f3d0f8c">&#9670;&nbsp;</a></span>create()</h2>
+<a id="abe676146e56cb7f350d9290d263fff97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe676146e56cb7f350d9290d263fff97">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -112,7 +122,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11InputLayout &gt;&#160;</td><td class="memItemRi
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DR_GRAPHICS_ERROR::E driderSDK::D3DInputLayout::create </td>
+          <td class="memname">void driderSDK::D3DInputLayout::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -120,14 +130,14 @@ Microsoft::WRL::ComPtr&lt; ID3D11InputLayout &gt;&#160;</td><td class="memItemRi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> *&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>inputDescArray</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">UInt32&#160;</td>
-          <td class="paramname"><em>arraySize</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_shader_bytecode.html">ShaderBytecode</a> &amp;&#160;</td>
+          <td class="paramname"><em>shader</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -141,6 +151,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11InputLayout &gt;&#160;</td><td class="memItemRi
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::create</p>
 <p>Create a input layout</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -152,7 +163,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11InputLayout &gt;&#160;</td><td class="memItemRi
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implements <a class="el" href="classdrider_s_d_k_1_1_input_layout.html#a1a6c6688c4050a3e2585c586f8c308f0">driderSDK::InputLayout</a>.</p>
+<p>Implements <a class="el" href="classdrider_s_d_k_1_1_input_layout.html#a715b3c04dc3bd80af372f0ae1b636ea2">driderSDK::InputLayout</a>.</p>
 
 </div>
 </div>
@@ -178,6 +189,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11InputLayout &gt;&#160;</td><td class="memItemRi
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::release</p>
 <p>Release the allocated memory </p>
 
 <p>Implements <a class="el" href="classdrider_s_d_k_1_1_input_layout.html#a1640597de55d764b85391ffc100375b1">driderSDK::InputLayout</a>.</p>
@@ -207,6 +219,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11InputLayout &gt;&#160;</td><td class="memItemRi
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::set</p>
 <p>Set the input layout</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -106,6 +106,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aed36b461864f39075e5b21547a0c2c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a773811f18f8a8f3cc192026194cf3c9a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#a773811f18f8a8f3cc192026194cf3c9a">equals</a> (const <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a> &amp;otherVector, float errorRange=Math::SMALL_NUMBER) const</td></tr>
 <tr class="separator:a773811f18f8a8f3cc192026194cf3c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d540ff6ee2623326b0d6a8a8db4d10"><td class="memItemLeft" align="right" valign="top">Int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#a46d540ff6ee2623326b0d6a8a8db4d10">compare</a> (const <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a> p1, const <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a> p2)</td></tr>
+<tr class="separator:a46d540ff6ee2623326b0d6a8a8db4d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f9bab4e9512767c36745f28d64ed26"><td class="memItemLeft" align="right" valign="top">Int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#ae7f9bab4e9512767c36745f28d64ed26">orientation</a> (const <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a> q, const <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a> r) const</td></tr>
+<tr class="separator:ae7f9bab4e9512767c36745f28d64ed26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40b514bad03b4e125589f02cef0b959d"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#a40b514bad03b4e125589f02cef0b959d">ptr</a> ()</td></tr>
 <tr class="separator:a40b514bad03b4e125589f02cef0b959d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae95f88c74b48df9b181c8e985e0b350c"><td class="memItemLeft" align="right" valign="top">const float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_vector2_d.html#ae95f88c74b48df9b181c8e985e0b350c">ptr</a> () const</td></tr>
@@ -327,6 +331,43 @@ union {</td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a46d540ff6ee2623326b0d6a8a8db4d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d540ff6ee2623326b0d6a8a8db4d10">&#9670;&nbsp;</a></span>compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Int32 driderSDK::Vector2D::compare </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a>&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a>&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::compare Compares the polar angle of 2 points.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>Actual point. </td></tr>
+    <tr><td class="paramname">p2</td><td>Point to compare.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>-1: If it's counter clockwise. +1: If it's clockwise. </dd></dl>
+
+</div>
+</div>
 <a id="af96ef2dcf9a724e4d4a3a28e5f39f902"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af96ef2dcf9a724e4d4a3a28e5f39f902">&#9670;&nbsp;</a></span>cross()</h2>
 
@@ -973,6 +1014,43 @@ union {</td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The sum of the products of the corresponding entries of the vectors. </dd></dl>
+
+</div>
+</div>
+<a id="ae7f9bab4e9512767c36745f28d64ed26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7f9bab4e9512767c36745f28d64ed26">&#9670;&nbsp;</a></span>orientation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Int32 driderSDK::Vector2D::orientation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a>&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a>&#160;</td>
+          <td class="paramname"><em>r</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::orientation Finds the orientation of ordered triplet p.(q, r).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>Point.</td></tr>
+    <tr><td class="paramname">r</td><td>Point.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0: p, q and r are colinear 1: Clockwise 2: Counterclockwise </dd></dl>
 
 </div>
 </div>

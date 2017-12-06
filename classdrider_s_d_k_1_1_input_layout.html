@@ -67,6 +67,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_input_layout-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::InputLayout Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -84,14 +85,26 @@ Inheritance diagram for driderSDK::InputLayout:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a91f111bca248df1da341847c10f039d7"><td class="memItemLeft" align="right" valign="top"><a id="a91f111bca248df1da341847c10f039d7"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> ()=0</td></tr>
+<tr class="separator:a91f111bca248df1da341847c10f039d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9fbbc3e2ae9e27da3ce5230b035c1c"><td class="memItemLeft" align="right" valign="top"><a id="a8d9fbbc3e2ae9e27da3ce5230b035c1c"></a>
+virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> ()=0</td></tr>
+<tr class="separator:a8d9fbbc3e2ae9e27da3ce5230b035c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c96f42fea2920f5601ce0861bd00c98"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_input_layout.html#a2c96f42fea2920f5601ce0861bd00c98">~InputLayout</a> ()</td></tr>
 <tr class="separator:a2c96f42fea2920f5601ce0861bd00c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a6c6688c4050a3e2585c586f8c308f0"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_input_layout.html#a1a6c6688c4050a3e2585c586f8c308f0">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> *inputDescArray, UInt32 arraySize)=0</td></tr>
-<tr class="separator:a1a6c6688c4050a3e2585c586f8c308f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715b3c04dc3bd80af372f0ae1b636ea2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_input_layout.html#a715b3c04dc3bd80af372f0ae1b636ea2">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const std::vector&lt; <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> &gt; &amp;inputDescArray, const <a class="el" href="classdrider_s_d_k_1_1_shader_bytecode.html">ShaderBytecode</a> &amp;shaderBytecode)=0</td></tr>
+<tr class="separator:a715b3c04dc3bd80af372f0ae1b636ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a322d3ff05ac7e0fbd0a85ccb9fa48c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_input_layout.html#a4a322d3ff05ac7e0fbd0a85ccb9fa48c">set</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext) const =0</td></tr>
 <tr class="separator:a4a322d3ff05ac7e0fbd0a85ccb9fa48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1640597de55d764b85391ffc100375b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_input_layout.html#a1640597de55d764b85391ffc100375b1">release</a> ()=0</td></tr>
 <tr class="separator:a1640597de55d764b85391ffc100375b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a030d2af27aa3d2c22fde70ca9ab3309d"><td class="memItemLeft" align="right" valign="top"><a id="a030d2af27aa3d2c22fde70ca9ab3309d"></a>
+std::vector&lt; <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_descriptorVec</b></td></tr>
+<tr class="separator:a030d2af27aa3d2c22fde70ca9ab3309d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2c96f42fea2920f5601ce0861bd00c98"></a>
@@ -121,8 +134,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1a6c6688c4050a3e2585c586f8c308f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a6c6688c4050a3e2585c586f8c308f0">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a715b3c04dc3bd80af372f0ae1b636ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715b3c04dc3bd80af372f0ae1b636ea2">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +144,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::InputLayout::create </td>
+          <td class="memname">virtual void driderSDK::InputLayout::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -139,14 +152,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> *&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>inputDescArray</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">UInt32&#160;</td>
-          <td class="paramname"><em>arraySize</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_shader_bytecode.html">ShaderBytecode</a> &amp;&#160;</td>
+          <td class="paramname"><em>shaderBytecode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -171,7 +184,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_input_layout.html#ad27403b964dd843fa8cdf40e4f3d0f8c">driderSDK::D3DInputLayout</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_input_layout.html#abe676146e56cb7f350d9290d263fff97">driderSDK::D3DInputLayout</a>.</p>
 
 </div>
 </div>

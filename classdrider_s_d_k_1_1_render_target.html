@@ -67,8 +67,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_render_target-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::RenderTarget Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -88,26 +86,20 @@ Inheritance diagram for driderSDK::RenderTarget:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a86aefaf27db999ef01e271dfcc8ed9ed"><td class="memItemLeft" align="right" valign="top"><a id="a86aefaf27db999ef01e271dfcc8ed9ed"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> ()=0</td></tr>
+<tr class="separator:a86aefaf27db999ef01e271dfcc8ed9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7160756b37d70cc2719de15af4ff149"><td class="memItemLeft" align="right" valign="top"><a id="ae7160756b37d70cc2719de15af4ff149"></a>
+virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> ()=0</td></tr>
+<tr class="separator:ae7160756b37d70cc2719de15af4ff149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a55c0362ee31fe29fed378b100e1ab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_render_target.html#a08a55c0362ee31fe29fed378b100e1ab">~RenderTarget</a> ()</td></tr>
 <tr class="separator:a08a55c0362ee31fe29fed378b100e1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a3570d15f759fc4ab3d89f4af0592a7"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_render_target.html#a6a3570d15f759fc4ab3d89f4af0592a7">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;desc, UInt32 _numColorTextures)=0</td></tr>
-<tr class="separator:a6a3570d15f759fc4ab3d89f4af0592a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed48ecf0a70857d34a8cdf30251d4dd0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_render_target.html#aed48ecf0a70857d34a8cdf30251d4dd0">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture)=0</td></tr>
+<tr class="separator:aed48ecf0a70857d34a8cdf30251d4dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcf0cbe62017f4f295c969021c6cb86c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_render_target.html#afcf0cbe62017f4f295c969021c6cb86c">set</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext, const <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;depthStencil) const =0</td></tr>
 <tr class="separator:afcf0cbe62017f4f295c969021c6cb86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3adee5b8c8239ca3a83b9b779cd3165c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_render_target.html#a3adee5b8c8239ca3a83b9b779cd3165c">release</a> ()=0</td></tr>
 <tr class="separator:a3adee5b8c8239ca3a83b9b779cd3165c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aeb79c329e4b65f8bf668647b5077e7f8"><td class="memItemLeft" align="right" valign="top"><a id="aeb79c329e4b65f8bf668647b5077e7f8"></a>
-std::vector&lt; <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>colorTextures</b></td></tr>
-<tr class="separator:aeb79c329e4b65f8bf668647b5077e7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a0ac6dd69b7dacd640869392b26eabfd3"><td class="memItemLeft" align="right" valign="top"><a id="a0ac6dd69b7dacd640869392b26eabfd3"></a>
-UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b></td></tr>
-<tr class="separator:a0ac6dd69b7dacd640869392b26eabfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for render target</p>
@@ -140,8 +132,8 @@ UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6a3570d15f759fc4ab3d89f4af0592a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a3570d15f759fc4ab3d89f4af0592a7">&#9670;&nbsp;</a></span>create()</h2>
+<a id="aed48ecf0a70857d34a8cdf30251d4dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed48ecf0a70857d34a8cdf30251d4dd0">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +142,7 @@ UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::RenderTarget::create </td>
+          <td class="memname">virtual void driderSDK::RenderTarget::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -158,14 +150,8 @@ UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;&#160;</td>
-          <td class="paramname"><em>desc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UInt32&#160;</td>
-          <td class="paramname"><em>_numColorTextures</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -190,7 +176,7 @@ UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_render_target.html#ac463664c07afdc565c1a6fd5b39aa2d1">driderSDK::D3DRenderTarget</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_render_target.html#ac801d01c713ce73eaaac6b67428fea25">driderSDK::D3DRenderTarget</a>.</p>
 
 </div>
 </div>

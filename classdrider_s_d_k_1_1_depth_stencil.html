@@ -67,7 +67,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_depth_stencil-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::DepthStencil Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -87,18 +86,18 @@ Inheritance diagram for driderSDK::DepthStencil:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa0348abdbaaff1312364e37909a85052"><td class="memItemLeft" align="right" valign="top"><a id="aa0348abdbaaff1312364e37909a85052"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> ()=0</td></tr>
+<tr class="separator:aa0348abdbaaff1312364e37909a85052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055fa77cc2e3effc81f36e1d168e0877"><td class="memItemLeft" align="right" valign="top"><a id="a055fa77cc2e3effc81f36e1d168e0877"></a>
+virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> ()=0</td></tr>
+<tr class="separator:a055fa77cc2e3effc81f36e1d168e0877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52d5e9758aac7ee2ba5742e036e243fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html#a52d5e9758aac7ee2ba5742e036e243fd">~DepthStencil</a> ()</td></tr>
 <tr class="separator:a52d5e9758aac7ee2ba5742e036e243fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44cd49ac92d53fe59022131ebf612e71"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html#a44cd49ac92d53fe59022131ebf612e71">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;desc)=0</td></tr>
-<tr class="separator:a44cd49ac92d53fe59022131ebf612e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0789da952e708f74d7fe6cca46c15d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html#a1c0789da952e708f74d7fe6cca46c15d">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture)=0</td></tr>
+<tr class="separator:a1c0789da952e708f74d7fe6cca46c15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a976f1bdf693f8424fec329db44def161"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html#a976f1bdf693f8424fec329db44def161">release</a> ()=0</td></tr>
 <tr class="separator:a976f1bdf693f8424fec329db44def161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aec85020944c6d5ad218ce346a79da92f"><td class="memItemLeft" align="right" valign="top"><a id="aec85020944c6d5ad218ce346a79da92f"></a>
-std::unique_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>depthTexture</b></td></tr>
-<tr class="separator:aec85020944c6d5ad218ce346a79da92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for depth stencil</p>
@@ -131,8 +130,8 @@ std::unique_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_texture.html">Text
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a44cd49ac92d53fe59022131ebf612e71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44cd49ac92d53fe59022131ebf612e71">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a1c0789da952e708f74d7fe6cca46c15d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c0789da952e708f74d7fe6cca46c15d">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +140,7 @@ std::unique_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_texture.html">Text
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::DepthStencil::create </td>
+          <td class="memname">virtual void driderSDK::DepthStencil::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -149,8 +148,8 @@ std::unique_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_texture.html">Text
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;&#160;</td>
-          <td class="paramname"><em>desc</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -174,7 +173,7 @@ std::unique_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_texture.html">Text
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_depth_stencil.html#a053b5279a4a0439baba2f861915f06b9">driderSDK::D3DDepthStencil</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_depth_stencil.html#a0b1f7023e27c22a92fb422ef83002561">driderSDK::D3DDepthStencil</a>.</p>
 
 </div>
 </div>

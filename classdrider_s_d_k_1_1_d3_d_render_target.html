@@ -87,8 +87,14 @@ Inheritance diagram for driderSDK::D3DRenderTarget:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac463664c07afdc565c1a6fd5b39aa2d1"><td class="memItemLeft" align="right" valign="top">DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_render_target.html#ac463664c07afdc565c1a6fd5b39aa2d1">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;colorDesc, UInt32 numRT) override</td></tr>
-<tr class="separator:ac463664c07afdc565c1a6fd5b39aa2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5be21805fcc1ebe47810ccb855e788b"><td class="memItemLeft" align="right" valign="top"><a id="ad5be21805fcc1ebe47810ccb855e788b"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> () override</td></tr>
+<tr class="separator:ad5be21805fcc1ebe47810ccb855e788b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfdf8e6ed9f10313ba3bddbc5c5f243"><td class="memItemLeft" align="right" valign="top"><a id="afcfdf8e6ed9f10313ba3bddbc5c5f243"></a>
+void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> () override</td></tr>
+<tr class="separator:afcfdf8e6ed9f10313ba3bddbc5c5f243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac801d01c713ce73eaaac6b67428fea25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_render_target.html#ac801d01c713ce73eaaac6b67428fea25">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture) override</td></tr>
+<tr class="separator:ac801d01c713ce73eaaac6b67428fea25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c990bcea6668be03f080c5769053ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_render_target.html#a89c990bcea6668be03f080c5769053ae">set</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext, const <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;depthStencil) const override</td></tr>
 <tr class="separator:a89c990bcea6668be03f080c5769053ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1121a5ab3bf2a1692b8363d6e4790243"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_render_target.html#a1121a5ab3bf2a1692b8363d6e4790243">release</a> () override</td></tr>
@@ -99,27 +105,16 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab94b983f1c29b82a0b24788bf457cd21"><td class="memItemLeft" align="right" valign="top"><a id="ab94b983f1c29b82a0b24788bf457cd21"></a>
-std::vector&lt; Microsoft::WRL::ComPtr&lt; ID3D11RenderTargetView &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>APIColorViews</b></td></tr>
-<tr class="separator:ab94b983f1c29b82a0b24788bf457cd21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classdrider_s_d_k_1_1_render_target"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdrider_s_d_k_1_1_render_target')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdrider_s_d_k_1_1_render_target.html">driderSDK::RenderTarget</a></td></tr>
-<tr class="memitem:aeb79c329e4b65f8bf668647b5077e7f8 inherit pub_attribs_classdrider_s_d_k_1_1_render_target"><td class="memItemLeft" align="right" valign="top"><a id="aeb79c329e4b65f8bf668647b5077e7f8"></a>
-std::vector&lt; <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>colorTextures</b></td></tr>
-<tr class="separator:aeb79c329e4b65f8bf668647b5077e7f8 inherit pub_attribs_classdrider_s_d_k_1_1_render_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_attribs_classdrider_s_d_k_1_1_render_target"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classdrider_s_d_k_1_1_render_target')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classdrider_s_d_k_1_1_render_target.html">driderSDK::RenderTarget</a></td></tr>
-<tr class="memitem:a0ac6dd69b7dacd640869392b26eabfd3 inherit pro_attribs_classdrider_s_d_k_1_1_render_target"><td class="memItemLeft" align="right" valign="top"><a id="a0ac6dd69b7dacd640869392b26eabfd3"></a>
-UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b></td></tr>
-<tr class="separator:a0ac6dd69b7dacd640869392b26eabfd3 inherit pro_attribs_classdrider_s_d_k_1_1_render_target"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598c1835cbb1bcaae1bda43a330e071b"><td class="memItemLeft" align="right" valign="top"><a id="a598c1835cbb1bcaae1bda43a330e071b"></a>
+ID3D11RenderTargetView *&#160;</td><td class="memItemRight" valign="bottom"><b>RTV</b></td></tr>
+<tr class="separator:a598c1835cbb1bcaae1bda43a330e071b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for render target</p>
 <p>Sample usage: RenderTarget* = new <a class="el" href="classdrider_s_d_k_1_1_d3_d_render_target.html">D3DRenderTarget</a>; </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac463664c07afdc565c1a6fd5b39aa2d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac463664c07afdc565c1a6fd5b39aa2d1">&#9670;&nbsp;</a></span>create()</h2>
+<a id="ac801d01c713ce73eaaac6b67428fea25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac801d01c713ce73eaaac6b67428fea25">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,7 +123,7 @@ UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DR_GRAPHICS_ERROR::E driderSDK::D3DRenderTarget::create </td>
+          <td class="memname">void driderSDK::D3DRenderTarget::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -136,14 +131,8 @@ UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_texture_desc.html">DrTextureDesc</a> &amp;&#160;</td>
-          <td class="paramname"><em>colorDesc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UInt32&#160;</td>
-          <td class="paramname"><em>numRT</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -157,6 +146,7 @@ UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::create</p>
 <p>Create a render target on this object</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -168,7 +158,7 @@ UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implements <a class="el" href="classdrider_s_d_k_1_1_render_target.html#a6a3570d15f759fc4ab3d89f4af0592a7">driderSDK::RenderTarget</a>.</p>
+<p>Implements <a class="el" href="classdrider_s_d_k_1_1_render_target.html#aed48ecf0a70857d34a8cdf30251d4dd0">driderSDK::RenderTarget</a>.</p>
 
 </div>
 </div>
@@ -194,6 +184,7 @@ UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::release</p>
 <p>Release the allocated memory </p>
 
 <p>Implements <a class="el" href="classdrider_s_d_k_1_1_render_target.html#a3adee5b8c8239ca3a83b9b779cd3165c">driderSDK::RenderTarget</a>.</p>
@@ -233,6 +224,7 @@ UInt32&#160;</td><td class="memItemRight" valign="bottom"><b>numColorTextures</b
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::set</p>
 <p>Set the render target and depth stencil</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

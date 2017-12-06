@@ -85,14 +85,20 @@ Inheritance diagram for driderSDK::D3DDeviceContext:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab5fa054652b1a4a7c9b3f92f9e8c6e9e"><td class="memItemLeft" align="right" valign="top"><a id="ab5fa054652b1a4a7c9b3f92f9e8c6e9e"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> () override</td></tr>
+<tr class="separator:ab5fa054652b1a4a7c9b3f92f9e8c6e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d304756f3f724f7087714017915a9c7"><td class="memItemLeft" align="right" valign="top"><a id="a4d304756f3f724f7087714017915a9c7"></a>
+void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> () override</td></tr>
+<tr class="separator:a4d304756f3f724f7087714017915a9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33d47c4b6ca7ca3d729bd8dc6d662c7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a33d47c4b6ca7ca3d729bd8dc6d662c7f">release</a> () override</td></tr>
 <tr class="separator:a33d47c4b6ca7ca3d729bd8dc6d662c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e12c15a44a7bbdbeb5644aa0080c7ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a5e12c15a44a7bbdbeb5644aa0080c7ee">generateMipMaps</a> (const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture) const override</td></tr>
 <tr class="separator:a5e12c15a44a7bbdbeb5644aa0080c7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b10e3df392e59a75f86cef312b51f08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a6b10e3df392e59a75f86cef312b51f08">updateTextureFromMemory</a> (<a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture, const char *databuffer, size_t bufferSize) const override</td></tr>
 <tr class="separator:a6b10e3df392e59a75f86cef312b51f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e067031cebdbf38fcf969e9a36f73ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a9e067031cebdbf38fcf969e9a36f73ca">updateBufferFromMemory</a> (<a class="el" href="classdrider_s_d_k_1_1_buffer.html">Buffer</a> &amp;buffer, const char *dataBuffer, size_t bufferSize) const override</td></tr>
-<tr class="separator:a9e067031cebdbf38fcf969e9a36f73ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf218fc962e6e963eb0acbd4e64212f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#adf218fc962e6e963eb0acbd4e64212f8">updateBufferFromMemory</a> (<a class="el" href="classdrider_s_d_k_1_1_buffer.html">Buffer</a> &amp;buffer, const byte *dataBuffer) const override</td></tr>
+<tr class="separator:adf218fc962e6e963eb0acbd4e64212f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa577e70cf1d3b91192ac0f41fca83784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#aa577e70cf1d3b91192ac0f41fca83784">setRenderTarget</a> (const <a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> &amp;renderTarget, const <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;depthStencil) const override</td></tr>
 <tr class="separator:aa577e70cf1d3b91192ac0f41fca83784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa857f3521f90b88b434b9119c3534f1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#aa857f3521f90b88b434b9119c3534f1a">setTexture</a> (const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture, UInt32 slot) const override</td></tr>
@@ -119,9 +125,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad3e9b7a990f82ae8aadb1deda5f7da41"><td class="memItemLeft" align="right" valign="top"><a id="ad3e9b7a990f82ae8aadb1deda5f7da41"></a>
-Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>D3D11DeviceContext</b></td></tr>
-<tr class="separator:ad3e9b7a990f82ae8aadb1deda5f7da41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97e26e5c990102a0bb045b10e50bd05"><td class="memItemLeft" align="right" valign="top"><a id="ab97e26e5c990102a0bb045b10e50bd05"></a>
+ID3D11DeviceContext *&#160;</td><td class="memItemRight" valign="bottom"><b>D3D11DeviceContext</b></td></tr>
+<tr class="separator:ab97e26e5c990102a0bb045b10e50bd05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classdrider_s_d_k_1_1_device_context"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdrider_s_d_k_1_1_device_context')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdrider_s_d_k_1_1_device_context.html">driderSDK::DeviceContext</a></td></tr>
+<tr class="memitem:adeeb6a430e943d3b2bfebe54b256d9ad inherit pub_attribs_classdrider_s_d_k_1_1_device_context"><td class="memItemLeft" align="right" valign="top"><a id="adeeb6a430e943d3b2bfebe54b256d9ad"></a>
+<a class="el" href="structdrider_s_d_k_1_1_device_context_data.html">DeviceContextData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_deviceContext</b></td></tr>
+<tr class="separator:adeeb6a430e943d3b2bfebe54b256d9ad inherit pub_attribs_classdrider_s_d_k_1_1_device_context"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a99b522d34e403088d6a489b8ea30bea7"></a>
@@ -169,6 +179,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Clear the depth stencil</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -217,6 +228,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Clear a render target</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -269,6 +281,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Draw the primitives</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -306,6 +319,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Generate mip maps of the texture</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -340,6 +354,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Release the allocated memory </p>
 
 <p>Implements <a class="el" href="classdrider_s_d_k_1_1_device_context.html#abc20e48354b2c42e52d4bb3daf322db0">driderSDK::DeviceContext</a>.</p>
@@ -379,6 +394,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Set the constant buffer to all shaders specifyed on typeFlag</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -425,6 +441,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Set the index buffer to the current context</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -461,6 +478,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Set the tipe of topology to use on the draw</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -506,6 +524,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Set the render target and depth stencil</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -542,6 +561,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Set the shader to the current context</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -587,6 +607,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Set the texture to the shader</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -639,6 +660,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Set the vertex buffer to the current context</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -653,8 +675,8 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
 
 </div>
 </div>
-<a id="a9e067031cebdbf38fcf969e9a36f73ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e067031cebdbf38fcf969e9a36f73ca">&#9670;&nbsp;</a></span>updateBufferFromMemory()</h2>
+<a id="adf218fc962e6e963eb0acbd4e64212f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf218fc962e6e963eb0acbd4e64212f8">&#9670;&nbsp;</a></span>updateBufferFromMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -671,14 +693,8 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>dataBuffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bufferSize</em>&#160;</td>
+          <td class="paramtype">const byte *&#160;</td>
+          <td class="paramname"><em>dataBuffer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -692,6 +708,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Update the data of the texture</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -702,7 +719,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classdrider_s_d_k_1_1_device_context.html#a8bd031df62c41baf38e7850d8d82c635">driderSDK::DeviceContext</a>.</p>
+<p>Implements <a class="el" href="classdrider_s_d_k_1_1_device_context.html#a631d07589612b8ae7408c2187bf55fde">driderSDK::DeviceContext</a>.</p>
 
 </div>
 </div>
@@ -745,6 +762,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11DeviceContext &gt;&#160;</td><td class="memItem
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::</p>
 <p>Update the data of the texture</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -99,12 +99,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4a79e8234bbf25c8cf850f01a6485a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a852e86146dc8621a99c5581e03d587de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_frustrum.html#a852e86146dc8621a99c5581e03d587de">createFromVP</a> (const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;ViewProjection)</td></tr>
 <tr class="separator:a852e86146dc8621a99c5581e03d587de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad81116f896faad5acada10c16c3e7518"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_frustrum.html#ad81116f896faad5acada10c16c3e7518">intersects</a> (const <a class="el" href="classdrider_s_d_k_1_1_ray.html">Ray</a> &amp;bRay) const</td></tr>
+<tr class="separator:ad81116f896faad5acada10c16c3e7518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab55226117775a0a5a9dd7f6a43faf2c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_frustrum.html#ab55226117775a0a5a9dd7f6a43faf2c0">intersects</a> (const <a class="el" href="classdrider_s_d_k_1_1_sphere.html">Sphere</a> &amp;sphere) const</td></tr>
 <tr class="separator:ab55226117775a0a5a9dd7f6a43faf2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8ea5791d67966fec77381ef964ea0b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_frustrum.html#a4d8ea5791d67966fec77381ef964ea0b">intersects</a> (const <a class="el" href="classdrider_s_d_k_1_1_a_a_b_b.html">AABB</a> &amp;frustrum) const</td></tr>
+<tr class="separator:a4d8ea5791d67966fec77381ef964ea0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a91edbb60fc8a536d9f62ac4b340a262c"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classdrider_s_d_k_1_1_plane.html">Plane</a>, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_frustrum.html#a91edbb60fc8a536d9f62ac4b340a262c">planes</a></td></tr>
+<tr class="memitem:a91edbb60fc8a536d9f62ac4b340a262c"><td class="memItemLeft" align="right" valign="top"><a id="a91edbb60fc8a536d9f62ac4b340a262c"></a>
+std::array&lt; <a class="el" href="classdrider_s_d_k_1_1_plane.html">Plane</a>, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>planes</b></td></tr>
 <tr class="separator:a91edbb60fc8a536d9f62ac4b340a262c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -151,7 +156,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TEST::frustrumConstructorVPM Constructor using a View Projection matrix</p>
+<p>TEST::fromVP Constructor using a View Projection matrix</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">VP</td><td>The View Projection matrix. </td></tr>
@@ -177,7 +182,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TEST::createFromVP Create the frustrum planes with the View Projection matrix</p>
+<p>TEST::fromVP Create the frustrum planes with the View Projection matrix</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">VP</td><td>The View Projection matrix. </td></tr>
@@ -187,8 +192,34 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad81116f896faad5acada10c16c3e7518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad81116f896faad5acada10c16c3e7518">&#9670;&nbsp;</a></span>intersects() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool driderSDK::Frustrum::intersects </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_ray.html">Ray</a> &amp;&#160;</td>
+          <td class="paramname"><em>bRay</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::intersectsRay Check if the frustrum intersects other ray</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bRay</td><td>The ray to check the intersecton.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the frustrum intersects with the other ray </dd></dl>
+
+</div>
+</div>
 <a id="ab55226117775a0a5a9dd7f6a43faf2c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab55226117775a0a5a9dd7f6a43faf2c0">&#9670;&nbsp;</a></span>intersects()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab55226117775a0a5a9dd7f6a43faf2c0">&#9670;&nbsp;</a></span>intersects() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,21 +233,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TEST::intersectsRay Check if the frustrum intersects other ray</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bRay</td><td>The ray to check the intersecton.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the frustrum intersects with the other ray Check if the frustrum intersects with a plane</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">plane</td><td>The plane to check the intersecton.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the frustrum intersects with the plane TEST::frustrumSphere Check if the frustrum intersects with a sphere</dd></dl>
+<p>TEST::frustrumSphere Check if the frustrum intersects with a sphere</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sphere</td><td>The sphere to check the intersecton.</td></tr>
@@ -227,68 +244,29 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a91edbb60fc8a536d9f62ac4b340a262c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91edbb60fc8a536d9f62ac4b340a262c">&#9670;&nbsp;</a></span>planes</h2>
+<a id="a4d8ea5791d67966fec77381ef964ea0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d8ea5791d67966fec77381ef964ea0b">&#9670;&nbsp;</a></span>intersects() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;<a class="el" href="classdrider_s_d_k_1_1_plane.html">Plane</a>,6&gt; driderSDK::Frustrum::planes</td>
+          <td class="memname">bool driderSDK::Frustrum::intersects </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_a_a_b_b.html">AABB</a> &amp;&#160;</td>
+          <td class="paramname"><em>frustrum</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if the frustrum intersects with a capsule</p>
+<p>TEST::AABBFrustrum Check if the frustrum intersects with a <a class="el" href="classdrider_s_d_k_1_1_a_a_b_b.html">AABB</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">capsule</td><td>The capsule to check the intersecton.</td></tr>
+    <tr><td class="paramname"><a class="el" href="classdrider_s_d_k_1_1_a_a_b_b.html">AABB</a></td><td>The <a class="el" href="classdrider_s_d_k_1_1_a_a_b_b.html">AABB</a> to check the intersecton.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the frustrum intersects with the capsule Check if the frustrum intersects with a frustrum</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frustrum</td><td>The frustrum to check the intersecton.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the frustrum intersects with the frustrum Check if the frustrum intersects contains a point</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>The point to check.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the frustrum contains the point Check if the frustrum intersects contains a plane</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">plane</td><td>The plane to check.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the frustrum contains the plane Check if the frustrum intersects contains a sphere</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sphere</td><td>The sphere to check.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the frustrum contains the sphere Check if the frustrum intersects contains a capsule</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">capsule</td><td>The capsule to check.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the frustrum contains the capsule Check if the frustrum intersects contains a frustrum</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">frustrum</td><td>The frustrum to check.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the frustrum contains the frustrum </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the frustrum intersects with the <a class="el" href="classdrider_s_d_k_1_1_a_a_b_b.html">AABB</a> </dd></dl>
 
 </div>
 </div>

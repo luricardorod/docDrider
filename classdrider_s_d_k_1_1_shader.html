@@ -67,6 +67,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_shader-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::Shader Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -93,14 +94,29 @@ Inheritance diagram for driderSDK::Shader:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ace2498d9acff8826d0f67075b331deb9"><td class="memItemLeft" align="right" valign="top"><a id="ace2498d9acff8826d0f67075b331deb9"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> ()=0</td></tr>
+<tr class="separator:ace2498d9acff8826d0f67075b331deb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f65ddda788ee5f1faed4ee7920f1b75"><td class="memItemLeft" align="right" valign="top"><a id="a1f65ddda788ee5f1faed4ee7920f1b75"></a>
+virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> ()=0</td></tr>
+<tr class="separator:a1f65ddda788ee5f1faed4ee7920f1b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb4bf7ccbddafc247f7013bd2610cab9"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_shader.html#adb4bf7ccbddafc247f7013bd2610cab9">~Shader</a> ()</td></tr>
 <tr class="separator:adb4bf7ccbddafc247f7013bd2610cab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ae70df147a6dd4dcf62f688f8979cf8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_shader.html#a0ae70df147a6dd4dcf62f688f8979cf8">set</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext) const =0</td></tr>
 <tr class="separator:a0ae70df147a6dd4dcf62f688f8979cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae30dca256f12db459b8e0c9549278bc3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_shader.html#ae30dca256f12db459b8e0c9549278bc3">release</a> ()=0</td></tr>
 <tr class="separator:ae30dca256f12db459b8e0c9549278bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba1c056b185834d1285df5b333ddd403"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_shader.html#aba1c056b185834d1285df5b333ddd403">createFromMemory</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const char *buffer, size_t bufferSize)=0</td></tr>
-<tr class="separator:aba1c056b185834d1285df5b333ddd403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7063f00831ccd1bad8b63080beeedbd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_shader.html#ac7063f00831ccd1bad8b63080beeedbd">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device)=0</td></tr>
+<tr class="separator:ac7063f00831ccd1bad8b63080beeedbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa928f39796a3d156c1e351f39c67d523"><td class="memItemLeft" align="right" valign="top"><a id="aa928f39796a3d156c1e351f39c67d523"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>compile</b> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const char *buffer, size_t bufferSize)=0</td></tr>
+<tr class="separator:aa928f39796a3d156c1e351f39c67d523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af3b21a82414d37e6abf820a6125e056d"><td class="memItemLeft" align="right" valign="top"><a id="af3b21a82414d37e6abf820a6125e056d"></a>
+<a class="el" href="classdrider_s_d_k_1_1_shader_bytecode.html">ShaderBytecode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_shaderBytecode</b></td></tr>
+<tr class="separator:af3b21a82414d37e6abf820a6125e056d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for shaders</p>
@@ -133,8 +149,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aba1c056b185834d1285df5b333ddd403"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba1c056b185834d1285df5b333ddd403">&#9670;&nbsp;</a></span>createFromMemory()</h2>
+<a id="ac7063f00831ccd1bad8b63080beeedbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7063f00831ccd1bad8b63080beeedbd">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,27 +159,11 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Shader::createFromMemory </td>
+          <td class="memname">virtual void driderSDK::Shader::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bufferSize</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -183,7 +183,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_compute_shader.html#a241a66ffba68218e5d35db3bac988951">driderSDK::D3DComputeShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_domain_shader.html#a738334d8561c3c647adff2e7fde42e05">driderSDK::D3DDomainShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_fragment_shader.html#a426b423d073cf0d0a43f40daeab12510">driderSDK::D3DFragmentShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_geometry_shader.html#a24d4923e095b525abf91df721f58a3d1">driderSDK::D3DGeometryShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_hull_shader.html#a2caef9b9428b30d720cf4d4504f46cd2">driderSDK::D3DHullShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_teselation_shader.html#a80a8899663a542e1b4c3c5013b9311e3">driderSDK::D3DTeselationShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_shader.html#ae9b991cd94472c63e7614e7efc992bc1">driderSDK::D3DVertexShader</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_textre_shader.html#ad5919dde4c730c05c7f098be1fe23262">driderSDK::D3DTextreShader</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_fragment_shader.html#a7414680c0af72d169423c9a616fd7390">driderSDK::D3DFragmentShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_geometry_shader.html#a642db56f80b067821c4b48a3014aa7c5">driderSDK::D3DGeometryShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_hull_shader.html#afdfbde3a48a72b7d18c546c4dbb2f9c2">driderSDK::D3DHullShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_shader.html#a90b7c331cada93a689162fea61888665">driderSDK::D3DVertexShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_compute_shader.html#a5bec422287b6959f0503ab9548b8fdf0">driderSDK::D3DComputeShader</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_domain_shader.html#acc97935319587a5be50e39b0b6ea7ad3">driderSDK::D3DDomainShader</a>.</p>
 
 </div>
 </div>
@@ -211,7 +211,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Release the allocated memory </p>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_compute_shader.html#a28c508c67f0eb8633eafe1bf99730ba6">driderSDK::D3DComputeShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_domain_shader.html#ae3d349cbb8ad9b45a0f65edd2900c31e">driderSDK::D3DDomainShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_fragment_shader.html#a04f1cd66fad289a0f43173a711a215aa">driderSDK::D3DFragmentShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_geometry_shader.html#ac2e31e69a85a3759941e217c07223225">driderSDK::D3DGeometryShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_hull_shader.html#a0f64d637d94aa3a5fe77a2aca2d4cfcb">driderSDK::D3DHullShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_teselation_shader.html#ae22d3c5e17c55bbf3a5bd3ebbcbb8887">driderSDK::D3DTeselationShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_shader.html#ab6b0664085219564207fe4d45cea40a7">driderSDK::D3DVertexShader</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_textre_shader.html#a9d01f599d6334816bc59075ed84017c0">driderSDK::D3DTextreShader</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_fragment_shader.html#a04f1cd66fad289a0f43173a711a215aa">driderSDK::D3DFragmentShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_geometry_shader.html#ac2e31e69a85a3759941e217c07223225">driderSDK::D3DGeometryShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_hull_shader.html#a0f64d637d94aa3a5fe77a2aca2d4cfcb">driderSDK::D3DHullShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_shader.html#ab6b0664085219564207fe4d45cea40a7">driderSDK::D3DVertexShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_compute_shader.html#a28c508c67f0eb8633eafe1bf99730ba6">driderSDK::D3DComputeShader</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_domain_shader.html#ae3d349cbb8ad9b45a0f65edd2900c31e">driderSDK::D3DDomainShader</a>.</p>
 
 </div>
 </div>
@@ -246,7 +246,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_compute_shader.html#ac0f21c2d5500a3276568be0f0b5e2ddc">driderSDK::D3DComputeShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_domain_shader.html#ab64b7f87db2d4c2a58ca0003436e792f">driderSDK::D3DDomainShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_fragment_shader.html#a88ccff5fbd7e64d71d4a367b7e366a2a">driderSDK::D3DFragmentShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_geometry_shader.html#a2b35eb9a6e629a86993d5018beb7c053">driderSDK::D3DGeometryShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_hull_shader.html#a25dfc1aa86ec1ea3f6f4b4cf1c207c19">driderSDK::D3DHullShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_teselation_shader.html#a14340975981962958004b02c17853f39">driderSDK::D3DTeselationShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_shader.html#a58ac2eb5e2487298d57d0d8d93bbb6c5">driderSDK::D3DVertexShader</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_textre_shader.html#ae6d3d27dc41b93c1ab6e72ba6234f685">driderSDK::D3DTextreShader</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_fragment_shader.html#a88ccff5fbd7e64d71d4a367b7e366a2a">driderSDK::D3DFragmentShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_geometry_shader.html#a2b35eb9a6e629a86993d5018beb7c053">driderSDK::D3DGeometryShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_hull_shader.html#a25dfc1aa86ec1ea3f6f4b4cf1c207c19">driderSDK::D3DHullShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_shader.html#a58ac2eb5e2487298d57d0d8d93bbb6c5">driderSDK::D3DVertexShader</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_compute_shader.html#ac0f21c2d5500a3276568be0f0b5e2ddc">driderSDK::D3DComputeShader</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_domain_shader.html#ab64b7f87db2d4c2a58ca0003436e792f">driderSDK::D3DDomainShader</a>.</p>
 
 </div>
 </div>

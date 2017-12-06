@@ -67,6 +67,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_buffer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::Buffer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -80,27 +81,43 @@ Inheritance diagram for driderSDK::Buffer:</div>
  <div class="center">
   <img src="classdrider_s_d_k_1_1_buffer.png" usemap="#driderSDK::Buffer_map" alt=""/>
   <map id="driderSDK::Buffer_map" name="driderSDK::Buffer_map">
-<area href="classdrider_s_d_k_1_1_command_buffer.html" alt="driderSDK::CommandBuffer" shape="rect" coords="0,56,192,80"/>
-<area href="classdrider_s_d_k_1_1_constant_buffer.html" alt="driderSDK::ConstantBuffer" shape="rect" coords="202,56,394,80"/>
-<area href="classdrider_s_d_k_1_1_index_buffer.html" alt="driderSDK::IndexBuffer" shape="rect" coords="404,56,596,80"/>
-<area href="classdrider_s_d_k_1_1_vertex_buffer.html" alt="driderSDK::VertexBuffer" shape="rect" coords="606,56,798,80"/>
-<area href="classdrider_s_d_k_1_1_d3_d_command_buffer.html" alt="driderSDK::D3DCommandBuffer" shape="rect" coords="0,112,192,136"/>
-<area href="classdrider_s_d_k_1_1_d3_d_constant_buffer.html" alt="driderSDK::D3DConstantBuffer" shape="rect" coords="202,112,394,136"/>
-<area href="classdrider_s_d_k_1_1_d3_d_index_buffer.html" alt="driderSDK::D3DIndexBuffer" shape="rect" coords="404,112,596,136"/>
-<area href="classdrider_s_d_k_1_1_d3_d_vertex_buffer.html" alt="driderSDK::D3DVertexBuffer" shape="rect" coords="606,112,798,136"/>
+<area href="classdrider_s_d_k_1_1_command_buffer.html" alt="driderSDK::CommandBuffer" shape="rect" coords="0,56,186,80"/>
+<area href="classdrider_s_d_k_1_1_constant_buffer.html" alt="driderSDK::ConstantBuffer" shape="rect" coords="196,56,382,80"/>
+<area href="classdrider_s_d_k_1_1_index_buffer.html" alt="driderSDK::IndexBuffer" shape="rect" coords="392,56,578,80"/>
+<area href="classdrider_s_d_k_1_1_vertex_buffer.html" alt="driderSDK::VertexBuffer" shape="rect" coords="588,56,774,80"/>
+<area href="classdrider_s_d_k_1_1_d3_d_constant_buffer.html" alt="driderSDK::D3DConstantBuffer" shape="rect" coords="196,112,382,136"/>
+<area href="classdrider_s_d_k_1_1_d3_d_index_buffer.html" alt="driderSDK::D3DIndexBuffer" shape="rect" coords="392,112,578,136"/>
+<area href="classdrider_s_d_k_1_1_d3_d_vertex_buffer.html" alt="driderSDK::D3DVertexBuffer" shape="rect" coords="588,112,774,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:afca3c41e7eeea4a7274ea8409e9caa21"><td class="memItemLeft" align="right" valign="top"><a id="afca3c41e7eeea4a7274ea8409e9caa21"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> ()=0</td></tr>
+<tr class="separator:afca3c41e7eeea4a7274ea8409e9caa21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affa7a3933d258fb359fdcc07480ef8cd"><td class="memItemLeft" align="right" valign="top"><a id="affa7a3933d258fb359fdcc07480ef8cd"></a>
+virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> ()=0</td></tr>
+<tr class="separator:affa7a3933d258fb359fdcc07480ef8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add8c805d62826f5da291a47bba99840d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_buffer.html#add8c805d62826f5da291a47bba99840d">~Buffer</a> ()</td></tr>
 <tr class="separator:add8c805d62826f5da291a47bba99840d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af24f789592b36c10410d843d07706266"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_buffer.html#af24f789592b36c10410d843d07706266">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a> &amp;desc, char *initialData)=0</td></tr>
-<tr class="separator:af24f789592b36c10410d843d07706266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c1dfdc66467edb594e5be0a3d851d34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_buffer.html#a4c1dfdc66467edb594e5be0a3d851d34">updateFromMemory</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext, const char *dataBuffer, size_t bufferSize)=0</td></tr>
-<tr class="separator:a4c1dfdc66467edb594e5be0a3d851d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c8dbd0836b0f4b1bdd99c197886bac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_buffer.html#a23c8dbd0836b0f4b1bdd99c197886bac">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a> &amp;desc, const byte *initialData)=0</td></tr>
+<tr class="separator:a23c8dbd0836b0f4b1bdd99c197886bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c9da7017d1914ce3db372aaa6b389f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_buffer.html#a8c9da7017d1914ce3db372aaa6b389f4">updateFromSysMemCpy</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext)=0</td></tr>
+<tr class="separator:a8c9da7017d1914ce3db372aaa6b389f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63eabbcc584186a92b35cf76efa6a81"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_buffer.html#aa63eabbcc584186a92b35cf76efa6a81">updateFromBuffer</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext, const byte *buffer)=0</td></tr>
+<tr class="separator:aa63eabbcc584186a92b35cf76efa6a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3943289b94d87e4f2e70e693f33872f6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_buffer.html#a3943289b94d87e4f2e70e693f33872f6">release</a> ()=0</td></tr>
 <tr class="separator:a3943289b94d87e4f2e70e693f33872f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a84639e0623d7f5b227be91860999604e"><td class="memItemLeft" align="right" valign="top"><a id="a84639e0623d7f5b227be91860999604e"></a>
+std::vector&lt; byte &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_sysMemCpy</b></td></tr>
+<tr class="separator:a84639e0623d7f5b227be91860999604e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77dd6f93a20ebe3aacae8b5cd00be6bb"><td class="memItemLeft" align="right" valign="top"><a id="a77dd6f93a20ebe3aacae8b5cd00be6bb"></a>
+<a class="el" href="structdrider_s_d_k_1_1_dr_buffer_desc.html">DrBufferDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_descriptor</b></td></tr>
+<tr class="separator:a77dd6f93a20ebe3aacae8b5cd00be6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for buffer shader resource</p>
@@ -133,8 +150,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af24f789592b36c10410d843d07706266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af24f789592b36c10410d843d07706266">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a23c8dbd0836b0f4b1bdd99c197886bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c8dbd0836b0f4b1bdd99c197886bac">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +160,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::Buffer::create </td>
+          <td class="memname">virtual void driderSDK::Buffer::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -157,7 +174,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
+          <td class="paramtype">const byte *&#160;</td>
           <td class="paramname"><em>initialData</em>&#160;</td>
         </tr>
         <tr>
@@ -183,7 +200,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_index_buffer.html#a44f2f8d4b7abed86e16686c6eba8d2b1">driderSDK::D3DIndexBuffer</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_buffer.html#a7cbdeddb70b3aa6d4193a88e1145c8b1">driderSDK::D3DVertexBuffer</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_constant_buffer.html#a823582bdaf5488f0765decb7acd15c92">driderSDK::D3DConstantBuffer</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_command_buffer.html#ae085d8fc6b600937d9c1fdd09ecaff8d">driderSDK::D3DCommandBuffer</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_constant_buffer.html#a174d1e95c6a5c1d674d7b4c3a6d97ab5">driderSDK::D3DConstantBuffer</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_index_buffer.html#ad00d9470aadf86c737cc9d07f2042f47">driderSDK::D3DIndexBuffer</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_buffer.html#abc9fd5241b666443ed05d11ef476ee73">driderSDK::D3DVertexBuffer</a>.</p>
 
 </div>
 </div>
@@ -211,12 +228,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Release the allocated memory </p>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_buffer.html#a0136b2c8fe1c2e745e6533cd6f7f8571">driderSDK::D3DVertexBuffer</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_constant_buffer.html#ab783ceae4ca4a6dccefbb81df6113b5e">driderSDK::D3DConstantBuffer</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_index_buffer.html#a92f7f756d13ac3566510d13912e53532">driderSDK::D3DIndexBuffer</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_command_buffer.html#ab9ab9de37b9ce03a8329d547c8c5e3ae">driderSDK::D3DCommandBuffer</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_buffer.html#a0136b2c8fe1c2e745e6533cd6f7f8571">driderSDK::D3DVertexBuffer</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_constant_buffer.html#ab783ceae4ca4a6dccefbb81df6113b5e">driderSDK::D3DConstantBuffer</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_index_buffer.html#a92f7f756d13ac3566510d13912e53532">driderSDK::D3DIndexBuffer</a>.</p>
 
 </div>
 </div>
-<a id="a4c1dfdc66467edb594e5be0a3d851d34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c1dfdc66467edb594e5be0a3d851d34">&#9670;&nbsp;</a></span>updateFromMemory()</h2>
+<a id="aa63eabbcc584186a92b35cf76efa6a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa63eabbcc584186a92b35cf76efa6a81">&#9670;&nbsp;</a></span>updateFromBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +242,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void driderSDK::Buffer::updateFromMemory </td>
+          <td class="memname">virtual void driderSDK::Buffer::updateFromBuffer </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;&#160;</td>
           <td class="paramname"><em>deviceContext</em>, </td>
@@ -233,14 +250,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>dataBuffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bufferSize</em>&#160;</td>
+          <td class="paramtype">const byte *&#160;</td>
+          <td class="paramname"><em>buffer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -264,7 +275,44 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_buffer.html#a86bb9d932ec348bd7e008961b7d97707">driderSDK::D3DVertexBuffer</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_constant_buffer.html#afc4217c2ed81542ebcbe81d792aab54b">driderSDK::D3DConstantBuffer</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_index_buffer.html#afee04279b78eef3e0a7be9d2702f91b8">driderSDK::D3DIndexBuffer</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_command_buffer.html#ad63a5ea6ac9187e755f8f4cce205d265">driderSDK::D3DCommandBuffer</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_buffer.html#a71d7a24b219993e4851e88b65317d51e">driderSDK::D3DVertexBuffer</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_constant_buffer.html#a2744133fd51de72e3a8ad0ef8b4a816c">driderSDK::D3DConstantBuffer</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_index_buffer.html#aaf61cc838d24387ceb89654bcb088537">driderSDK::D3DIndexBuffer</a>.</p>
+
+</div>
+</div>
+<a id="a8c9da7017d1914ce3db372aaa6b389f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c9da7017d1914ce3db372aaa6b389f4">&#9670;&nbsp;</a></span>updateFromSysMemCpy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::Buffer::updateFromSysMemCpy </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>deviceContext</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update the buffer with new data</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceContext</td><td>The device context to get acces to the resource</td></tr>
+    <tr><td class="paramname">dataBuffer</td><td>The new data buffer</td></tr>
+    <tr><td class="paramname">bufferSize</td><td>The new data buffer size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_vertex_buffer.html#aa970200dbb1e61aa1a84691d4a2649e8">driderSDK::D3DVertexBuffer</a>, <a class="el" href="classdrider_s_d_k_1_1_d3_d_constant_buffer.html#a573b722af7e3a86b09bb1507e95f032f">driderSDK::D3DConstantBuffer</a>, and <a class="el" href="classdrider_s_d_k_1_1_d3_d_index_buffer.html#a71e805e39651d267042c3ce25592b79a">driderSDK::D3DIndexBuffer</a>.</p>
 
 </div>
 </div>

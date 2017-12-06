@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['math',['Math',['../structdrider_s_d_k_1_1_math.html',1,'driderSDK']]],
-  ['matrix3x3',['Matrix3x3',['../classdrider_s_d_k_1_1_matrix3x3.html',1,'driderSDK']]],
-  ['matrix4x4',['Matrix4x4',['../classdrider_s_d_k_1_1_matrix4x4.html',1,'driderSDK']]],
-  ['matrixnxm',['MatrixNxM',['../classdrider_s_d_k_1_1_matrix_nx_m.html',1,'driderSDK']]],
-  ['module',['Module',['../classdrider_s_d_k_1_1_module.html',1,'driderSDK']]],
-  ['module_3c_20logger_20_3e',['Module&lt; Logger &gt;',['../classdrider_s_d_k_1_1_module.html',1,'driderSDK']]]
+  ['line',['Line',['../classdrider_s_d_k_1_1_line.html',1,'driderSDK']]],
+  ['loader',['Loader',['../structdrider_s_d_k_1_1_loader.html',1,'driderSDK']]],
+  ['logger',['Logger',['../classdrider_s_d_k_1_1_logger.html',1,'driderSDK']]]
 ];

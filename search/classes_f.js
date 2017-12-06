@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['vector2d',['Vector2D',['../classdrider_s_d_k_1_1_vector2_d.html',1,'driderSDK']]],
-  ['vector2di',['Vector2DI',['../classdrider_s_d_k_1_1_vector2_d_i.html',1,'driderSDK']]],
-  ['vector3d',['Vector3D',['../classdrider_s_d_k_1_1_vector3_d.html',1,'driderSDK']]],
-  ['vector4d',['Vector4D',['../classdrider_s_d_k_1_1_vector4_d.html',1,'driderSDK']]],
-  ['vectorn',['VectorN',['../classdrider_s_d_k_1_1_vector_n.html',1,'driderSDK']]],
-  ['vertexbuffer',['VertexBuffer',['../classdrider_s_d_k_1_1_vertex_buffer.html',1,'driderSDK']]],
-  ['vertexshader',['VertexShader',['../classdrider_s_d_k_1_1_vertex_shader.html',1,'driderSDK']]]
+  ['samplerstate',['SamplerState',['../classdrider_s_d_k_1_1_sampler_state.html',1,'driderSDK']]],
+  ['scenegraph',['SceneGraph',['../classdrider_s_d_k_1_1_scene_graph.html',1,'driderSDK']]],
+  ['shader',['Shader',['../classdrider_s_d_k_1_1_shader.html',1,'driderSDK']]],
+  ['shaderbytecode',['ShaderBytecode',['../classdrider_s_d_k_1_1_shader_bytecode.html',1,'driderSDK']]],
+  ['simage',['sImage',['../structdrider_s_d_k_1_1s_image.html',1,'driderSDK']]],
+  ['skeleton',['Skeleton',['../classdrider_s_d_k_1_1_skeleton.html',1,'driderSDK']]],
+  ['skeletoninfo',['SkeletonInfo',['../structdrider_s_d_k_1_1_skeleton_info.html',1,'driderSDK']]],
+  ['sphere',['Sphere',['../classdrider_s_d_k_1_1_sphere.html',1,'driderSDK']]],
+  ['stackallocator',['StackAllocator',['../classdrider_s_d_k_1_1_stack_allocator.html',1,'driderSDK']]],
+  ['stringutils',['StringUtils',['../structdrider_s_d_k_1_1_string_utils.html',1,'driderSDK']]],
+  ['swapchain',['SwapChain',['../classdrider_s_d_k_1_1_swap_chain.html',1,'driderSDK']]]
 ];

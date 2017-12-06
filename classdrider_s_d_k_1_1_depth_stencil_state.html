@@ -67,6 +67,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_depth_stencil_state-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::DepthStencilState Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -84,16 +85,28 @@ Inheritance diagram for driderSDK::DepthStencilState:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5f7a951c302f12324959deb87961a8df"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html#a5f7a951c302f12324959deb87961a8df">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a> &amp;desc)=0</td></tr>
-<tr class="separator:a5f7a951c302f12324959deb87961a8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba3b970a34c8f06d1abe4e56102277e"><td class="memItemLeft" align="right" valign="top"><a id="a0ba3b970a34c8f06d1abe4e56102277e"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> ()=0</td></tr>
+<tr class="separator:a0ba3b970a34c8f06d1abe4e56102277e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6cdd0f525e172c68ff37d00d404bcd"><td class="memItemLeft" align="right" valign="top"><a id="a0a6cdd0f525e172c68ff37d00d404bcd"></a>
+virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> ()=0</td></tr>
+<tr class="separator:a0a6cdd0f525e172c68ff37d00d404bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeefe4665076d53329de41013b5f285ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html#aeefe4665076d53329de41013b5f285ee">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a> &amp;desc)=0</td></tr>
+<tr class="separator:aeefe4665076d53329de41013b5f285ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d79e954f00f7469086f1fec6185d04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html#ae7d79e954f00f7469086f1fec6185d04">set</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext, UInt32 refValue) const =0</td></tr>
 <tr class="separator:ae7d79e954f00f7469086f1fec6185d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98479b767ad37af3a5e6203fcef44933"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html#a98479b767ad37af3a5e6203fcef44933">release</a> ()=0</td></tr>
 <tr class="separator:a98479b767ad37af3a5e6203fcef44933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae7bcb975b1b968fa0e775058335197e6"><td class="memItemLeft" align="right" valign="top"><a id="ae7bcb975b1b968fa0e775058335197e6"></a>
+<a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_descriptor</b></td></tr>
+<tr class="separator:ae7bcb975b1b968fa0e775058335197e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5f7a951c302f12324959deb87961a8df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f7a951c302f12324959deb87961a8df">&#9670;&nbsp;</a></span>create()</h2>
+<a id="aeefe4665076d53329de41013b5f285ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeefe4665076d53329de41013b5f285ee">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -102,7 +115,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::DepthStencilState::create </td>
+          <td class="memname">virtual void driderSDK::DepthStencilState::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -135,7 +148,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_depth_stencil_state.html#a279a62df1aacd62ed19b2305afd679cd">driderSDK::D3DDepthStencilState</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_depth_stencil_state.html#ace1856c39be7b220ca00f48b71478e90">driderSDK::D3DDepthStencilState</a>.</p>
 
 </div>
 </div>

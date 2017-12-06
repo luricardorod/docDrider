@@ -85,10 +85,16 @@ Inheritance diagram for driderSDK::D3DSwapChain:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab86ffc51a93f88f5741398a88e1bbe8c"><td class="memItemLeft" align="right" valign="top">DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_swap_chain.html#ab86ffc51a93f88f5741398a88e1bbe8c">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_swap_chain_desc.html">DrSwapChainDesc</a> &amp;desc) override</td></tr>
-<tr class="separator:ab86ffc51a93f88f5741398a88e1bbe8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14a764969bb2354e257632dea887e18a"><td class="memItemLeft" align="right" valign="top">DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_swap_chain.html#a14a764969bb2354e257632dea887e18a">getBackBuffer</a> (<a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture) override</td></tr>
-<tr class="separator:a14a764969bb2354e257632dea887e18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25145996e42021604a05aeaa7cf3bd94"><td class="memItemLeft" align="right" valign="top"><a id="a25145996e42021604a05aeaa7cf3bd94"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> () override</td></tr>
+<tr class="separator:a25145996e42021604a05aeaa7cf3bd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8dfa541165732d436de69e13a0607ef"><td class="memItemLeft" align="right" valign="top"><a id="ae8dfa541165732d436de69e13a0607ef"></a>
+void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> () override</td></tr>
+<tr class="separator:ae8dfa541165732d436de69e13a0607ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9130f879f188cf5efecfb3c07b09bd87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_swap_chain.html#a9130f879f188cf5efecfb3c07b09bd87">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_swap_chain_desc.html">DrSwapChainDesc</a> &amp;desc) override</td></tr>
+<tr class="separator:a9130f879f188cf5efecfb3c07b09bd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539f3c87384543c2ee3819474a562c9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_swap_chain.html#a539f3c87384543c2ee3819474a562c9f">getBackBuffer</a> (<a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture) override</td></tr>
+<tr class="separator:a539f3c87384543c2ee3819474a562c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b1e2e432d95d32d7159b4ed4396b1d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_swap_chain.html#a6b1e2e432d95d32d7159b4ed4396b1d0">release</a> () override</td></tr>
 <tr class="separator:a6b1e2e432d95d32d7159b4ed4396b1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9490d6035cd8c63b82a1c08fd936d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_swap_chain.html#a2e9490d6035cd8c63b82a1c08fd936d1">swapBuffers</a> () override</td></tr>
@@ -99,16 +105,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab4c40dc152a736779d16324da10a4d4e"><td class="memItemLeft" align="right" valign="top"><a id="ab4c40dc152a736779d16324da10a4d4e"></a>
-Microsoft::WRL::ComPtr&lt; IDXGISwapChain &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>APISwapchain</b></td></tr>
-<tr class="separator:ab4c40dc152a736779d16324da10a4d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5341ca80800de4065be67c76868b62"><td class="memItemLeft" align="right" valign="top"><a id="a2a5341ca80800de4065be67c76868b62"></a>
-Microsoft::WRL::ComPtr&lt; ID3D11RenderTargetView &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>APIRenderTargetView</b></td></tr>
-<tr class="separator:a2a5341ca80800de4065be67c76868b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa563987ac3619168a965aa61add83f3a"><td class="memItemLeft" align="right" valign="top"><a id="aa563987ac3619168a965aa61add83f3a"></a>
+IDXGISwapChain *&#160;</td><td class="memItemRight" valign="bottom"><b>APISwapchain</b></td></tr>
+<tr class="separator:aa563987ac3619168a965aa61add83f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0791880d7878ec082d89d3564846db71"><td class="memItemLeft" align="right" valign="top"><a id="a0791880d7878ec082d89d3564846db71"></a>
+ID3D11RenderTargetView *&#160;</td><td class="memItemRight" valign="bottom"><b>APIRenderTargetView</b></td></tr>
+<tr class="separator:a0791880d7878ec082d89d3564846db71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classdrider_s_d_k_1_1_swap_chain"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdrider_s_d_k_1_1_swap_chain')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdrider_s_d_k_1_1_swap_chain.html">driderSDK::SwapChain</a></td></tr>
+<tr class="memitem:a1eeea78f47c88c13d7fcc58f53dbb626 inherit pub_attribs_classdrider_s_d_k_1_1_swap_chain"><td class="memItemLeft" align="right" valign="top"><a id="a1eeea78f47c88c13d7fcc58f53dbb626"></a>
+<a class="el" href="structdrider_s_d_k_1_1_dr_swap_chain_desc.html">DrSwapChainDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_descriptor</b></td></tr>
+<tr class="separator:a1eeea78f47c88c13d7fcc58f53dbb626 inherit pub_attribs_classdrider_s_d_k_1_1_swap_chain"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab86ffc51a93f88f5741398a88e1bbe8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab86ffc51a93f88f5741398a88e1bbe8c">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a9130f879f188cf5efecfb3c07b09bd87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9130f879f188cf5efecfb3c07b09bd87">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -117,7 +127,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RenderTargetView &gt;&#160;</td><td class="memI
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DR_GRAPHICS_ERROR::E driderSDK::D3DSwapChain::create </td>
+          <td class="memname">void driderSDK::D3DSwapChain::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -140,6 +150,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RenderTargetView &gt;&#160;</td><td class="memI
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::create</p>
 <p>Create a swap chain</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -150,12 +161,12 @@ Microsoft::WRL::ComPtr&lt; ID3D11RenderTargetView &gt;&#160;</td><td class="memI
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implements <a class="el" href="classdrider_s_d_k_1_1_swap_chain.html#ade25a931070ab0cfa87c6ea2f53c7a1c">driderSDK::SwapChain</a>.</p>
+<p>Implements <a class="el" href="classdrider_s_d_k_1_1_swap_chain.html#a871cad0e8083916abcc675e1061c9827">driderSDK::SwapChain</a>.</p>
 
 </div>
 </div>
-<a id="a14a764969bb2354e257632dea887e18a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14a764969bb2354e257632dea887e18a">&#9670;&nbsp;</a></span>getBackBuffer()</h2>
+<a id="a539f3c87384543c2ee3819474a562c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539f3c87384543c2ee3819474a562c9f">&#9670;&nbsp;</a></span>getBackBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,7 +175,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RenderTargetView &gt;&#160;</td><td class="memI
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DR_GRAPHICS_ERROR::E driderSDK::D3DSwapChain::getBackBuffer </td>
+          <td class="memname">void driderSDK::D3DSwapChain::getBackBuffer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;&#160;</td>
           <td class="paramname"><em>texture</em></td><td>)</td>
@@ -177,6 +188,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RenderTargetView &gt;&#160;</td><td class="memI
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::getBackBuffer</p>
 <p>Get the back buffer</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -186,7 +198,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RenderTargetView &gt;&#160;</td><td class="memI
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implements <a class="el" href="classdrider_s_d_k_1_1_swap_chain.html#a6b9118931451dfa7a4b991945f4e2042">driderSDK::SwapChain</a>.</p>
+<p>Implements <a class="el" href="classdrider_s_d_k_1_1_swap_chain.html#a2a685f20f5fe3f7b442d27cbb9d8ea2c">driderSDK::SwapChain</a>.</p>
 
 </div>
 </div>
@@ -212,6 +224,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RenderTargetView &gt;&#160;</td><td class="memI
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::release</p>
 <p>Release the allocated memory </p>
 
 <p>Implements <a class="el" href="classdrider_s_d_k_1_1_swap_chain.html#a27071a175427cc1cdd59f4d30013d1b9">driderSDK::SwapChain</a>.</p>
@@ -240,6 +253,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RenderTargetView &gt;&#160;</td><td class="memI
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::swapBuffers</p>
 <p>Swap back-front buffer </p>
 
 <p>Implements <a class="el" href="classdrider_s_d_k_1_1_swap_chain.html#a613f6acf540896335e28834ed2bb9934">driderSDK::SwapChain</a>.</p>

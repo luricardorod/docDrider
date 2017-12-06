@@ -98,8 +98,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa2f2f19f27b36910669f84acb1e88f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe544aa7bf3a16d82d8a6c2c35293f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_quaternion.html#aabe544aa7bf3a16d82d8a6c2c35293f2">normalize</a> ()</td></tr>
 <tr class="separator:aabe544aa7bf3a16d82d8a6c2c35293f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a892aa4383f2070ef76b549705b8905cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_quaternion.html#a892aa4383f2070ef76b549705b8905cb">rotation</a> (float theta, const <a class="el" href="classdrider_s_d_k_1_1_quaternion.html">Quaternion</a> &amp;A)</td></tr>
-<tr class="separator:a892aa4383f2070ef76b549705b8905cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf051375a251e68082e204bdc7ee8d62"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_quaternion.html#aaf051375a251e68082e204bdc7ee8d62">rotation</a> (const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;V) const</td></tr>
+<tr class="separator:aaf051375a251e68082e204bdc7ee8d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eccec4e75e252b94145e1afcae89f55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_quaternion.html#a5eccec4e75e252b94145e1afcae89f55">matrixFromQuaternion</a> (<a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;MatrixOut)</td></tr>
 <tr class="separator:a5eccec4e75e252b94145e1afcae89f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ebac08edf7d6579c08965164256e0b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_quaternion.html#a3ebac08edf7d6579c08965164256e0b6">matrixFromQuaternion</a> (<a class="el" href="classdrider_s_d_k_1_1_matrix3x3.html">Matrix3x3</a> &amp;MatrixOut)</td></tr>
@@ -902,40 +902,29 @@ union {</td></tr>
 
 </div>
 </div>
-<a id="a892aa4383f2070ef76b549705b8905cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a892aa4383f2070ef76b549705b8905cb">&#9670;&nbsp;</a></span>rotation()</h2>
+<a id="aaf051375a251e68082e204bdc7ee8d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf051375a251e68082e204bdc7ee8d62">&#9670;&nbsp;</a></span>rotation()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_quaternion.html">Quaternion</a> driderSDK::Quaternion::rotation </td>
+          <td class="memname">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> driderSDK::Quaternion::rotation </td>
           <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>theta</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
-          <td class="paramname"><em>A</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>V</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TEST::rotation Rotates the quaternion given theta and another quaternion.</p>
+<p>TEST::rotation Rotates a 3D Vector by this quaternion.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">theta</td><td>Angle of rotation.</td></tr>
-    <tr><td class="paramname">A</td><td>The other quaternion to generate an axis.</td></tr>
+    <tr><td class="paramname">V</td><td>Vector to rotate.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A rotated quaternion. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A rotated vector. </dd></dl>
 
 </div>
 </div>

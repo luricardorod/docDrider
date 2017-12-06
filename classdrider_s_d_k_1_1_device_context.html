@@ -67,6 +67,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_device_context-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::DeviceContext Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -84,6 +85,12 @@ Inheritance diagram for driderSDK::DeviceContext:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a553a692c921874fdd3b2c8a41f383636"><td class="memItemLeft" align="right" valign="top"><a id="a553a692c921874fdd3b2c8a41f383636"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> ()=0</td></tr>
+<tr class="separator:a553a692c921874fdd3b2c8a41f383636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08cde960c1d07038dd495a4651d8cccd"><td class="memItemLeft" align="right" valign="top"><a id="a08cde960c1d07038dd495a4651d8cccd"></a>
+virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> ()=0</td></tr>
+<tr class="separator:a08cde960c1d07038dd495a4651d8cccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14223c8c8143245edcf4ea356c7a5fcd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a14223c8c8143245edcf4ea356c7a5fcd">~DeviceContext</a> ()</td></tr>
 <tr class="separator:a14223c8c8143245edcf4ea356c7a5fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc20e48354b2c42e52d4bb3daf322db0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#abc20e48354b2c42e52d4bb3daf322db0">release</a> ()=0</td></tr>
@@ -92,8 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a094540f35b492c327bb23e5dc68b1abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a777305216fc0ebac2db60fd04c43fbd5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a777305216fc0ebac2db60fd04c43fbd5">updateTextureFromMemory</a> (<a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture, const char *databuffer, size_t bufferSize) const =0</td></tr>
 <tr class="separator:a777305216fc0ebac2db60fd04c43fbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd031df62c41baf38e7850d8d82c635"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a8bd031df62c41baf38e7850d8d82c635">updateBufferFromMemory</a> (<a class="el" href="classdrider_s_d_k_1_1_buffer.html">Buffer</a> &amp;buffer, const char *dataBuffer, size_t bufferSize) const =0</td></tr>
-<tr class="separator:a8bd031df62c41baf38e7850d8d82c635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631d07589612b8ae7408c2187bf55fde"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a631d07589612b8ae7408c2187bf55fde">updateBufferFromMemory</a> (<a class="el" href="classdrider_s_d_k_1_1_buffer.html">Buffer</a> &amp;buffer, const byte *dataBuffer) const =0</td></tr>
+<tr class="separator:a631d07589612b8ae7408c2187bf55fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7650e16660bbf568527d4dbd6f648359"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a7650e16660bbf568527d4dbd6f648359">setRenderTarget</a> (const <a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> &amp;renderTarget, const <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;depthStencil) const =0</td></tr>
 <tr class="separator:a7650e16660bbf568527d4dbd6f648359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02479767c9a24f4b9c7afc33c4164cef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#a02479767c9a24f4b9c7afc33c4164cef">setTexture</a> (const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture, UInt32 slot) const =0</td></tr>
@@ -114,6 +121,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54206ce3022fae1f51f15f92421e3226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb8d1fd21331ff3b97f5fe6ba0b50f6c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_device_context.html#afb8d1fd21331ff3b97f5fe6ba0b50f6c">draw</a> (UInt32 indexCount, UInt32 startIndexLocation, UInt32 startVertexLocation) const =0</td></tr>
 <tr class="separator:afb8d1fd21331ff3b97f5fe6ba0b50f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:adeeb6a430e943d3b2bfebe54b256d9ad"><td class="memItemLeft" align="right" valign="top"><a id="adeeb6a430e943d3b2bfebe54b256d9ad"></a>
+<a class="el" href="structdrider_s_d_k_1_1_device_context_data.html">DeviceContextData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_deviceContext</b></td></tr>
+<tr class="separator:adeeb6a430e943d3b2bfebe54b256d9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a14223c8c8143245edcf4ea356c7a5fcd"></a>
@@ -672,8 +685,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8bd031df62c41baf38e7850d8d82c635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bd031df62c41baf38e7850d8d82c635">&#9670;&nbsp;</a></span>updateBufferFromMemory()</h2>
+<a id="a631d07589612b8ae7408c2187bf55fde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631d07589612b8ae7408c2187bf55fde">&#9670;&nbsp;</a></span>updateBufferFromMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -690,14 +703,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>dataBuffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>bufferSize</em>&#160;</td>
+          <td class="paramtype">const byte *&#160;</td>
+          <td class="paramname"><em>dataBuffer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -721,7 +728,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#a9e067031cebdbf38fcf969e9a36f73ca">driderSDK::D3DDeviceContext</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_device_context.html#adf218fc962e6e963eb0acbd4e64212f8">driderSDK::D3DDeviceContext</a>.</p>
 
 </div>
 </div>

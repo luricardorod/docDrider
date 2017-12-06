@@ -74,7 +74,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="dr__file_system_8h_source.html">dr_fileSystem.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="dr__file__system_8h_source.html">dr_file_system.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -82,19 +82,31 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afc691cb65f0c6b9c836d5ff756e8695a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb30ff22569c140c684ff5d3d3c9a5da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#aeb30ff22569c140c684ff5d3d3c9a5da">~FileSystem</a> ()</td></tr>
 <tr class="separator:aeb30ff22569c140c684ff5d3d3c9a5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36033b0a75ee005e23a79273fe5e883c"><td class="memItemLeft" align="right" valign="top">TString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a36033b0a75ee005e23a79273fe5e883c">GetWorkingPath</a> ()</td></tr>
+<tr class="separator:a36033b0a75ee005e23a79273fe5e883c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248d76403012e720f55100ee6a1b0300"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a248d76403012e720f55100ee6a1b0300">CreateAndOpen</a> (const TString &amp;filename, <a class="el" href="classdrider_s_d_k_1_1_file.html">File</a> &amp;file)</td></tr>
+<tr class="separator:a248d76403012e720f55100ee6a1b0300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3f33f14ff2cd1b559e5f9a75e41259"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a8d3f33f14ff2cd1b559e5f9a75e41259">Copy</a> (const TString &amp;filepathSrc, const TString &amp;filepathDst)</td></tr>
+<tr class="separator:a8d3f33f14ff2cd1b559e5f9a75e41259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555388acf12203eaa10845d307538a24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a555388acf12203eaa10845d307538a24">Move</a> (const TString &amp;filepathSrc, const TString &amp;filepathDst)</td></tr>
+<tr class="separator:a555388acf12203eaa10845d307538a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f440bb715a6ad11adbcdc579194554"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a60f440bb715a6ad11adbcdc579194554">Remove</a> (const TString &amp;filepath)</td></tr>
+<tr class="separator:a60f440bb715a6ad11adbcdc579194554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fdd0ade75bdf0a16233c35a50a01a9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a4fdd0ade75bdf0a16233c35a50a01a9c">IsFile</a> (const TString &amp;filepath)</td></tr>
+<tr class="separator:a4fdd0ade75bdf0a16233c35a50a01a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad200d50f84451246b6d9725f7233c160"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#ad200d50f84451246b6d9725f7233c160">IsDirectory</a> (const TString &amp;filepath)</td></tr>
+<tr class="separator:ad200d50f84451246b6d9725f7233c160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a602862dcb31d0a0ccada0a92fcd13af8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a602862dcb31d0a0ccada0a92fcd13af8">Exists</a> (const TString &amp;filepath)</td></tr>
+<tr class="separator:a602862dcb31d0a0ccada0a92fcd13af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abcb04df92e81100acc994b350937dfa0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#abcb04df92e81100acc994b350937dfa0">load</a> (const std::string filename, std::string &amp;bufferOut)</td></tr>
-<tr class="separator:abcb04df92e81100acc994b350937dfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a281e08938aacf3976388707d64ec2131"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a281e08938aacf3976388707d64ec2131">save</a> (const std::string filename, const std::string &amp;bufferToSave)</td></tr>
-<tr class="separator:a281e08938aacf3976388707d64ec2131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f83e2117187bde7c81b127af4e2823a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a3f83e2117187bde7c81b127af4e2823a">append</a> (const std::string filename, const std::string &amp;bufferToAppend)</td></tr>
-<tr class="separator:a3f83e2117187bde7c81b127af4e2823a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ceafa03f641b8ec850cdbb9af9e8f73"><td class="memItemLeft" align="right" valign="top">static TString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_file_system.html#a9ceafa03f641b8ec850cdbb9af9e8f73">GetFileExtension</a> (const TString &amp;filepath)</td></tr>
+<tr class="separator:a9ceafa03f641b8ec850cdbb9af9e8f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to load files in buffers</p>
-<p>Sample usage: <a class="el" href="classdrider_s_d_k_1_1_file_system.html">FileSystem</a> sampleName; sampleName.load("fileToOpen", bufferToStoreFile); sampleName.save("fileToWrite", bufferToSaveToFile); sampleName.append("fileToAppend", bufferToAddInFile); </p>
+<p>Sample usage: <a class="el" href="classdrider_s_d_k_1_1_file_system.html">FileSystem</a> sampleName; </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afc691cb65f0c6b9c836d5ff756e8695a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc691cb65f0c6b9c836d5ff756e8695a">&#9670;&nbsp;</a></span>FileSystem()</h2>
@@ -135,8 +147,109 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3f83e2117187bde7c81b127af4e2823a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f83e2117187bde7c81b127af4e2823a">&#9670;&nbsp;</a></span>append()</h2>
+<a id="a8d3f33f14ff2cd1b559e5f9a75e41259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d3f33f14ff2cd1b559e5f9a75e41259">&#9670;&nbsp;</a></span>Copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void driderSDK::FileSystem::Copy </td>
+          <td>(</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>filepathSrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>filepathDst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::Copy</p>
+<p>Description</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a248d76403012e720f55100ee6a1b0300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248d76403012e720f55100ee6a1b0300">&#9670;&nbsp;</a></span>CreateAndOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool driderSDK::FileSystem::CreateAndOpen </td>
+          <td>(</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_file.html">File</a> &amp;&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::CreateAndOpen</p>
+<p>Description</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a602862dcb31d0a0ccada0a92fcd13af8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a602862dcb31d0a0ccada0a92fcd13af8">&#9670;&nbsp;</a></span>Exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool driderSDK::FileSystem::Exists </td>
+          <td>(</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::Exists</p>
+<p>Description</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a9ceafa03f641b8ec850cdbb9af9e8f73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ceafa03f641b8ec850cdbb9af9e8f73">&#9670;&nbsp;</a></span>GetFileExtension()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,21 +258,11 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool driderSDK::FileSystem::append </td>
+          <td class="memname">TString driderSDK::FileSystem::GetFileExtension </td>
           <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>bufferToAppend</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -168,75 +271,109 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TEST::append The Append operation is identical in structure to Save, except that the file is opened for appending. The input buffer is written at the end of an already existing file. If the file does not exist, it is created and the buffer is written.</p>
-<p>Param filename The name of the file to save.</p>
-<p>Param bufferToSave The info to be saved.</p>
-<p>Return Boolean value is true if the save is successful. If the returned value is false, one of the following conditions has occurred: The input buffer is null. The file cannot be opened for writing (the file might exist and be set to read-only). </p>
+<p>TEST::GetFileExtension</p>
+<p>Description</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
-<a id="abcb04df92e81100acc994b350937dfa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcb04df92e81100acc994b350937dfa0">&#9670;&nbsp;</a></span>load()</h2>
+<a id="a36033b0a75ee005e23a79273fe5e883c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36033b0a75ee005e23a79273fe5e883c">&#9670;&nbsp;</a></span>GetWorkingPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool driderSDK::FileSystem::load </td>
+          <td class="memname">TString driderSDK::FileSystem::GetWorkingPath </td>
           <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>bufferOut</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>TEST::load</p>
-<p>The Load operation determines how many bytes are in the file and returns the amount in riSize.</p>
-<p>Param filename The name of the file to load.</p>
-<p>Param bufferOut The output where the file will be loaded</p>
-<p>Return Boolean value is true if the load is successful, in which case the outputs racBuffer and riSize are valid.</p>
-<p>If the returned value is false, one of the following conditions has occurred: The file does not exist. The file cannot be opened for reading (the file attributes might not allow this). </p>
+<p>TEST::GetWorkingPath</p>
+<p>Returns the fullpath of the working directory. OS specific.</p>
+<dl class="section return"><dt>Returns</dt><dd>String containing the fullpath of the working directory. </dd></dl>
 
 </div>
 </div>
-<a id="a281e08938aacf3976388707d64ec2131"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a281e08938aacf3976388707d64ec2131">&#9670;&nbsp;</a></span>save()</h2>
+<a id="ad200d50f84451246b6d9725f7233c160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad200d50f84451246b6d9725f7233c160">&#9670;&nbsp;</a></span>IsDirectory()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool driderSDK::FileSystem::save </td>
+          <td class="memname">bool driderSDK::FileSystem::IsDirectory </td>
           <td>(</td>
-          <td class="paramtype">const std::string&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::IsDirectory</p>
+<p>Description</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a4fdd0ade75bdf0a16233c35a50a01a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fdd0ade75bdf0a16233c35a50a01a9c">&#9670;&nbsp;</a></span>IsFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool driderSDK::FileSystem::IsFile </td>
+          <td>(</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::IsFile</p>
+<p>Description</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a555388acf12203eaa10845d307538a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a555388acf12203eaa10845d307538a24">&#9670;&nbsp;</a></span>Move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void driderSDK::FileSystem::Move </td>
+          <td>(</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>filepathSrc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>bufferToSave</em>&#160;</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>filepathDst</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -244,22 +381,51 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>TEST::save The Save operation writes the input buffer to disk.</p>
-<p>Param filename The name of the file to save.</p>
-<p>Param bufferToSave The info to be saved.</p>
-<p>Return Boolean value is true if the save is successful. If the returned value is false, one of the following conditions has occurred: The input buffer is null. The file cannot be opened for writing (the file might exist and be set to read-only). </p>
+<p>TEST::Move</p>
+<p>Description</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a60f440bb715a6ad11adbcdc579194554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60f440bb715a6ad11adbcdc579194554">&#9670;&nbsp;</a></span>Remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool driderSDK::FileSystem::Remove </td>
+          <td>(</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::Remove</p>
+<p>Description</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>F:/projectsVS2017/Drider-Engine/Engine/Include/<a class="el" href="dr__file_system_8h_source.html">dr_fileSystem.h</a></li>
-<li>F:/projectsVS2017/Drider-Engine/Engine/Source/dr_fileSystem.cpp</li>
+<li>F:/projectsVS2017/Drider-Engine/Engine/Include/<a class="el" href="dr__file__system_8h_source.html">dr_file_system.h</a></li>
+<li>F:/projectsVS2017/Drider-Engine/Engine/Source/dr_file_system.cpp</li>
+<li>F:/projectsVS2017/Drider-Engine/Engine/Source/dr_file_system_linux.cpp</li>
+<li>F:/projectsVS2017/Drider-Engine/Engine/Source/dr_file_system_win.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -67,6 +67,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_rasterizer_state-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::RasterizerState Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -84,14 +85,26 @@ Inheritance diagram for driderSDK::RasterizerState:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:afbfac0abe7e2338a34aecbf0b188ebc0"><td class="memItemLeft" align="right" valign="top"><a id="afbfac0abe7e2338a34aecbf0b188ebc0"></a>
+virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> ()=0</td></tr>
+<tr class="separator:afbfac0abe7e2338a34aecbf0b188ebc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb7dc0f55a7c930ed9bd4f0a6babd5e9"><td class="memItemLeft" align="right" valign="top"><a id="abb7dc0f55a7c930ed9bd4f0a6babd5e9"></a>
+virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> ()=0</td></tr>
+<tr class="separator:abb7dc0f55a7c930ed9bd4f0a6babd5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a344dcf7af8bd0030ca6a922372e146a5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html#a344dcf7af8bd0030ca6a922372e146a5">~RasterizerState</a> ()</td></tr>
 <tr class="separator:a344dcf7af8bd0030ca6a922372e146a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74789385f39444c09ce01471a6992363"><td class="memItemLeft" align="right" valign="top">virtual DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html#a74789385f39444c09ce01471a6992363">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_rasterizer_desc.html">DrRasterizerDesc</a> &amp;desc)=0</td></tr>
-<tr class="separator:a74789385f39444c09ce01471a6992363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358a10b89a4cb9ae17d3e5d26fc89d54"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html#a358a10b89a4cb9ae17d3e5d26fc89d54">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_rasterizer_desc.html">DrRasterizerDesc</a> &amp;desc)=0</td></tr>
+<tr class="separator:a358a10b89a4cb9ae17d3e5d26fc89d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48e9e29ee206ed9fbe330c0c4a60b415"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html#a48e9e29ee206ed9fbe330c0c4a60b415">set</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext) const =0</td></tr>
 <tr class="separator:a48e9e29ee206ed9fbe330c0c4a60b415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae504c321cd8c81ab083a783c5a3dbb4e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html#ae504c321cd8c81ab083a783c5a3dbb4e">release</a> ()=0</td></tr>
 <tr class="separator:ae504c321cd8c81ab083a783c5a3dbb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a64e8814f687a17977dc6a0aed5a311fc"><td class="memItemLeft" align="right" valign="top"><a id="a64e8814f687a17977dc6a0aed5a311fc"></a>
+<a class="el" href="structdrider_s_d_k_1_1_dr_rasterizer_desc.html">DrRasterizerDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_descriptor</b></td></tr>
+<tr class="separator:a64e8814f687a17977dc6a0aed5a311fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a344dcf7af8bd0030ca6a922372e146a5"></a>
@@ -121,8 +134,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a74789385f39444c09ce01471a6992363"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74789385f39444c09ce01471a6992363">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a358a10b89a4cb9ae17d3e5d26fc89d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a358a10b89a4cb9ae17d3e5d26fc89d54">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +144,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual DR_GRAPHICS_ERROR::E driderSDK::RasterizerState::create </td>
+          <td class="memname">virtual void driderSDK::RasterizerState::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -164,7 +177,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_rasterizer_state.html#ada6a6019481453c1a5bd6d7345c8efe9">driderSDK::D3DRasterizerState</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_rasterizer_state.html#a863da21165995c73dd2bbd151090c0ba">driderSDK::D3DRasterizerState</a>.</p>
 
 </div>
 </div>

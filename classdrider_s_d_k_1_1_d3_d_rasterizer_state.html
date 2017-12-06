@@ -85,8 +85,14 @@ Inheritance diagram for driderSDK::D3DRasterizerState:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ada6a6019481453c1a5bd6d7345c8efe9"><td class="memItemLeft" align="right" valign="top">DR_GRAPHICS_ERROR::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_rasterizer_state.html#ada6a6019481453c1a5bd6d7345c8efe9">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_rasterizer_desc.html">DrRasterizerDesc</a> &amp;desc) override</td></tr>
-<tr class="separator:ada6a6019481453c1a5bd6d7345c8efe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fefabd6e5a89d788418bf948ee733f"><td class="memItemLeft" align="right" valign="top"><a id="aa1fefabd6e5a89d788418bf948ee733f"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObject</b> () override</td></tr>
+<tr class="separator:aa1fefabd6e5a89d788418bf948ee733f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c4ac95fac67f68631df172baea8b3f"><td class="memItemLeft" align="right" valign="top"><a id="aa2c4ac95fac67f68631df172baea8b3f"></a>
+void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObjectReference</b> () override</td></tr>
+<tr class="separator:aa2c4ac95fac67f68631df172baea8b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a863da21165995c73dd2bbd151090c0ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_rasterizer_state.html#a863da21165995c73dd2bbd151090c0ba">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_rasterizer_desc.html">DrRasterizerDesc</a> &amp;desc) override</td></tr>
+<tr class="separator:a863da21165995c73dd2bbd151090c0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0063fb2fa2b13cc4f5111a8b0f1783b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_rasterizer_state.html#a0063fb2fa2b13cc4f5111a8b0f1783b3">set</a> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;deviceContext) const override</td></tr>
 <tr class="separator:a0063fb2fa2b13cc4f5111a8b0f1783b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3458c5db375d8a150a1ef4af1847c85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_d3_d_rasterizer_state.html#ae3458c5db375d8a150a1ef4af1847c85">release</a> () override</td></tr>
@@ -97,13 +103,17 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a18ec0357ea63b078d56c1edaae7891ac"><td class="memItemLeft" align="right" valign="top"><a id="a18ec0357ea63b078d56c1edaae7891ac"></a>
-Microsoft::WRL::ComPtr&lt; ID3D11RasterizerState &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>APIState</b></td></tr>
-<tr class="separator:a18ec0357ea63b078d56c1edaae7891ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b612f6b0fb1a9b147590d81ac5e629"><td class="memItemLeft" align="right" valign="top"><a id="a06b612f6b0fb1a9b147590d81ac5e629"></a>
+ID3D11RasterizerState *&#160;</td><td class="memItemRight" valign="bottom"><b>APIState</b></td></tr>
+<tr class="separator:a06b612f6b0fb1a9b147590d81ac5e629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classdrider_s_d_k_1_1_rasterizer_state"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdrider_s_d_k_1_1_rasterizer_state')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html">driderSDK::RasterizerState</a></td></tr>
+<tr class="memitem:a64e8814f687a17977dc6a0aed5a311fc inherit pub_attribs_classdrider_s_d_k_1_1_rasterizer_state"><td class="memItemLeft" align="right" valign="top"><a id="a64e8814f687a17977dc6a0aed5a311fc"></a>
+<a class="el" href="structdrider_s_d_k_1_1_dr_rasterizer_desc.html">DrRasterizerDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_descriptor</b></td></tr>
+<tr class="separator:a64e8814f687a17977dc6a0aed5a311fc inherit pub_attribs_classdrider_s_d_k_1_1_rasterizer_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ada6a6019481453c1a5bd6d7345c8efe9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada6a6019481453c1a5bd6d7345c8efe9">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a863da21165995c73dd2bbd151090c0ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a863da21165995c73dd2bbd151090c0ba">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -112,7 +122,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RasterizerState &gt;&#160;</td><td class="memIt
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DR_GRAPHICS_ERROR::E driderSDK::D3DRasterizerState::create </td>
+          <td class="memname">void driderSDK::D3DRasterizerState::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -135,6 +145,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RasterizerState &gt;&#160;</td><td class="memIt
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::create</p>
 <p>Create a sample state</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -145,7 +156,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RasterizerState &gt;&#160;</td><td class="memIt
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implements <a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html#a74789385f39444c09ce01471a6992363">driderSDK::RasterizerState</a>.</p>
+<p>Implements <a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html#a358a10b89a4cb9ae17d3e5d26fc89d54">driderSDK::RasterizerState</a>.</p>
 
 </div>
 </div>
@@ -171,6 +182,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RasterizerState &gt;&#160;</td><td class="memIt
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::release</p>
 <p>Release the allocated memory </p>
 
 <p>Implements <a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html#ae504c321cd8c81ab083a783c5a3dbb4e">driderSDK::RasterizerState</a>.</p>
@@ -200,6 +212,7 @@ Microsoft::WRL::ComPtr&lt; ID3D11RasterizerState &gt;&#160;</td><td class="memIt
   </tr>
 </table>
 </div><div class="memdoc">
+<p>TEST::set</p>
 <p>Set the state</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

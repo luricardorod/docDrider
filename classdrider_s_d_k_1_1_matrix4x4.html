@@ -68,6 +68,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_matrix4x4-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::Matrix4x4 Class Reference</div>  </div>
@@ -82,6 +83,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a696c5b9c5a3ae92bec287ffea2bab475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4488ccdabfe2ae9a23b71827ddb5dd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#ab4488ccdabfe2ae9a23b71827ddb5dd0">Matrix4x4</a> (<a class="el" href="structdrider_s_d_k_1_1_math.html#af7adf3f4a348dfa0f1eb5532acab60e3">Math::FORCE_INIT</a> k)</td></tr>
 <tr class="separator:ab4488ccdabfe2ae9a23b71827ddb5dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb22fb684c125eca70b53c18c06d590"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#affb22fb684c125eca70b53c18c06d590">Matrix4x4</a> (const <a class="el" href="classdrider_s_d_k_1_1_matrix3x3.html">Matrix3x3</a> &amp;M)</td></tr>
+<tr class="separator:affb22fb684c125eca70b53c18c06d590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93143c996786c4e4333e8f3ed012563"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#ac93143c996786c4e4333e8f3ed012563">Matrix4x4</a> (const <a class="el" href="classdrider_s_d_k_1_1_quaternion.html">Quaternion</a> &amp;Q)</td></tr>
+<tr class="separator:ac93143c996786c4e4333e8f3ed012563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa83bb9dd8c644bc98c0fde7c77d171"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a2aa83bb9dd8c644bc98c0fde7c77d171">Matrix4x4</a> (<a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&amp;M)=default</td></tr>
 <tr class="separator:a2aa83bb9dd8c644bc98c0fde7c77d171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac266ab96b1bfc7596493518657347e21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#ac266ab96b1bfc7596493518657347e21">Matrix4x4</a> (const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;M)</td></tr>
@@ -94,16 +99,44 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4166cb8a25afb808ec7fe0035b401cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91d8bd9e3887c79f4d6ab78984a1139d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a91d8bd9e3887c79f4d6ab78984a1139d">determinant</a> () const</td></tr>
 <tr class="separator:a91d8bd9e3887c79f4d6ab78984a1139d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4da17c3d74556ed7c15319bee90111d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a4da17c3d74556ed7c15319bee90111d2">cofactor</a> ()</td></tr>
-<tr class="separator:a4da17c3d74556ed7c15319bee90111d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af11d4d0c46eaca07f45f9facda94a3d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#af11d4d0c46eaca07f45f9facda94a3d7">adjugate</a> ()</td></tr>
-<tr class="separator:af11d4d0c46eaca07f45f9facda94a3d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeca61e0c536625a96ad40b693604d40a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#aeca61e0c536625a96ad40b693604d40a">inverse</a> ()</td></tr>
-<tr class="separator:aeca61e0c536625a96ad40b693604d40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a646a2c43fc8c748fd58e5d9b707b1d27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a646a2c43fc8c748fd58e5d9b707b1d27">transpose</a> ()</td></tr>
-<tr class="separator:a646a2c43fc8c748fd58e5d9b707b1d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56ab21663e69a6d5fc85ad9f5458765e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a56ab21663e69a6d5fc85ad9f5458765e">identity</a> ()</td></tr>
-<tr class="separator:a56ab21663e69a6d5fc85ad9f5458765e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd4010a695e1db83d2ad4487bd7a623"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a4fd4010a695e1db83d2ad4487bd7a623">cofactor</a> ()</td></tr>
+<tr class="separator:a4fd4010a695e1db83d2ad4487bd7a623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9d5014db215f98949c64406e7619f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#adf9d5014db215f98949c64406e7619f7">adjugate</a> ()</td></tr>
+<tr class="separator:adf9d5014db215f98949c64406e7619f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554ca5b6c83acc64f440f8d20469c16b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a554ca5b6c83acc64f440f8d20469c16b">inverse</a> ()</td></tr>
+<tr class="separator:a554ca5b6c83acc64f440f8d20469c16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea8bbe2922fbe474ccf23f0b22649d7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#aea8bbe2922fbe474ccf23f0b22649d7c">transpose</a> ()</td></tr>
+<tr class="separator:aea8bbe2922fbe474ccf23f0b22649d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac916c427e4179ef926f88d0f03e8f3f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#ac916c427e4179ef926f88d0f03e8f3f9">identity</a> ()</td></tr>
+<tr class="separator:ac916c427e4179ef926f88d0f03e8f3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5449fe73eeceef347eafc3f41d5fce08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a5449fe73eeceef347eafc3f41d5fce08">equals</a> (const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;otherMatrix, float errorRange=Math::SMALL_NUMBER) const</td></tr>
+<tr class="separator:a5449fe73eeceef347eafc3f41d5fce08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ed214a811b9204ed4890d471016d70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#af0ed214a811b9204ed4890d471016d70">eulerAngles</a> ()</td></tr>
+<tr class="separator:af0ed214a811b9204ed4890d471016d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6940d974da7dcbdefc7f2ee929bef6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#aa6940d974da7dcbdefc7f2ee929bef6e">Translation</a> (const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;Pos)</td></tr>
+<tr class="separator:aa6940d974da7dcbdefc7f2ee929bef6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31c2d8ea716f379285284ee49e5234dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a31c2d8ea716f379285284ee49e5234dd">Move</a> (const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;Move)</td></tr>
+<tr class="separator:a31c2d8ea716f379285284ee49e5234dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c947453060b4aa6f8ac1a47ae0bbc38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a5c947453060b4aa6f8ac1a47ae0bbc38">Scale</a> (const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;Scale)</td></tr>
+<tr class="separator:a5c947453060b4aa6f8ac1a47ae0bbc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af16db8b101b4a16f95b5ddd1bb661c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a2af16db8b101b4a16f95b5ddd1bb661c">Rotation</a> (const float Yaw, const float Pitch, const float Roll)</td></tr>
+<tr class="separator:a2af16db8b101b4a16f95b5ddd1bb661c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35fa7ecf56d7f658d9f143f628b307fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a35fa7ecf56d7f658d9f143f628b307fb">RotationX</a> (const float teta)</td></tr>
+<tr class="separator:a35fa7ecf56d7f658d9f143f628b307fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1676488e903148bca59e2e3c93643438"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a1676488e903148bca59e2e3c93643438">RotationY</a> (const float teta)</td></tr>
+<tr class="separator:a1676488e903148bca59e2e3c93643438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cdb32fa9ddc0382f777941c0d686502"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a7cdb32fa9ddc0382f777941c0d686502">RotationZ</a> (const float teta)</td></tr>
+<tr class="separator:a7cdb32fa9ddc0382f777941c0d686502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c1cbcf2abe2c222019700edc4a94e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a34c1cbcf2abe2c222019700edc4a94e2">LookAt</a> (const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;Eye, const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;At, const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;Up)</td></tr>
+<tr class="separator:a34c1cbcf2abe2c222019700edc4a94e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6990391283d108de0d8067e10f0cf713"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a6990391283d108de0d8067e10f0cf713">Projection</a> (float Width, float Height, float ZNear, float ZFar)</td></tr>
+<tr class="separator:a6990391283d108de0d8067e10f0cf713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bcd28031fa004995f010c7950de59bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a3bcd28031fa004995f010c7950de59bc">ProjectionFov</a> (float FOV, float Aspect, float ZNear, float ZFar)</td></tr>
+<tr class="separator:a3bcd28031fa004995f010c7950de59bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c142fdd0f787b996d2b415c5ddb0546"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a5c142fdd0f787b996d2b415c5ddb0546">Orthogonal</a> (float Width, float Height, float ZNear, float ZFar)</td></tr>
+<tr class="separator:a5c142fdd0f787b996d2b415c5ddb0546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c20120e126f1218ef124a9bd96f9d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a55c20120e126f1218ef124a9bd96f9d0">Reflection</a> (<a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> NormalOfMirror)</td></tr>
+<tr class="separator:a55c20120e126f1218ef124a9bd96f9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6ef19722ffdace7c8b3e964dcd45823"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#ac6ef19722ffdace7c8b3e964dcd45823">ptr</a> ()</td></tr>
 <tr class="separator:ac6ef19722ffdace7c8b3e964dcd45823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39c705cd2fddad455a110bc333b82b0a"><td class="memItemLeft" align="right" valign="top">const float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a39c705cd2fddad455a110bc333b82b0a">ptr</a> () const</td></tr>
@@ -132,6 +165,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5917fdd91bad190195d6aa12a12449f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e176d8b8f0e31acb586d20c3765bf39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a9e176d8b8f0e31acb586d20c3765bf39">operator*=</a> (const float S)</td></tr>
 <tr class="separator:a9e176d8b8f0e31acb586d20c3765bf39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6e8838339eb6f4ed138c9ce5749020"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a2b6e8838339eb6f4ed138c9ce5749020">operator/</a> (const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;M) const</td></tr>
+<tr class="separator:a2b6e8838339eb6f4ed138c9ce5749020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72a0ca37cf30228fe7b4cb6ebdb8c3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#af72a0ca37cf30228fe7b4cb6ebdb8c3e">operator/=</a> (const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;M)</td></tr>
+<tr class="separator:af72a0ca37cf30228fe7b4cb6ebdb8c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abacae6ac316fc50d9e764adee8334e85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#abacae6ac316fc50d9e764adee8334e85">operator==</a> (const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;M)</td></tr>
 <tr class="separator:abacae6ac316fc50d9e764adee8334e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7895bd13e9b7ee8079148550ef70114b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html#a7895bd13e9b7ee8079148550ef70114b">operator!=</a> (const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;M)</td></tr>
@@ -162,13 +199,20 @@ union {</td></tr>
 <tr class="separator:a2ade268cea6611c338c3aee74e904cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d36123916276477e42d6ee3670ef6c2"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a0d36123916276477e42d6ee3670ef6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa75abf759b5bfede3343921f47ea4338"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a>&#160;</td><td class="memItemRight" valign="bottom"><b>identityMat4x4</b></td></tr>
+<tr class="separator:aa75abf759b5bfede3343921f47ea4338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18425f01b2a62214095a5bfae1a7627d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zerosMat4x4</b></td></tr>
+<tr class="separator:a18425f01b2a62214095a5bfae1a7627d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Matrix with 4x4 elements</p>
 <p>Sample usage: <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> matrixName; </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a696c5b9c5a3ae92bec287ffea2bab475"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a696c5b9c5a3ae92bec287ffea2bab475">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a696c5b9c5a3ae92bec287ffea2bab475">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +231,7 @@ union {</td></tr>
 </div>
 </div>
 <a id="ab4488ccdabfe2ae9a23b71827ddb5dd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4488ccdabfe2ae9a23b71827ddb5dd0">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4488ccdabfe2ae9a23b71827ddb5dd0">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,8 +259,65 @@ union {</td></tr>
 
 </div>
 </div>
+<a id="affb22fb684c125eca70b53c18c06d590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affb22fb684c125eca70b53c18c06d590">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">driderSDK::Matrix4x4::Matrix4x4 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_matrix3x3.html">Matrix3x3</a> &amp;&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>TEST::Constructor3x3</p>
+<p>Constructor for matrix3x3</p>
+<p>Values are initialized with values for matrix3x3 vector0, vector1 and vector2 values of w initialize in 0 except vector4.w in 1 </p>
+
+</div>
+</div>
+<a id="ac93143c996786c4e4333e8f3ed012563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93143c996786c4e4333e8f3ed012563">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">driderSDK::Matrix4x4::Matrix4x4 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
+          <td class="paramname"><em>Q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>TEST::ConstructorQuaternion</p>
+<p>Constructor for quaternion values of w intitalize in 0 and vector4.w in 1 </p>
+
+</div>
+</div>
 <a id="a2aa83bb9dd8c644bc98c0fde7c77d171"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2aa83bb9dd8c644bc98c0fde7c77d171">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa83bb9dd8c644bc98c0fde7c77d171">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +345,7 @@ union {</td></tr>
 </div>
 </div>
 <a id="ac266ab96b1bfc7596493518657347e21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac266ab96b1bfc7596493518657347e21">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac266ab96b1bfc7596493518657347e21">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -264,7 +365,7 @@ union {</td></tr>
 </div>
 </div>
 <a id="ac02c69c1208e330998c5f9273c210321"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac02c69c1208e330998c5f9273c210321">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02c69c1208e330998c5f9273c210321">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[7/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,7 +487,7 @@ union {</td></tr>
 </div>
 </div>
 <a id="af45cb839de51a6ac04d1f0930c3b80b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af45cb839de51a6ac04d1f0930c3b80b8">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af45cb839de51a6ac04d1f0930c3b80b8">&#9670;&nbsp;</a></span>Matrix4x4() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -457,14 +558,14 @@ union {</td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af11d4d0c46eaca07f45f9facda94a3d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af11d4d0c46eaca07f45f9facda94a3d7">&#9670;&nbsp;</a></span>adjugate()</h2>
+<a id="adf9d5014db215f98949c64406e7619f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf9d5014db215f98949c64406e7619f7">&#9670;&nbsp;</a></span>adjugate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void driderSDK::Matrix4x4::adjugate </td>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::adjugate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -477,14 +578,14 @@ union {</td></tr>
 
 </div>
 </div>
-<a id="a4da17c3d74556ed7c15319bee90111d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4da17c3d74556ed7c15319bee90111d2">&#9670;&nbsp;</a></span>cofactor()</h2>
+<a id="a4fd4010a695e1db83d2ad4487bd7a623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd4010a695e1db83d2ad4487bd7a623">&#9670;&nbsp;</a></span>cofactor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void driderSDK::Matrix4x4::cofactor </td>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::cofactor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -517,14 +618,72 @@ union {</td></tr>
 
 </div>
 </div>
-<a id="a56ab21663e69a6d5fc85ad9f5458765e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56ab21663e69a6d5fc85ad9f5458765e">&#9670;&nbsp;</a></span>identity()</h2>
+<a id="a5449fe73eeceef347eafc3f41d5fce08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5449fe73eeceef347eafc3f41d5fce08">&#9670;&nbsp;</a></span>equals()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void driderSDK::Matrix4x4::identity </td>
+          <td class="memname">bool driderSDK::Matrix4x4::equals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td>
+          <td class="paramname"><em>otherMatrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>errorRange</em> = <code>Math::SMALL_NUMBER</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::equals</p>
+<p>Check's if the other matrix is equal to this matrix with an error range.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">otherMatrix</td><td>Matrix to compare with this matrix.</td></tr>
+    <tr><td class="paramname">errorRange</td><td>The value of the error range.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool expression of condition. </dd></dl>
+
+</div>
+</div>
+<a id="af0ed214a811b9204ed4890d471016d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ed214a811b9204ed4890d471016d70">&#9670;&nbsp;</a></span>eulerAngles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> driderSDK::Matrix4x4::eulerAngles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::toEulerAngle</p>
+<p>Euler angles form quaternion.</p>
+<dl class="section return"><dt>Returns</dt><dd>vextor3d to values of angles. </dd></dl>
+
+</div>
+</div>
+<a id="ac916c427e4179ef926f88d0f03e8f3f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac916c427e4179ef926f88d0f03e8f3f9">&#9670;&nbsp;</a></span>identity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::identity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -537,14 +696,14 @@ union {</td></tr>
 
 </div>
 </div>
-<a id="aeca61e0c536625a96ad40b693604d40a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeca61e0c536625a96ad40b693604d40a">&#9670;&nbsp;</a></span>inverse()</h2>
+<a id="a554ca5b6c83acc64f440f8d20469c16b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554ca5b6c83acc64f440f8d20469c16b">&#9670;&nbsp;</a></span>inverse()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void driderSDK::Matrix4x4::inverse </td>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::inverse </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -553,6 +712,62 @@ union {</td></tr>
 </div><div class="memdoc">
 <p>TEST::inverse</p>
 <p>Calculate inverse of matrix. using det * adjugate </p>
+
+</div>
+</div>
+<a id="a34c1cbcf2abe2c222019700edc4a94e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c1cbcf2abe2c222019700edc4a94e2">&#9670;&nbsp;</a></span>LookAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::LookAt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>Eye</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>At</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>Up</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::LookAt </p>
+
+</div>
+</div>
+<a id="a31c2d8ea716f379285284ee49e5234dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c2d8ea716f379285284ee49e5234dd">&#9670;&nbsp;</a></span>Move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::Move </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>Move</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::Move</p>
+<p>Move</p>
+<p>Add position to vector </p>
 
 </div>
 </div>
@@ -746,6 +961,44 @@ union {</td></tr>
 
 </div>
 </div>
+<a id="a2b6e8838339eb6f4ed138c9ce5749020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b6e8838339eb6f4ed138c9ce5749020">&#9670;&nbsp;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> driderSDK::Matrix4x4::operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::operatorDivide </p>
+
+</div>
+</div>
+<a id="af72a0ca37cf30228fe7b4cb6ebdb8c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72a0ca37cf30228fe7b4cb6ebdb8c3e">&#9670;&nbsp;</a></span>operator/=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::operator/= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td>
+          <td class="paramname"><em>M</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::operatorDivideEqual </p>
+
+</div>
+</div>
 <a id="a99921a1d4775e7c8166084ea427d9d62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99921a1d4775e7c8166084ea427d9d62">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
@@ -780,7 +1033,7 @@ union {</td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TEST::operatorEqualMatrix3x3 </p>
+<p>TEST::operatorEqualMatrix3x3 w value not modified or asigned </p>
 
 </div>
 </div>
@@ -819,6 +1072,130 @@ union {</td></tr>
       </table>
 </div><div class="memdoc">
 <p>TEST::forceInit </p>
+
+</div>
+</div>
+<a id="a5c142fdd0f787b996d2b415c5ddb0546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c142fdd0f787b996d2b415c5ddb0546">&#9670;&nbsp;</a></span>Orthogonal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::Orthogonal </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ZNear</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ZFar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::Orthogonal </p>
+
+</div>
+</div>
+<a id="a6990391283d108de0d8067e10f0cf713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6990391283d108de0d8067e10f0cf713">&#9670;&nbsp;</a></span>Projection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::Projection </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ZNear</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ZFar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::Projection</p>
+<p>MAtrix for look at for camera </p>
+
+</div>
+</div>
+<a id="a3bcd28031fa004995f010c7950de59bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bcd28031fa004995f010c7950de59bc">&#9670;&nbsp;</a></span>ProjectionFov()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::ProjectionFov </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>FOV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Aspect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ZNear</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ZFar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::ProjectionFov </p>
 
 </div>
 </div>
@@ -862,14 +1239,175 @@ union {</td></tr>
 
 </div>
 </div>
-<a id="a646a2c43fc8c748fd58e5d9b707b1d27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a646a2c43fc8c748fd58e5d9b707b1d27">&#9670;&nbsp;</a></span>transpose()</h2>
+<a id="a55c20120e126f1218ef124a9bd96f9d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55c20120e126f1218ef124a9bd96f9d0">&#9670;&nbsp;</a></span>Reflection()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void driderSDK::Matrix4x4::transpose </td>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::Reflection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a>&#160;</td>
+          <td class="paramname"><em>NormalOfMirror</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::Reflection </p>
+
+</div>
+</div>
+<a id="a2af16db8b101b4a16f95b5ddd1bb661c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af16db8b101b4a16f95b5ddd1bb661c">&#9670;&nbsp;</a></span>Rotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::Rotation </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>Yaw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>Pitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>Roll</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::Rotation</p>
+<p>Rotation</p>
+<p>Aplication rotation z, x, y </p>
+
+</div>
+</div>
+<a id="a35fa7ecf56d7f658d9f143f628b307fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35fa7ecf56d7f658d9f143f628b307fb">&#9670;&nbsp;</a></span>RotationX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::RotationX </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>teta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::RotationX</p>
+<p>Rotation</p>
+<p>Aplication rotation x </p>
+
+</div>
+</div>
+<a id="a1676488e903148bca59e2e3c93643438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1676488e903148bca59e2e3c93643438">&#9670;&nbsp;</a></span>RotationY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::RotationY </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>teta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::RotationY</p>
+<p>RotationY</p>
+<p>Aplication rotation Y </p>
+
+</div>
+</div>
+<a id="a7cdb32fa9ddc0382f777941c0d686502"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cdb32fa9ddc0382f777941c0d686502">&#9670;&nbsp;</a></span>RotationZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::RotationZ </td>
+          <td>(</td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>teta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::RotationZ</p>
+<p>RotationZ</p>
+<p>Aplication rotation Z </p>
+
+</div>
+</div>
+<a id="a5c947453060b4aa6f8ac1a47ae0bbc38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c947453060b4aa6f8ac1a47ae0bbc38">&#9670;&nbsp;</a></span>Scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::Scale </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>Scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::Scale</p>
+<p>Scale</p>
+<p>Change scale of matrix </p>
+
+</div>
+</div>
+<a id="aa6940d974da7dcbdefc7f2ee929bef6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6940d974da7dcbdefc7f2ee929bef6e">&#9670;&nbsp;</a></span>Translation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::Translation </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>Pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TEST::Translation</p>
+<p>Translate</p>
+<p>Change position to vector </p>
+
+</div>
+</div>
+<a id="aea8bbe2922fbe474ccf23f0b22649d7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea8bbe2922fbe474ccf23f0b22649d7c">&#9670;&nbsp;</a></span>transpose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Matrix4x4::transpose </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -880,6 +1418,51 @@ union {</td></tr>
 <p>Transpose</p>
 <p>Invert columns whith rows | A1 | A2 | A3 | A4 |T | A1 | B1 | C1 | D1 | | B1 | B2 | B3 | B4 | | A2 | B2 | C2 | D2 | | C1 | C2 | C3 | C4 | = | A3 | B3 | C3 | D3 | | D1 | D2 | D3 | C4 | | A4 | B4 | C4 | D4 | </p>
 
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa75abf759b5bfede3343921f47ea4338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75abf759b5bfede3343921f47ea4338">&#9670;&nbsp;</a></span>identityMat4x4</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> driderSDK::Matrix4x4::identityMat4x4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="classdrider_s_d_k_1_1_matrix4x4.html#a696c5b9c5a3ae92bec287ffea2bab475">Matrix4x4</a>(1.f, 0.f, 0.f, 0.f,</div><div class="line">                          0.f, 1.f, 0.f, 0.f,</div><div class="line">                          0.f, 0.f, 1.f, 0.f,</div><div class="line">                          0.f, 0.f, 0.f, 1.f)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a18425f01b2a62214095a5bfae1a7627d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18425f01b2a62214095a5bfae1a7627d">&#9670;&nbsp;</a></span>zerosMat4x4</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> driderSDK::Matrix4x4::zerosMat4x4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code" href="classdrider_s_d_k_1_1_matrix4x4.html#a696c5b9c5a3ae92bec287ffea2bab475">Matrix4x4</a>(0.f, 0.f, 0.f, 0.f,</div><div class="line">                       0.f, 0.f, 0.f, 0.f,</div><div class="line">                       0.f, 0.f, 0.f, 0.f,</div><div class="line">                       0.f, 0.f, 0.f, 0.f)</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
