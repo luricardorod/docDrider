@@ -69,6 +69,7 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -81,6 +82,8 @@ Inheritance diagram for driderSDK::Node:</div>
  <div class="center">
   <img src="classdrider_s_d_k_1_1_node.png" usemap="#driderSDK::Node_map" alt=""/>
   <map id="driderSDK::Node_map" name="driderSDK::Node_map">
+<area href="classdrider_s_d_k_1_1_game_object.html" alt="driderSDK::GameObject" shape="rect" coords="0,112,230,136"/>
+<area href="classdrider_s_d_k_1_1_root_node.html" alt="driderSDK::RootNode" shape="rect" coords="240,112,470,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -97,9 +100,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>WeakNode</b> = std::
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a865028a91586a45a4889183c37b1f9a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_node.html#a865028a91586a45a4889183c37b1f9a2">Node</a> (const TString &amp;_name, WeakNode _parent=WeakNode())</td></tr>
 <tr class="separator:a865028a91586a45a4889183c37b1f9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaedaab50848f0961ae8057ff83bd9f3b"><td class="memItemLeft" align="right" valign="top"><a id="aaedaab50848f0961ae8057ff83bd9f3b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;accumulatedTransform)</td></tr>
-<tr class="separator:aaedaab50848f0961ae8057ff83bd9f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154450a6fd51a4eebad2d8a53363b3fb"><td class="memItemLeft" align="right" valign="top"><a id="a154450a6fd51a4eebad2d8a53363b3fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
+<tr class="separator:a154450a6fd51a4eebad2d8a53363b3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e6130bd9a9884cad1e4522fb3c311a"><td class="memItemLeft" align="right" valign="top"><a id="af5e6130bd9a9884cad1e4522fb3c311a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addChild</b> (SharedNode child)</td></tr>
 <tr class="separator:af5e6130bd9a9884cad1e4522fb3c311a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,15 +112,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (Shared
 <tr class="memitem:a5e15e11b4d70c9f9de8f63a369883dc4"><td class="memItemLeft" align="right" valign="top"><a id="a5e15e11b4d70c9f9de8f63a369883dc4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (const TString &amp;name)</td></tr>
 <tr class="separator:a5e15e11b4d70c9f9de8f63a369883dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a831e910ecb207c0c23beb31e5accd3f8"><td class="memItemLeft" align="right" valign="top"><a id="a831e910ecb207c0c23beb31e5accd3f8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>removeChild</b> (const TString &amp;childName)</td></tr>
-<tr class="separator:a831e910ecb207c0c23beb31e5accd3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1acb036a32fc7a63f944880c1cc4e927"><td class="memItemLeft" align="right" valign="top"><a id="a1acb036a32fc7a63f944880c1cc4e927"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeChild</b> (SharedNode child)</td></tr>
 <tr class="separator:a1acb036a32fc7a63f944880c1cc4e927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9976253f1cdad2d9eefc6ad14b461339"><td class="memItemLeft" align="right" valign="top"><a id="a9976253f1cdad2d9eefc6ad14b461339"></a>
-TString&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> ()</td></tr>
-<tr class="separator:a9976253f1cdad2d9eefc6ad14b461339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec4721c98e6c8fcdc92fa9a544b1810"><td class="memItemLeft" align="right" valign="top"><a id="a6ec4721c98e6c8fcdc92fa9a544b1810"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeChildren</b> ()</td></tr>
+<tr class="separator:a6ec4721c98e6c8fcdc92fa9a544b1810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0f13c575da097d9cf6fee34ac047b8"><td class="memItemLeft" align="right" valign="top"><a id="a3e0f13c575da097d9cf6fee34ac047b8"></a>
+const TString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> ()</td></tr>
+<tr class="separator:a3e0f13c575da097d9cf6fee34ac047b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4c87aef9da4a544969201b69674104c"><td class="memItemLeft" align="right" valign="top"><a id="aa4c87aef9da4a544969201b69674104c"></a>
 SharedNode&#160;</td><td class="memItemRight" valign="bottom"><b>getParent</b> ()</td></tr>
 <tr class="separator:aa4c87aef9da4a544969201b69674104c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,14 +137,20 @@ Public Attributes</h2></td></tr>
 <a class="el" href="classdrider_s_d_k_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>transform</b></td></tr>
 <tr class="separator:a4829f63441904c0ba604300297e6d5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7a6f3fecd9d92d2c9d04355f0ce0ac33"><td class="memItemLeft" align="right" valign="top"><a id="a7a6f3fecd9d92d2c9d04355f0ce0ac33"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>updateImpl</b> ()</td></tr>
+<tr class="separator:a7a6f3fecd9d92d2c9d04355f0ce0ac33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ae7b663c9555984615dac1684d14d8200"><td class="memItemLeft" align="right" valign="top"><a id="ae7b663c9555984615dac1684d14d8200"></a>
 <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_finalTransform</b></td></tr>
 <tr class="separator:ae7b663c9555984615dac1684d14d8200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a278114af4c3da3438aad137fac959d83"><td class="memItemLeft" align="right" valign="top"><a id="a278114af4c3da3438aad137fac959d83"></a>
-std::vector&lt; SharedNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_childs</b></td></tr>
-<tr class="separator:a278114af4c3da3438aad137fac959d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0543b4ace1bbfaeb1ef2da357f0db4f"><td class="memItemLeft" align="right" valign="top"><a id="ad0543b4ace1bbfaeb1ef2da357f0db4f"></a>
+std::vector&lt; SharedNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_children</b></td></tr>
+<tr class="separator:ad0543b4ace1bbfaeb1ef2da357f0db4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1eb93f83624117e1e148f1779c7bfea"><td class="memItemLeft" align="right" valign="top"><a id="aa1eb93f83624117e1e148f1779c7bfea"></a>
 WeakNode&#160;</td><td class="memItemRight" valign="bottom"><b>m_parent</b></td></tr>
 <tr class="separator:aa1eb93f83624117e1e148f1779c7bfea"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -93,9 +93,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a265040c3fafcdcd8293a8b93653e8611"><td class="memItemLeft" align="right" valign="top"><a id="a265040c3fafcdcd8293a8b93653e8611"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>NodesRefMap</b> = std::unordered_map&lt; String, <a class="el" href="structdrider_s_d_k_1_1_skeleton_1_1_node_data.html">Skeleton::NodeData</a> * &gt;</td></tr>
-<tr class="separator:a265040c3fafcdcd8293a8b93653e8611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b6a0609865c46461ea9f80140d1db76"><td class="memItemLeft" align="right" valign="top"><a id="a2b6a0609865c46461ea9f80140d1db76"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>NodesRefMap</b> = std::unordered_map&lt; TString, <a class="el" href="structdrider_s_d_k_1_1_skeleton_1_1_node_data.html">Skeleton::NodeData</a> * &gt;</td></tr>
+<tr class="separator:a2b6a0609865c46461ea9f80140d1db76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -116,6 +116,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>loadIndices</b> (cons
 <tr class="memitem:a5373fbdd9d7edeed21f9d1be9663bfc7"><td class="memItemLeft" align="right" valign="top"><a id="a5373fbdd9d7edeed21f9d1be9663bfc7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadSkeleton</b> (const aiScene &amp;model, <a class="el" href="structdrider_s_d_k_1_1_model_info.html">ModelInfo</a> &amp;outModel, <a class="el" href="classdrider_s_d_k_1_1_skeleton.html">Skeleton</a> &amp;outSkeleton)</td></tr>
 <tr class="separator:a5373fbdd9d7edeed21f9d1be9663bfc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706ae499f0bb3a7399584edcee6bb938"><td class="memItemLeft" align="right" valign="top"><a id="a706ae499f0bb3a7399584edcee6bb938"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadMaterials</b> (const aiScene &amp;model)</td></tr>
+<tr class="separator:a706ae499f0bb3a7399584edcee6bb938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f457c0c32699f9c6bf0a59c94789316"><td class="memItemLeft" align="right" valign="top"><a id="a2f457c0c32699f9c6bf0a59c94789316"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadAnimations</b> (const aiScene &amp;model, <a class="el" href="structdrider_s_d_k_1_1_model_info.html">ModelInfo</a> &amp;outModel)</td></tr>
+<tr class="separator:a2f457c0c32699f9c6bf0a59c94789316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a820c3e62a8ce9497a495eb0eddc76372"><td class="memItemLeft" align="right" valign="top"><a id="a820c3e62a8ce9497a495eb0eddc76372"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>buildTree</b> (const aiNode *pNodeSrc, <a class="el" href="structdrider_s_d_k_1_1_skeleton_1_1_node_data.html">Skeleton::NodeData</a> *pNode, NodesRefMap &amp;nodesRefs)</td></tr>
 <tr class="separator:a820c3e62a8ce9497a495eb0eddc76372"><td class="memSeparator" colspan="2">&#160;</td></tr>

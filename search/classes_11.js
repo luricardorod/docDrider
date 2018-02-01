@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['vector2d',['Vector2D',['../classdrider_s_d_k_1_1_vector2_d.html',1,'driderSDK']]],
-  ['vector2di',['Vector2DI',['../classdrider_s_d_k_1_1_vector2_d_i.html',1,'driderSDK']]],
-  ['vector3d',['Vector3D',['../classdrider_s_d_k_1_1_vector3_d.html',1,'driderSDK']]],
-  ['vector4d',['Vector4D',['../classdrider_s_d_k_1_1_vector4_d.html',1,'driderSDK']]],
-  ['vectorn',['VectorN',['../classdrider_s_d_k_1_1_vector_n.html',1,'driderSDK']]],
-  ['vertex',['Vertex',['../structdrider_s_d_k_1_1_vertex.html',1,'driderSDK::Vertex'],['../structvertex.html',1,'vertex']]],
-  ['vertexbuffer',['VertexBuffer',['../classdrider_s_d_k_1_1_vertex_buffer.html',1,'driderSDK']]],
-  ['vertexshader',['VertexShader',['../classdrider_s_d_k_1_1_vertex_shader.html',1,'driderSDK']]],
-  ['viewport',['Viewport',['../structdrider_s_d_k_1_1_viewport.html',1,'driderSDK']]]
+  ['radian',['Radian',['../classdrider_s_d_k_1_1_radian.html',1,'driderSDK']]],
+  ['rasterizerstate',['RasterizerState',['../classdrider_s_d_k_1_1_rasterizer_state.html',1,'driderSDK']]],
+  ['ray',['Ray',['../classdrider_s_d_k_1_1_ray.html',1,'driderSDK']]],
+  ['renderpass',['RenderPass',['../classdrider_s_d_k_1_1_render_pass.html',1,'driderSDK']]],
+  ['rendertarget',['RenderTarget',['../classdrider_s_d_k_1_1_render_target.html',1,'driderSDK']]],
+  ['resource',['Resource',['../classdrider_s_d_k_1_1_resource.html',1,'driderSDK']]],
+  ['resourcefactory',['ResourceFactory',['../classdrider_s_d_k_1_1_resource_factory.html',1,'driderSDK']]],
+  ['resourcemanager',['ResourceManager',['../classdrider_s_d_k_1_1_resource_manager.html',1,'driderSDK']]],
+  ['rootnode',['RootNode',['../classdrider_s_d_k_1_1_root_node.html',1,'driderSDK']]]
 ];

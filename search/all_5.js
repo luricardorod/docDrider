@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['face',['Face',['../structdrider_s_d_k_1_1_face.html',1,'driderSDK']]],
   ['fast_5facos',['fast_aCos',['../structdrider_s_d_k_1_1_math.html#a95344b3e95ffadaff537496fec0ed86d',1,'driderSDK::Math']]],
   ['fast_5fasin',['fast_aSin',['../structdrider_s_d_k_1_1_math.html#a178023ce94bf4acbaea82b3a2541b941',1,'driderSDK::Math']]],
   ['fast_5fatan',['fast_aTan',['../structdrider_s_d_k_1_1_math.html#a6dfb1ac975ea477e9c79151b4d3b5a04',1,'driderSDK::Math']]],
@@ -11,9 +12,15 @@ var searchData=
   ['fast_5ftan',['fast_tan',['../structdrider_s_d_k_1_1_math.html#a63ee90c1db4bc0dd9e730f2cfafaf8a4',1,'driderSDK::Math']]],
   ['file',['File',['../classdrider_s_d_k_1_1_file.html',1,'driderSDK::File'],['../classdrider_s_d_k_1_1_file.html#a7ac9c7585634519628feb46c0142e623',1,'driderSDK::File::File()']]],
   ['filesystem',['FileSystem',['../classdrider_s_d_k_1_1_file_system.html',1,'driderSDK::FileSystem'],['../classdrider_s_d_k_1_1_file_system.html#afc691cb65f0c6b9c836d5ff756e8695a',1,'driderSDK::FileSystem::FileSystem()']]],
+  ['floatproperty',['FloatProperty',['../structdrider_s_d_k_1_1_material_1_1_float_property.html',1,'driderSDK::Material']]],
   ['floor',['floor',['../structdrider_s_d_k_1_1_math.html#a14e73719d2870c36b2f8db5342812be1',1,'driderSDK::Math']]],
+  ['fmodchannel',['FMODChannel',['../classdrider_s_d_k_1_1_f_m_o_d_channel.html',1,'driderSDK']]],
+  ['fmodchannelgroup',['FMODChannelGroup',['../classdrider_s_d_k_1_1_f_m_o_d_channel_group.html',1,'driderSDK']]],
+  ['fmodcreatesoundexinfo',['FMODCreateSoundExInfo',['../classdrider_s_d_k_1_1_f_m_o_d_create_sound_ex_info.html',1,'driderSDK']]],
+  ['fmodsound',['FMODSound',['../classdrider_s_d_k_1_1_f_m_o_d_sound.html',1,'driderSDK']]],
+  ['fmodsoundapi',['FMODSoundAPI',['../classdrider_s_d_k_1_1_f_m_o_d_sound_a_p_i.html',1,'driderSDK']]],
+  ['fmodsoundsystem',['FMODSoundSystem',['../classdrider_s_d_k_1_1_f_m_o_d_sound_system.html',1,'driderSDK']]],
   ['force_5finit',['FORCE_INIT',['../structdrider_s_d_k_1_1_math.html#af7adf3f4a348dfa0f1eb5532acab60e3',1,'driderSDK::Math']]],
-  ['fragmentshader',['FragmentShader',['../classdrider_s_d_k_1_1_fragment_shader.html',1,'driderSDK']]],
   ['freetexture',['freeTexture',['../structdrider_s_d_k_1_1_loader.html#abee0c0f307248214c4af5be0589647a5',1,'driderSDK::Loader']]],
   ['frustrum',['Frustrum',['../classdrider_s_d_k_1_1_frustrum.html',1,'driderSDK::Frustrum'],['../classdrider_s_d_k_1_1_frustrum.html#a29699fd374b8ca67fec026417f62cb7b',1,'driderSDK::Frustrum::Frustrum()'],['../classdrider_s_d_k_1_1_frustrum.html#a4a79e8234bbf25c8cf850f01a6485a1a',1,'driderSDK::Frustrum::Frustrum(const Matrix4x4 &amp;ViewProjection)']]],
   ['frustrumfrustrum',['frustrumFrustrum',['../structdrider_s_d_k_1_1_intersect.html#ac5987744cf7a7b1c11b430f6611b9379',1,'driderSDK::Intersect']]],

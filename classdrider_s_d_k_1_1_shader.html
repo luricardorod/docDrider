@@ -81,14 +81,13 @@ Inheritance diagram for driderSDK::Shader:</div>
  <div class="center">
   <img src="classdrider_s_d_k_1_1_shader.png" usemap="#driderSDK::Shader_map" alt=""/>
   <map id="driderSDK::Shader_map" name="driderSDK::Shader_map">
-<area href="classdrider_s_d_k_1_1_compute_shader.html" alt="driderSDK::ComputeShader" shape="rect" coords="185,56,360,80"/>
-<area href="classdrider_s_d_k_1_1_domain_shader.html" alt="driderSDK::DomainShader" shape="rect" coords="185,112,360,136"/>
-<area href="classdrider_s_d_k_1_1_fragment_shader.html" alt="driderSDK::FragmentShader" shape="rect" coords="185,168,360,192"/>
-<area href="classdrider_s_d_k_1_1_geometry_shader.html" alt="driderSDK::GeometryShader" shape="rect" coords="185,224,360,248"/>
-<area href="classdrider_s_d_k_1_1_hull_shader.html" alt="driderSDK::HullShader" shape="rect" coords="185,280,360,304"/>
-<area href="classdrider_s_d_k_1_1_teselation_shader.html" alt="driderSDK::TeselationShader" shape="rect" coords="185,336,360,360"/>
-<area href="classdrider_s_d_k_1_1_texture_shader.html" alt="driderSDK::TextureShader" shape="rect" coords="185,392,360,416"/>
-<area href="classdrider_s_d_k_1_1_vertex_shader.html" alt="driderSDK::VertexShader" shape="rect" coords="185,448,360,472"/>
+<area href="classdrider_s_d_k_1_1_d3_d_shader.html" alt="driderSDK::D3DShader" shape="rect" coords="517,56,714,80"/>
+<area href="classdrider_s_d_k_1_1_d3_d_compute_shader.html" alt="driderSDK::D3DComputeShader" shape="rect" coords="0,112,197,136"/>
+<area href="classdrider_s_d_k_1_1_d3_d_domain_shader.html" alt="driderSDK::D3DDomainShader" shape="rect" coords="207,112,404,136"/>
+<area href="classdrider_s_d_k_1_1_d3_d_fragment_shader.html" alt="driderSDK::D3DFragmentShader" shape="rect" coords="414,112,611,136"/>
+<area href="classdrider_s_d_k_1_1_d3_d_geometry_shader.html" alt="driderSDK::D3DGeometryShader" shape="rect" coords="621,112,818,136"/>
+<area href="classdrider_s_d_k_1_1_d3_d_hull_shader.html" alt="driderSDK::D3DHullShader" shape="rect" coords="828,112,1025,136"/>
+<area href="classdrider_s_d_k_1_1_d3_d_vertex_shader.html" alt="driderSDK::D3DVertexShader" shape="rect" coords="1035,112,1232,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -111,6 +110,9 @@ virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObje
 <tr class="memitem:aa928f39796a3d156c1e351f39c67d523"><td class="memItemLeft" align="right" valign="top"><a id="aa928f39796a3d156c1e351f39c67d523"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>compile</b> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const char *buffer, size_t bufferSize)=0</td></tr>
 <tr class="separator:aa928f39796a3d156c1e351f39c67d523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b24f133568878e3fe59b96244e2f1d0"><td class="memItemLeft" align="right" valign="top"><a id="a1b24f133568878e3fe59b96244e2f1d0"></a>
+virtual std::vector&lt; <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>reflect</b> ()=0</td></tr>
+<tr class="separator:a1b24f133568878e3fe59b96244e2f1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>

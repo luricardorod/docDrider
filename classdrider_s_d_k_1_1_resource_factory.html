@@ -77,24 +77,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3a48a364c26f10d27f9a991742663e0c"><td class="memItemLeft" align="right" valign="top"><a id="a3a48a364c26f10d27f9a991742663e0c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceCreator</b> = std::function&lt; std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt;()&gt;</td></tr>
-<tr class="separator:a3a48a364c26f10d27f9a991742663e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2040b7b6dffe996ba920d5c01fd54376"><td class="memItemLeft" align="right" valign="top"><a id="a2040b7b6dffe996ba920d5c01fd54376"></a>
-typedef std::unordered_map&lt; CompatibleType::E, ResourceCreator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FactoryMap</b></td></tr>
-<tr class="separator:a2040b7b6dffe996ba920d5c01fd54376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6acb694ef9134b2999c2ef3a2536360"><td class="memItemLeft" align="right" valign="top"><a id="af6acb694ef9134b2999c2ef3a2536360"></a>
+typedef std::unordered_map&lt; CompatibleType::E, CreateResourceFn &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FactoryMap</b></td></tr>
+<tr class="separator:af6acb694ef9134b2999c2ef3a2536360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a3d1971202b4b5c49677035ab9b366469"><td class="memItemLeft" align="right" valign="top"><a id="a3d1971202b4b5c49677035ab9b366469"></a>
+typedef&#160;</td><td class="memItemRight" valign="bottom"><b>std::shared_ptr</b> (__stdcall *CreateResourceFn)(TString)</td></tr>
+<tr class="separator:a3d1971202b4b5c49677035ab9b366469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a473259e71162c0bda11f99ec5b6725"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_factory.html#a0a473259e71162c0bda11f99ec5b6725">ResourceFactory</a> ()</td></tr>
 <tr class="separator:a0a473259e71162c0bda11f99ec5b6725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fa603dfebd16459b49156049bd4a7fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_factory.html#a7fa603dfebd16459b49156049bd4a7fc">~ResourceFactory</a> ()</td></tr>
 <tr class="separator:a7fa603dfebd16459b49156049bd4a7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e9bf64036bb2e17fb65409bad9e89cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_factory.html#a4e9bf64036bb2e17fb65409bad9e89cd">Register</a> (CompatibleType::E type, ResourceCreator pfnCreate)</td></tr>
-<tr class="separator:a4e9bf64036bb2e17fb65409bad9e89cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4081bcf0700e230ae30e67150d148209"><td class="memItemLeft" align="right" valign="top"><a id="a4081bcf0700e230ae30e67150d148209"></a>
-std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateResource</b> (CompatibleType::E type)</td></tr>
-<tr class="separator:a4081bcf0700e230ae30e67150d148209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb4ecb1b52a283fb9722ab42a2ef7ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_factory.html#aaeb4ecb1b52a283fb9722ab42a2ef7ed">Register</a> (CompatibleType::E type, CreateResourceFn pfnCreate)</td></tr>
+<tr class="separator:aaeb4ecb1b52a283fb9722ab42a2ef7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe8f08b8674beaf7ba487b0770d6ec8"><td class="memItemLeft" align="right" valign="top"><a id="abfe8f08b8674beaf7ba487b0770d6ec8"></a>
+std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateResource</b> (<a class="el" href="classdrider_s_d_k_1_1_codec.html">Codec</a> *codec, TString resourceName)</td></tr>
+<tr class="separator:abfe8f08b8674beaf7ba487b0770d6ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -143,13 +143,13 @@ FactoryMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_FactoryMap</b
   </tr>
 </table>
 </div><div class="memdoc">
-<p>TEST::resourceFacturyDestructor Default constructor </p>
+<p>TEST::resourceFactoryDestructor Default constructor </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4e9bf64036bb2e17fb65409bad9e89cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e9bf64036bb2e17fb65409bad9e89cd">&#9670;&nbsp;</a></span>Register()</h2>
+<a id="aaeb4ecb1b52a283fb9722ab42a2ef7ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeb4ecb1b52a283fb9722ab42a2ef7ed">&#9670;&nbsp;</a></span>Register()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,7 +163,7 @@ FactoryMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_FactoryMap</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ResourceCreator&#160;</td>
+          <td class="paramtype">CreateResourceFn&#160;</td>
           <td class="paramname"><em>pfnCreate</em>&#160;</td>
         </tr>
         <tr>
@@ -173,7 +173,7 @@ FactoryMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_FactoryMap</b
         </tr>
       </table>
 </div><div class="memdoc">
-<p>TEST::resourceFacturyConstructor Record the functions of the resources</p>
+<p>TEST::resourceFactoryConstructor Record the functions of the resources</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>The type of the resource</td></tr>
