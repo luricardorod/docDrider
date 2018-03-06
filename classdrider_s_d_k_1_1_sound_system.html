@@ -88,14 +88,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6f509394a22e762ee9994bcbfbf78447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbf5d6bffdc2e5ba1a703fedea72fbd9"><td class="memItemLeft" align="right" valign="top">virtual DR_SOUND_RESULT::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_sound_system.html#abbf5d6bffdc2e5ba1a703fedea72fbd9">init</a> (Int32 maxChannels, DR_INITFLAGS::E initFlags, void *extraDriverData)=0</td></tr>
 <tr class="separator:abbf5d6bffdc2e5ba1a703fedea72fbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae35d06cb077e0ec4aa474566a4686068"><td class="memItemLeft" align="right" valign="top">virtual DR_SOUND_RESULT::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_sound_system.html#ae35d06cb077e0ec4aa474566a4686068">update</a> ()=0</td></tr>
-<tr class="separator:ae35d06cb077e0ec4aa474566a4686068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152cb7062aae527f185903418eaa0ad1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_sound_system.html#a152cb7062aae527f185903418eaa0ad1">update</a> ()=0</td></tr>
+<tr class="separator:a152cb7062aae527f185903418eaa0ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ef15445ea27f0169b9db0055d766d9"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_sound_system.html#ac2ef15445ea27f0169b9db0055d766d9">getReference</a> ()=0</td></tr>
 <tr class="separator:ac2ef15445ea27f0169b9db0055d766d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f5d211b4c9652d35d2eeae588eac859"><td class="memItemLeft" align="right" valign="top">virtual void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_sound_system.html#a5f5d211b4c9652d35d2eeae588eac859">getObjectReference</a> ()=0</td></tr>
 <tr class="separator:a5f5d211b4c9652d35d2eeae588eac859"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a373c08068374b8d72470fbf371722368"><td class="memItemLeft" align="right" valign="top">virtual DR_SOUND_RESULT::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_sound_system.html#a373c08068374b8d72470fbf371722368">createSound</a> (TString name, DR_SOUND_MODE::E mode, <a class="el" href="classdrider_s_d_k_1_1_dr_create_sound_ex_info.html">DrCreateSoundExInfo</a> *createInfo, <a class="el" href="classdrider_s_d_k_1_1_dr_sound.html">DrSound</a> *sound)=0</td></tr>
-<tr class="separator:a373c08068374b8d72470fbf371722368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a38403e473c89c59d964411d032151"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_sound_system.html#a27a38403e473c89c59d964411d032151">createSound</a> (TString name, DR_SOUND_MODE::E mode, <a class="el" href="classdrider_s_d_k_1_1_dr_create_sound_ex_info.html">DrCreateSoundExInfo</a> *createInfo, <a class="el" href="classdrider_s_d_k_1_1_dr_sound.html">DrSound</a> *sound)=0</td></tr>
+<tr class="separator:a27a38403e473c89c59d964411d032151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceb6b79c97e70b9c11bc944450778398"><td class="memItemLeft" align="right" valign="top"><a id="aceb6b79c97e70b9c11bc944450778398"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>playSound</b> (<a class="el" href="classdrider_s_d_k_1_1_dr_sound.html">DrSound</a> *sound, <a class="el" href="classdrider_s_d_k_1_1_dr_channel_group.html">DrChannelGroup</a> *channelGroup, bool paused, <a class="el" href="classdrider_s_d_k_1_1_dr_channel.html">DrChannel</a> **channel)=0</td></tr>
+<tr class="separator:aceb6b79c97e70b9c11bc944450778398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5522cb9940fab7144ab074e6917f98"><td class="memItemLeft" align="right" valign="top"><a id="a8c5522cb9940fab7144ab074e6917f98"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set3DSettings</b> (float dopplerscale, float distancefactor, float rolloffscale)=0</td></tr>
+<tr class="separator:a8c5522cb9940fab7144ab074e6917f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea62db8b2a9115ee2a41f1a84ceb8b47"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_sound_system.html#aea62db8b2a9115ee2a41f1a84ceb8b47">set3DListenerAttributes</a> (Int32 listener, const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> *pos, const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> *vel, const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> *forward, const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> *up)=0</td></tr>
+<tr class="separator:aea62db8b2a9115ee2a41f1a84ceb8b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4103e03c5911b80808dbec27ea4a6a6"><td class="memItemLeft" align="right" valign="top"><a id="aa4103e03c5911b80808dbec27ea4a6a6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>getMasterChannelGroup</b> (<a class="el" href="classdrider_s_d_k_1_1_dr_channel_group.html">DrChannelGroup</a> **channelGroup)=0</td></tr>
+<tr class="separator:aa4103e03c5911b80808dbec27ea4a6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b435510aa90d41d71c78b540b3c1d55"><td class="memItemLeft" align="right" valign="top"><a id="a9b435510aa90d41d71c78b540b3c1d55"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createDSPByType</b> (DR_DSP_TYPE::E bspType, <a class="el" href="classdrider_s_d_k_1_1_dr_d_s_p.html">DrDSP</a> **dsp)=0</td></tr>
+<tr class="separator:a9b435510aa90d41d71c78b540b3c1d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6f509394a22e762ee9994bcbfbf78447"></a>
@@ -125,8 +139,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a373c08068374b8d72470fbf371722368"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a373c08068374b8d72470fbf371722368">&#9670;&nbsp;</a></span>createSound()</h2>
+<a id="a27a38403e473c89c59d964411d032151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a38403e473c89c59d964411d032151">&#9670;&nbsp;</a></span>createSound()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,7 +149,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual DR_SOUND_RESULT::E driderSDK::SoundSystem::createSound </td>
+          <td class="memname">virtual void driderSDK::SoundSystem::createSound </td>
           <td>(</td>
           <td class="paramtype">TString&#160;</td>
           <td class="paramname"><em>name</em>, </td>
@@ -180,7 +194,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_f_m_o_d_sound_system.html#a81ccd1d16eb3d6401c7014aaf8eca869">driderSDK::FMODSoundSystem</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_f_m_o_d_sound_system.html#af96deba393b39d30b0ef43e64ef68013">driderSDK::FMODSoundSystem</a>.</p>
 
 </div>
 </div>
@@ -293,8 +307,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae35d06cb077e0ec4aa474566a4686068"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae35d06cb077e0ec4aa474566a4686068">&#9670;&nbsp;</a></span>update()</h2>
+<a id="aea62db8b2a9115ee2a41f1a84ceb8b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea62db8b2a9115ee2a41f1a84ceb8b47">&#9670;&nbsp;</a></span>set3DListenerAttributes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -303,7 +317,64 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual DR_SOUND_RESULT::E driderSDK::SoundSystem::update </td>
+          <td class="memname">virtual void driderSDK::SoundSystem::set3DListenerAttributes </td>
+          <td>(</td>
+          <td class="paramtype">Int32&#160;</td>
+          <td class="paramname"><em>listener</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>vel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>forward</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> *&#160;</td>
+          <td class="paramname"><em>up</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This updates the position, velocity and orientation of the specified 3D sound listener. </p>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_f_m_o_d_sound_system.html#a2d79d95bcf592dd0aff3e8cd8eeeef8e">driderSDK::FMODSoundSystem</a>.</p>
+
+</div>
+</div>
+<a id="a152cb7062aae527f185903418eaa0ad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a152cb7062aae527f185903418eaa0ad1">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::SoundSystem::update </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -317,7 +388,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Update the sound system </p>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_f_m_o_d_sound_system.html#ace501e32b0b22fd70c19c50e3ef6df74">driderSDK::FMODSoundSystem</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_f_m_o_d_sound_system.html#aa55de11eea039bf967f7596c53f92fbf">driderSDK::FMODSoundSystem</a>.</p>
 
 </div>
 </div>

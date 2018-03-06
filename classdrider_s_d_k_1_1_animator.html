@@ -77,14 +77,11 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a145f63a1e0898a8ece92578eec29af37"><td class="memItemLeft" align="right" valign="top"><a id="a145f63a1e0898a8ece92578eec29af37"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnimation</b> (std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_animation.html">Animation</a> &gt; pAnimation)</td></tr>
+<tr class="memitem:a145f63a1e0898a8ece92578eec29af37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_animator.html#a145f63a1e0898a8ece92578eec29af37">setAnimation</a> (std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_animation.html">Animation</a> &gt; pAnimation)</td></tr>
 <tr class="separator:a145f63a1e0898a8ece92578eec29af37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06bef55a6c9c2fde8203ad8ef92efbfb"><td class="memItemLeft" align="right" valign="top"><a id="a06bef55a6c9c2fde8203ad8ef92efbfb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSkeleton</b> (std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_skeleton.html">Skeleton</a> &gt; pSkeleton)</td></tr>
+<tr class="memitem:a06bef55a6c9c2fde8203ad8ef92efbfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_animator.html#a06bef55a6c9c2fde8203ad8ef92efbfb">setSkeleton</a> (std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_skeleton.html">Skeleton</a> &gt; pSkeleton)</td></tr>
 <tr class="separator:a06bef55a6c9c2fde8203ad8ef92efbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84117474468b9416d3997dd42b08ffac"><td class="memItemLeft" align="right" valign="top"><a id="a84117474468b9416d3997dd42b08ffac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>evaluate</b> (float time)</td></tr>
+<tr class="memitem:a84117474468b9416d3997dd42b08ffac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_animator.html#a84117474468b9416d3997dd42b08ffac">evaluate</a> (float time)</td></tr>
 <tr class="separator:a84117474468b9416d3997dd42b08ffac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5d39711553c6a0247b8aa4cdeb13161"><td class="memItemLeft" align="right" valign="top"><a id="ad5d39711553c6a0247b8aa4cdeb13161"></a>
 const std::vector&lt; <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTransforms</b> ()</td></tr>
@@ -130,9 +127,67 @@ std::weak_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_animation.html">Anim
 std::vector&lt; <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_transforms</b></td></tr>
 <tr class="separator:a86e1f5796ead2853e439c3ff5f18e877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a84117474468b9416d3997dd42b08ffac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84117474468b9416d3997dd42b08ffac">&#9670;&nbsp;</a></span>evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void driderSDK::Animator::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update the bones transforms according to its animation at current time. </p>
+
+</div>
+</div>
+<a id="a145f63a1e0898a8ece92578eec29af37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145f63a1e0898a8ece92578eec29af37">&#9670;&nbsp;</a></span>setAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void driderSDK::Animator::setAnimation </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_animation.html">Animation</a> &gt;&#160;</td>
+          <td class="paramname"><em>pAnimation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets current animation </p>
+
+</div>
+</div>
+<a id="a06bef55a6c9c2fde8203ad8ef92efbfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06bef55a6c9c2fde8203ad8ef92efbfb">&#9670;&nbsp;</a></span>setSkeleton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void driderSDK::Animator::setSkeleton </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_skeleton.html">Skeleton</a> &gt;&#160;</td>
+          <td class="paramname"><em>pSkeleton</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets current skeleton </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>F:/projectsVS2017/Drider-Engine/Core/Include/<a class="el" href="dr__animator_8h_source.html">dr_animator.h</a></li>
-<li>F:/projectsVS2017/Drider-Engine/Core/Include/dr_animator.cpp</li>
+<li>F:/projectsVS2017/Drider-Engine/Core/Source/dr_animator.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -97,6 +97,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aecc6ccdfd8dfd300fcf55dddb8dbc2b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac29762f610f7152518d7061608ff46eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_f_m_o_d_channel.html#ac29762f610f7152518d7061608ff46eb">getVolume</a> (float *volume) override</td></tr>
 <tr class="separator:ac29762f610f7152518d7061608ff46eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9723f14ad45a86de97102f0a48f0eb70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_f_m_o_d_channel.html#a9723f14ad45a86de97102f0a48f0eb70">setReverbProperties</a> (Int32 instance, float wet) override</td></tr>
+<tr class="separator:a9723f14ad45a86de97102f0a48f0eb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa056cdf8ef94b8f404847d41489b54af"><td class="memItemLeft" align="right" valign="top"><a id="aa056cdf8ef94b8f404847d41489b54af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set3DAttributes</b> (const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> *pos, const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> *vel) override</td></tr>
+<tr class="separator:aa056cdf8ef94b8f404847d41489b54af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdrider_s_d_k_1_1_dr_channel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdrider_s_d_k_1_1_dr_channel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdrider_s_d_k_1_1_dr_channel.html">driderSDK::DrChannel</a></td></tr>
 <tr class="memitem:a473c6fe7b2429c1b12358585623a0437 inherit pub_methods_classdrider_s_d_k_1_1_dr_channel"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_dr_channel.html#a473c6fe7b2429c1b12358585623a0437">~DrChannel</a> ()</td></tr>
 <tr class="separator:a473c6fe7b2429c1b12358585623a0437 inherit pub_methods_classdrider_s_d_k_1_1_dr_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,6 +111,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aeda23417fd0d123daf25e9887b899b8c"><td class="memItemLeft" align="right" valign="top"><a id="aeda23417fd0d123daf25e9887b899b8c"></a>
 FMOD::Channel *&#160;</td><td class="memItemRight" valign="bottom"><b>channel</b></td></tr>
 <tr class="separator:aeda23417fd0d123daf25e9887b899b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20cde19c127963cd7e87f1968664104"><td class="memItemLeft" align="right" valign="top"><a id="ad20cde19c127963cd7e87f1968664104"></a>
+FMOD_RESULT&#160;</td><td class="memItemRight" valign="bottom"><b>result</b></td></tr>
+<tr class="separator:ad20cde19c127963cd7e87f1968664104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0ddb3e7c86f6ea28fa1155a5f56e5d6e"></a>
@@ -266,6 +274,45 @@ FMOD::Channel *&#160;</td><td class="memItemRight" valign="bottom"><b>channel</b
 </dl>
 
 <p>Implements <a class="el" href="classdrider_s_d_k_1_1_dr_channel.html#a827a8cc39d87e0c980d9ac986b381d9c">driderSDK::DrChannel</a>.</p>
+
+</div>
+</div>
+<a id="a9723f14ad45a86de97102f0a48f0eb70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9723f14ad45a86de97102f0a48f0eb70">&#9670;&nbsp;</a></span>setReverbProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void driderSDK::FMODChannel::setReverbProperties </td>
+          <td>(</td>
+          <td class="paramtype">Int32&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>wet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the wet level (or send level) of a particular reverb instance. </p>
+
+<p>Implements <a class="el" href="classdrider_s_d_k_1_1_dr_channel.html#a1917e166bc03b5ff4648a1e67f21236d">driderSDK::DrChannel</a>.</p>
 
 </div>
 </div>

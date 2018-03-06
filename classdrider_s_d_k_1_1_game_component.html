@@ -65,12 +65,109 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="classdrider_s_d_k_1_1_game_component-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">driderSDK::GameComponent Class Reference</div>  </div>
+<div class="title">driderSDK::GameComponent Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-<hr/>The documentation for this class was generated from the following file:<ul>
+<div class="dynheader">
+Inheritance diagram for driderSDK::GameComponent:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classdrider_s_d_k_1_1_game_component.png" usemap="#driderSDK::GameComponent_map" alt=""/>
+  <map id="driderSDK::GameComponent_map" name="driderSDK::GameComponent_map">
+<area href="classdrider_s_d_k_1_1_enable_object.html" alt="driderSDK::EnableObject" shape="rect" coords="510,0,704,24"/>
+<area href="classdrider_s_d_k_1_1_animator_component.html" alt="driderSDK::AnimatorComponent" shape="rect" coords="0,112,194,136"/>
+<area href="classdrider_s_d_k_1_1_collider_component.html" alt="driderSDK::ColliderComponent" shape="rect" coords="204,112,398,136"/>
+<area href="classdrider_s_d_k_1_1_drawable_component.html" alt="driderSDK::DrawableComponent" shape="rect" coords="510,112,704,136"/>
+<area href="classdrider_s_d_k_1_1_render_component.html" alt="driderSDK::RenderComponent" shape="rect" coords="714,112,908,136"/>
+<area href="classdrider_s_d_k_1_1_skeleton_debug.html" alt="driderSDK::SkeletonDebug" shape="rect" coords="918,112,1112,136"/>
+<area href="classdrider_s_d_k_1_1_a_a_b_b_collider.html" alt="driderSDK::AABBCollider" shape="rect" coords="204,168,398,192"/>
+<area href="classdrider_s_d_k_1_1_a_a_b_b_debug.html" alt="driderSDK::AABBDebug" shape="rect" coords="408,168,602,192"/>
+<area href="classdrider_s_d_k_1_1_frustum_debug.html" alt="driderSDK::FrustumDebug" shape="rect" coords="612,168,806,192"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab98ce9d952e41a4186e8fb660f514bd6"><td class="memItemLeft" align="right" valign="top"><a id="ab98ce9d952e41a4186e8fb660f514bd6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GameComponent</b> (<a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> &amp;gameObject_)</td></tr>
+<tr class="separator:ab98ce9d952e41a4186e8fb660f514bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b6ca97a9964aa23adf161c4fc1bbbc"><td class="memItemLeft" align="right" valign="top"><a id="aa3b6ca97a9964aa23adf161c4fc1bbbc"></a>
+<a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getGameObject</b> ()</td></tr>
+<tr class="separator:aa3b6ca97a9964aa23adf161c4fc1bbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedff57b4a497931427dbadcd4598ab18"><td class="memItemLeft" align="right" valign="top"><a id="aedff57b4a497931427dbadcd4598ab18"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onCreate</b> ()=0</td></tr>
+<tr class="separator:aedff57b4a497931427dbadcd4598ab18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6df58018740f11e1a83e20b9094eafc"><td class="memItemLeft" align="right" valign="top"><a id="ab6df58018740f11e1a83e20b9094eafc"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onUpdate</b> ()=0</td></tr>
+<tr class="separator:ab6df58018740f11e1a83e20b9094eafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81054f5eba78dcf4ef270a59b8f13542"><td class="memItemLeft" align="right" valign="top"><a id="a81054f5eba78dcf4ef270a59b8f13542"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onRender</b> ()=0</td></tr>
+<tr class="separator:a81054f5eba78dcf4ef270a59b8f13542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee962822212854d4e0a15f9b3d3adfbd"><td class="memItemLeft" align="right" valign="top"><a id="aee962822212854d4e0a15f9b3d3adfbd"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onDestroy</b> ()=0</td></tr>
+<tr class="separator:aee962822212854d4e0a15f9b3d3adfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634aaf58154e4f1a793c1f2780a98e38"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_game_component.html#a634aaf58154e4f1a793c1f2780a98e38">cloneIn</a> (<a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> &amp;_go)=0</td></tr>
+<tr class="separator:a634aaf58154e4f1a793c1f2780a98e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classdrider_s_d_k_1_1_enable_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdrider_s_d_k_1_1_enable_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdrider_s_d_k_1_1_enable_object.html">driderSDK::EnableObject</a></td></tr>
+<tr class="memitem:a2194f669a0406350b6a07ada797e3577 inherit pub_methods_classdrider_s_d_k_1_1_enable_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_enable_object.html#a2194f669a0406350b6a07ada797e3577">EnableObject</a> ()</td></tr>
+<tr class="separator:a2194f669a0406350b6a07ada797e3577 inherit pub_methods_classdrider_s_d_k_1_1_enable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e405a34f0ad44b1c662f5a4da49c818 inherit pub_methods_classdrider_s_d_k_1_1_enable_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_enable_object.html#a9e405a34f0ad44b1c662f5a4da49c818">setEnabled</a> (bool enabled)</td></tr>
+<tr class="separator:a9e405a34f0ad44b1c662f5a4da49c818 inherit pub_methods_classdrider_s_d_k_1_1_enable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae7fd840bb95061a44e56a828e88179 inherit pub_methods_classdrider_s_d_k_1_1_enable_object"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_enable_object.html#aeae7fd840bb95061a44e56a828e88179">isEnabled</a> ()</td></tr>
+<tr class="separator:aeae7fd840bb95061a44e56a828e88179 inherit pub_methods_classdrider_s_d_k_1_1_enable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:abce47446c252e18b7464f55fb5d3d70a"><td class="memItemLeft" align="right" valign="top"><a id="abce47446c252e18b7464f55fb5d3d70a"></a>
+<a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_gameObject</b></td></tr>
+<tr class="separator:abce47446c252e18b7464f55fb5d3d70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classdrider_s_d_k_1_1_enable_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdrider_s_d_k_1_1_enable_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdrider_s_d_k_1_1_enable_object.html">driderSDK::EnableObject</a></td></tr>
+<tr class="memitem:a0c63ce32b2ec4cfcaeb05d9a99bbbb8c inherit pro_methods_classdrider_s_d_k_1_1_enable_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_enable_object.html#a0c63ce32b2ec4cfcaeb05d9a99bbbb8c">onEnabled</a> ()</td></tr>
+<tr class="separator:a0c63ce32b2ec4cfcaeb05d9a99bbbb8c inherit pro_methods_classdrider_s_d_k_1_1_enable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e7b3dfb1bc1f3d13cf5d817eeaf324 inherit pro_methods_classdrider_s_d_k_1_1_enable_object"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_enable_object.html#a01e7b3dfb1bc1f3d13cf5d817eeaf324">onDisabled</a> ()</td></tr>
+<tr class="separator:a01e7b3dfb1bc1f3d13cf5d817eeaf324 inherit pro_methods_classdrider_s_d_k_1_1_enable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a634aaf58154e4f1a793c1f2780a98e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a634aaf58154e4f1a793c1f2780a98e38">&#9670;&nbsp;</a></span>cloneIn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void driderSDK::GameComponent::cloneIn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> &amp;&#160;</td>
+          <td class="paramname"><em>_go</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clones the component inside the given gameObject </p>
+
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_render_component.html#ad97204d79e56e00d765134f5fe146abb">driderSDK::RenderComponent</a>, <a class="el" href="classdrider_s_d_k_1_1_animator_component.html#a8184f4b59ef12c2b7b2ce88b78f3b6b6">driderSDK::AnimatorComponent</a>, <a class="el" href="classdrider_s_d_k_1_1_skeleton_debug.html#ac510659353380e3b241719bd9c1d0f26">driderSDK::SkeletonDebug</a>, <a class="el" href="classdrider_s_d_k_1_1_a_a_b_b_collider.html#a5ce1198e4e50b92cffc81be5472bc802">driderSDK::AABBCollider</a>, <a class="el" href="classdrider_s_d_k_1_1_a_a_b_b_debug.html#aeaeedec68a4ca677f91bcbfcd4797ddf">driderSDK::AABBDebug</a>, and <a class="el" href="classdrider_s_d_k_1_1_frustum_debug.html#a9832e832595b9ee2ee9772b99cdd6da0">driderSDK::FrustumDebug</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>F:/projectsVS2017/Drider-Engine/Core/Include/<a class="el" href="dr__game_component_8h_source.html">dr_gameComponent.h</a></li>
+<li>F:/projectsVS2017/Drider-Engine/Core/Source/dr_gameComponent.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

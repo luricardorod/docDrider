@@ -68,8 +68,11 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_resource_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::ResourceManager Class Reference</div>  </div>
@@ -89,9 +92,9 @@ Inheritance diagram for driderSDK::ResourceManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab398fe58fb79085d75fa632d37e21ee0"><td class="memItemLeft" align="right" valign="top"><a id="ab398fe58fb79085d75fa632d37e21ee0"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ResorceSmartPtr</b> = std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt;</td></tr>
-<tr class="separator:ab398fe58fb79085d75fa632d37e21ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599da77cf57ca09b23d84118c0979cc5"><td class="memItemLeft" align="right" valign="top"><a id="a599da77cf57ca09b23d84118c0979cc5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SharedResource</b> = std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt;</td></tr>
+<tr class="separator:a599da77cf57ca09b23d84118c0979cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -105,37 +108,23 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaa74ec670d01ac12f73c604d1e38dc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53ac6745a538d164bad29f0b3c1f6899"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#a53ac6745a538d164bad29f0b3c1f6899">~ResourceManager</a> ()</td></tr>
 <tr class="separator:a53ac6745a538d164bad29f0b3c1f6899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaceb9fcfe4fc385af6b22c5f5f429b4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#aaceb9fcfe4fc385af6b22c5f5f429b4d">init</a> (<a class="el" href="classdrider_s_d_k_1_1_sound_system.html">SoundSystem</a> *soundSystem)</td></tr>
-<tr class="separator:aaceb9fcfe4fc385af6b22c5f5f429b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa69a26b9005f52a4deec9aa7a37647ee"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#aa69a26b9005f52a4deec9aa7a37647ee">getReference</a> (TString key)</td></tr>
-<tr class="separator:aa69a26b9005f52a4deec9aa7a37647ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9a6e15775f5610edbbd2da1e4bdb0d8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#ab9a6e15775f5610edbbd2da1e4bdb0d8">loadResource</a> (TString resourceName)</td></tr>
-<tr class="separator:ab9a6e15775f5610edbbd2da1e4bdb0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad72dec19184ae90368df945536bc6c41"><td class="memItemLeft" align="right" valign="top"><a id="ad72dec19184ae90368df945536bc6c41"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addResource</b> (TString resourceName, std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt; pResource)</td></tr>
-<tr class="separator:ad72dec19184ae90368df945536bc6c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a7d498ecd0eeaeb5287add55c5196bba0"><td class="memItemLeft" align="right" valign="top"><a id="a7d498ecd0eeaeb5287add55c5196bba0"></a>
-std::unordered_map&lt; TString, std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resourceContent</b></td></tr>
-<tr class="separator:a7d498ecd0eeaeb5287add55c5196bba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36eccc1c0080a014297b04c0bd16452e"><td class="memItemLeft" align="right" valign="top"><a id="a36eccc1c0080a014297b04c0bd16452e"></a>
-std::unordered_map&lt; <a class="el" href="classdrider_s_d_k_1_1_codec.html">Codec</a> *, std::function&lt; ResorceSmartPtr()&gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resourceFactory</b></td></tr>
-<tr class="separator:a36eccc1c0080a014297b04c0bd16452e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ced7868c50f225f557c8cc0cec468c5"><td class="memItemLeft" align="right" valign="top"><a id="a4ced7868c50f225f557c8cc0cec468c5"></a>
-std::vector&lt; std::unique_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_codec.html">Codec</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>codecs</b></td></tr>
-<tr class="separator:a4ced7868c50f225f557c8cc0cec468c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ab6792db027c0381502b83e38c605bc5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#ab6792db027c0381502b83e38c605bc5f">createResource</a> (TString resourceName, <a class="el" href="classdrider_s_d_k_1_1_codec.html">Codec</a> *codec)</td></tr>
-<tr class="separator:ab6792db027c0381502b83e38c605bc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7367f03f2493d28625e63ee0abc4a7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#ab7367f03f2493d28625e63ee0abc4a7b">existInResourceContent</a> (TString key)</td></tr>
-<tr class="separator:ab7367f03f2493d28625e63ee0abc4a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1ea98f3317d4e1ff718b9d91662189cc"><td class="memItemLeft" align="right" valign="top">static SharedResource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#a1ea98f3317d4e1ff718b9d91662189cc">getReference</a> (const TString &amp;key)</td></tr>
+<tr class="separator:a1ea98f3317d4e1ff718b9d91662189cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05382c7c018dea20aa8a7883aa92d895"><td class="memItemLeft" align="right" valign="top">static SharedResource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#a05382c7c018dea20aa8a7883aa92d895">loadResource</a> (const TString &amp;resourceName)</td></tr>
+<tr class="separator:a05382c7c018dea20aa8a7883aa92d895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1994f837a1b0cb82ed963a3f2c6b6d43"><td class="memItemLeft" align="right" valign="top">static SharedResource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#a1994f837a1b0cb82ed963a3f2c6b6d43">loadResource</a> (const TString &amp;resourceName, void *extraData)</td></tr>
+<tr class="separator:a1994f837a1b0cb82ed963a3f2c6b6d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b0dbda82ec4998fe8faabbb18c31efe"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#a4b0dbda82ec4998fe8faabbb18c31efe">isResourceLoaded</a> (const TString &amp;key)</td></tr>
+<tr class="separator:a4b0dbda82ec4998fe8faabbb18c31efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa74e6309aaedd50e9a981efae9a2ad"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#abaa74e6309aaedd50e9a981efae9a2ad">createMaterial</a> (const TString &amp;materialName, bool empty=false)</td></tr>
+<tr class="separator:abaa74e6309aaedd50e9a981efae9a2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370ef6e58e56f30591027911bf373b9c"><td class="memTemplParams" colspan="2"><a id="a370ef6e58e56f30591027911bf373b9c"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:a370ef6e58e56f30591027911bf373b9c"><td class="memTemplItemLeft" align="right" valign="top">static std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>getReferenceT</b> (const TString &amp;resourceName)</td></tr>
+<tr class="separator:a370ef6e58e56f30591027911bf373b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classdrider_s_d_k_1_1_module"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classdrider_s_d_k_1_1_module')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classdrider_s_d_k_1_1_module.html">driderSDK::Module&lt; ResourceManager &gt;</a></td></tr>
 <tr class="memitem:a02dad8fef793b78efef6ae2dae538080 inherit pub_static_methods_classdrider_s_d_k_1_1_module"><td class="memItemLeft" align="right" valign="top"><a id="a02dad8fef793b78efef6ae2dae538080"></a>
 static <a class="el" href="classdrider_s_d_k_1_1_resource_manager.html">ResourceManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
@@ -155,6 +144,52 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>shutDown</b> (
 <tr class="memitem:a7c5a787d0e174bd5bbce3713283073f0 inherit pub_static_methods_classdrider_s_d_k_1_1_module"><td class="memItemLeft" align="right" valign="top"><a id="a7c5a787d0e174bd5bbce3713283073f0"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isStarted</b> ()</td></tr>
 <tr class="separator:a7c5a787d0e174bd5bbce3713283073f0 inherit pub_static_methods_classdrider_s_d_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:ab2e9b707eb62061aa878ca41e7b8e691"><td class="memItemLeft" align="right" valign="top"><a id="ab2e9b707eb62061aa878ca41e7b8e691"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceFactory</b> = std::function&lt; SharedResource()&gt;</td></tr>
+<tr class="separator:ab2e9b707eb62061aa878ca41e7b8e691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a90ec348705ba8cd1cd1d10e7a0cc3939"><td class="memItemLeft" align="right" valign="top"><a id="a90ec348705ba8cd1cd1d10e7a0cc3939"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onStartUp</b> ()</td></tr>
+<tr class="separator:a90ec348705ba8cd1cd1d10e7a0cc3939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ced0bfbb5aa1d78db1e827588c500c"><td class="memItemLeft" align="right" valign="top"><a id="a11ced0bfbb5aa1d78db1e827588c500c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createDefaultResources</b> ()</td></tr>
+<tr class="separator:a11ced0bfbb5aa1d78db1e827588c500c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19fc535c4d7bc825033cf380db3bf9a"><td class="memItemLeft" align="right" valign="top"><a id="ab19fc535c4d7bc825033cf380db3bf9a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createDummyTexture</b> ()</td></tr>
+<tr class="separator:ab19fc535c4d7bc825033cf380db3bf9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fbed387684addbb4a82c8005a23e2ad"><td class="memItemLeft" align="right" valign="top"><a id="a5fbed387684addbb4a82c8005a23e2ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createDummyMaterial</b> ()</td></tr>
+<tr class="separator:a5fbed387684addbb4a82c8005a23e2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f5a69cb884c022ea59a8ff797bf2777"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#a9f5a69cb884c022ea59a8ff797bf2777">createResource</a> (const TString &amp;resourceName, <a class="el" href="classdrider_s_d_k_1_1_codec.html">Codec</a> *codec, void *extraInfo)</td></tr>
+<tr class="separator:a9f5a69cb884c022ea59a8ff797bf2777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:aa2104b2307f52d0410c23460f74dd325"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource_manager.html#aa2104b2307f52d0410c23460f74dd325">addResource</a> (SharedResource pResource, const TString &amp;resourceName)</td></tr>
+<tr class="separator:aa2104b2307f52d0410c23460f74dd325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8640ed7a1812a7c9b6b0f3b753077c61"><td class="memItemLeft" align="right" valign="top"><a id="a8640ed7a1812a7c9b6b0f3b753077c61"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>Codec</b></td></tr>
+<tr class="separator:a8640ed7a1812a7c9b6b0f3b753077c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a5e4c810908f9d1bd4acdaaed6a78a"><td class="memItemLeft" align="right" valign="top"><a id="a16a5e4c810908f9d1bd4acdaaed6a78a"></a>
+std::unordered_map&lt; TString, SharedResource &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_resources</b></td></tr>
+<tr class="separator:a16a5e4c810908f9d1bd4acdaaed6a78a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df61e4dc38e0de9581f2e691cf1a17f"><td class="memItemLeft" align="right" valign="top"><a id="a9df61e4dc38e0de9581f2e691cf1a17f"></a>
+std::unordered_map&lt; <a class="el" href="classdrider_s_d_k_1_1_codec.html">Codec</a> *, ResourceFactory &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_resourceFactories</b></td></tr>
+<tr class="separator:a9df61e4dc38e0de9581f2e691cf1a17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb203d564397298e2380ddcda2e62ba"><td class="memItemLeft" align="right" valign="top"><a id="a7bb203d564397298e2380ddcda2e62ba"></a>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_codec.html">Codec</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_codecs</b></td></tr>
+<tr class="separator:a7bb203d564397298e2380ddcda2e62ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classdrider_s_d_k_1_1_module"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdrider_s_d_k_1_1_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdrider_s_d_k_1_1_module.html">driderSDK::Module&lt; ResourceManager &gt;</a></td></tr>
 <tr class="memitem:aa4a640167ca73947013333a124549800 inherit pro_methods_classdrider_s_d_k_1_1_module"><td class="memItemLeft" align="right" valign="top"><a id="aa4a640167ca73947013333a124549800"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Module</b> (const <a class="el" href="classdrider_s_d_k_1_1_module.html">Module</a> &amp;)</td></tr>
@@ -162,9 +197,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isStarted</b> 
 <tr class="memitem:a4564fe6765acdbade0e19f63545f3542 inherit pro_methods_classdrider_s_d_k_1_1_module"><td class="memItemLeft" align="right" valign="top"><a id="a4564fe6765acdbade0e19f63545f3542"></a>
 <a class="el" href="classdrider_s_d_k_1_1_module.html">Module</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classdrider_s_d_k_1_1_module.html">Module</a> &amp;)</td></tr>
 <tr class="separator:a4564fe6765acdbade0e19f63545f3542 inherit pro_methods_classdrider_s_d_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a738b948e6d154f1caeefa16e43fb5603 inherit pro_methods_classdrider_s_d_k_1_1_module"><td class="memItemLeft" align="right" valign="top"><a id="a738b948e6d154f1caeefa16e43fb5603"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onStartUp</b> ()</td></tr>
-<tr class="separator:a738b948e6d154f1caeefa16e43fb5603 inherit pro_methods_classdrider_s_d_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36fb2abc98c4f911d2791f2f6c58cd49 inherit pro_methods_classdrider_s_d_k_1_1_module"><td class="memItemLeft" align="right" valign="top"><a id="a36fb2abc98c4f911d2791f2f6c58cd49"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>onShutDown</b> ()</td></tr>
 <tr class="separator:a36fb2abc98c4f911d2791f2f6c58cd49 inherit pro_methods_classdrider_s_d_k_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,9 +220,6 @@ static bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>isShutDo
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">driderSDK::ResourceManager::ResourceManager </td>
@@ -199,11 +228,6 @@ static bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>isShutDo
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>TEST::resourceMConstructor Default constructor. </p>
 
@@ -214,9 +238,6 @@ static bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>isShutDo
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">driderSDK::ResourceManager::~ResourceManager </td>
@@ -225,19 +246,95 @@ static bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>isShutDo
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>TEST::resourceMDestructor Default destructor. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab6792db027c0381502b83e38c605bc5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6792db027c0381502b83e38c605bc5f">&#9670;&nbsp;</a></span>createResource()</h2>
+<a id="aa2104b2307f52d0410c23460f74dd325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2104b2307f52d0410c23460f74dd325">&#9670;&nbsp;</a></span>addResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void driderSDK::ResourceManager::addResource </td>
+          <td>(</td>
+          <td class="paramtype">SharedResource&#160;</td>
+          <td class="paramname"><em>pResource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>resourceName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add a resource to the ResourceContent of the <a class="el" href="classdrider_s_d_k_1_1_resource_manager.html">ResourceManager</a> </p>
+
+</div>
+</div>
+<a id="abaa74e6309aaedd50e9a981efae9a2ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa74e6309aaedd50e9a981efae9a2ad">&#9670;&nbsp;</a></span>createMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_material.html">Material</a> &gt; driderSDK::ResourceManager::createMaterial </td>
+          <td>(</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>materialName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>empty</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a material using default properties or empty.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">empty</td><td>Specifies if the material should be empty.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The dummy material if empty is false, an empty material otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a9f5a69cb884c022ea59a8ff797bf2777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f5a69cb884c022ea59a8ff797bf2777">&#9670;&nbsp;</a></span>createResource()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,14 +345,20 @@ static bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>isShutDo
         <tr>
           <td class="memname">void driderSDK::ResourceManager::createResource </td>
           <td>(</td>
-          <td class="paramtype">TString&#160;</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
           <td class="paramname"><em>resourceName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_codec.html">Codec</a> *&#160;</td>
-          <td class="paramname"><em>codec</em>&#160;</td>
+          <td class="paramname"><em>codec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>extraInfo</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -272,8 +375,9 @@ static bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>isShutDo
 <p>TEST::createResource Creates a resource, then puts in the contentResource and sets a key</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">resourceType</td><td>Type of the resource.</td></tr>
-    <tr><td class="paramname">resourceName</td><td>The name of the resource.</td></tr>
+    <tr><td class="paramname">resourceName</td><td>Type of the resource.</td></tr>
+    <tr><td class="paramname">codec</td><td>Pointer to codec.</td></tr>
+    <tr><td class="paramname">extraInfo</td><td>Extra info to inicialize the resource.</td></tr>
   </table>
   </dd>
 </dl>
@@ -281,8 +385,8 @@ static bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>isShutDo
 
 </div>
 </div>
-<a id="ab7367f03f2493d28625e63ee0abc4a7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7367f03f2493d28625e63ee0abc4a7b">&#9670;&nbsp;</a></span>existInResourceContent()</h2>
+<a id="a1ea98f3317d4e1ff718b9d91662189cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea98f3317d4e1ff718b9d91662189cc">&#9670;&nbsp;</a></span>getReference()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,16 +395,50 @@ static bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>isShutDo
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool driderSDK::ResourceManager::existInResourceContent </td>
+          <td class="memname">ResourceManager::SharedResource driderSDK::ResourceManager::getReference </td>
           <td>(</td>
-          <td class="paramtype">TString&#160;</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>TEST::getReference Retraves a reference of a resource with a key.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key thats reference a resource in the contentResource</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return the shared_ptr to a <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a4b0dbda82ec4998fe8faabbb18c31efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b0dbda82ec4998fe8faabbb18c31efe">&#9670;&nbsp;</a></span>isResourceLoaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool driderSDK::ResourceManager::isResourceLoaded </td>
+          <td>(</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -315,70 +453,78 @@ static bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>isShutDo
 
 </div>
 </div>
-<a id="aa69a26b9005f52a4deec9aa7a37647ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa69a26b9005f52a4deec9aa7a37647ee">&#9670;&nbsp;</a></span>getReference()</h2>
+<a id="a05382c7c018dea20aa8a7883aa92d895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05382c7c018dea20aa8a7883aa92d895">&#9670;&nbsp;</a></span>loadResource() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt; driderSDK::ResourceManager::getReference </td>
+          <td class="memname">ResourceManager::SharedResource driderSDK::ResourceManager::loadResource </td>
           <td>(</td>
-          <td class="paramtype">TString&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>TEST::getReference Retraves a reference of a resource with a key.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">key</td><td>The key thats reference a resource in the contentResource</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Return the shared_ptr to a <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a>. </dd></dl>
-
-</div>
-</div>
-<a id="aaceb9fcfe4fc385af6b22c5f5f429b4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaceb9fcfe4fc385af6b22c5f5f429b4d">&#9670;&nbsp;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void driderSDK::ResourceManager::init </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_sound_system.html">SoundSystem</a> *&#160;</td>
-          <td class="paramname"><em>soundSystem</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Initialize the resource manager </p>
-
-</div>
-</div>
-<a id="ab9a6e15775f5610edbbd2da1e4bdb0d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9a6e15775f5610edbbd2da1e4bdb0d8">&#9670;&nbsp;</a></span>loadResource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt; driderSDK::ResourceManager::loadResource </td>
-          <td>(</td>
-          <td class="paramtype">TString&#160;</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
           <td class="paramname"><em>resourceName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>TEST::loadResource Checks if the resource is compatible, then load this resource in the resourceContent.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">resourceName</td><td><a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a>'s name.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void. </dd></dl>
+
+</div>
+</div>
+<a id="a1994f837a1b0cb82ed963a3f2c6b6d43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1994f837a1b0cb82ed963a3f2c6b6d43">&#9670;&nbsp;</a></span>loadResource() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ResourceManager::SharedResource driderSDK::ResourceManager::loadResource </td>
+          <td>(</td>
+          <td class="paramtype">const TString &amp;&#160;</td>
+          <td class="paramname"><em>resourceName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>extraData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>TEST::loadResource Checks if the resource is compatible, then load this resource in the resourceContent.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resourceName</td><td><a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a>'s name.</td></tr>
+    <tr><td class="paramname">extraInfo</td><td>Extra data to initialize the resource</td></tr>
   </table>
   </dd>
 </dl>

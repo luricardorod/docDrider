@@ -69,7 +69,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classdrider_s_d_k_1_1_resource-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">driderSDK::Resource Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">driderSDK::Resource Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -78,12 +78,13 @@ Inheritance diagram for driderSDK::Resource:</div>
  <div class="center">
   <img src="classdrider_s_d_k_1_1_resource.png" usemap="#driderSDK::Resource_map" alt=""/>
   <map id="driderSDK::Resource_map" name="driderSDK::Resource_map">
-<area href="classdrider_s_d_k_1_1_animation.html" alt="driderSDK::Animation" shape="rect" coords="0,56,173,80"/>
-<area href="classdrider_s_d_k_1_1_material.html" alt="driderSDK::Material" shape="rect" coords="183,56,356,80"/>
-<area href="classdrider_s_d_k_1_1_model.html" alt="driderSDK::Model" shape="rect" coords="366,56,539,80"/>
-<area href="classdrider_s_d_k_1_1_skeleton.html" alt="driderSDK::Skeleton" shape="rect" coords="549,56,722,80"/>
-<area href="classdrider_s_d_k_1_1_sound_core.html" alt="driderSDK::SoundCore" shape="rect" coords="732,56,905,80"/>
-<area href="classdrider_s_d_k_1_1_texture_resource.html" alt="driderSDK::TextureResource" shape="rect" coords="915,56,1088,80"/>
+<area href="classdrider_s_d_k_1_1_animation.html" alt="driderSDK::Animation" shape="rect" coords="0,56,147,80"/>
+<area href="classdrider_s_d_k_1_1_material.html" alt="driderSDK::Material" shape="rect" coords="157,56,304,80"/>
+<area href="classdrider_s_d_k_1_1_model.html" alt="driderSDK::Model" shape="rect" coords="314,56,461,80"/>
+<area href="classdrider_s_d_k_1_1_script_core.html" alt="driderSDK::ScriptCore" shape="rect" coords="471,56,618,80"/>
+<area href="classdrider_s_d_k_1_1_skeleton.html" alt="driderSDK::Skeleton" shape="rect" coords="628,56,775,80"/>
+<area href="classdrider_s_d_k_1_1_sound_core.html" alt="driderSDK::SoundCore" shape="rect" coords="785,56,932,80"/>
+<area href="classdrider_s_d_k_1_1_texture_core.html" alt="driderSDK::TextureCore" shape="rect" coords="942,56,1089,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -93,8 +94,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa5325882ee82d028b0a34fd77a7b099b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da7a10e814eccc2cf875d1b12958e66"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource.html#a5da7a10e814eccc2cf875d1b12958e66">~Resource</a> ()</td></tr>
 <tr class="separator:a5da7a10e814eccc2cf875d1b12958e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3709d5927f5ef08a3c44a78a5eb3bcc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource.html#ac3709d5927f5ef08a3c44a78a5eb3bcc">init</a> (void *pData)=0</td></tr>
-<tr class="separator:ac3709d5927f5ef08a3c44a78a5eb3bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98bb78024e17510107e22da07351c8a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_resource.html#a98bb78024e17510107e22da07351c8a4">init</a> (void *)</td></tr>
+<tr class="separator:a98bb78024e17510107e22da07351c8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab052aa61079bb17eaa462a9435ecc617"><td class="memItemLeft" align="right" valign="top"><a id="ab052aa61079bb17eaa462a9435ecc617"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (void *, void *)</td></tr>
+<tr class="separator:ab052aa61079bb17eaa462a9435ecc617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5571f0b3f5456434da0e50847f905a7a"><td class="memItemLeft" align="right" valign="top"><a id="a5571f0b3f5456434da0e50847f905a7a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> (void *)</td></tr>
+<tr class="separator:a5571f0b3f5456434da0e50847f905a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa5325882ee82d028b0a34fd77a7b099b"></a>
@@ -150,8 +157,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac3709d5927f5ef08a3c44a78a5eb3bcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3709d5927f5ef08a3c44a78a5eb3bcc">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a98bb78024e17510107e22da07351c8a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98bb78024e17510107e22da07351c8a4">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,19 +170,19 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void driderSDK::Resource::init </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>pData</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Initialize the resource </p>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_animation.html#ab465ee5f1dcf605dd10d904da3adab9d">driderSDK::Animation</a>, <a class="el" href="classdrider_s_d_k_1_1_skeleton.html#aeaf835b6484a8e9fc852855a51dfe763">driderSDK::Skeleton</a>, <a class="el" href="classdrider_s_d_k_1_1_model.html#a0cf448b1fb763092762449b3cd22a827">driderSDK::Model</a>, <a class="el" href="classdrider_s_d_k_1_1_texture_resource.html#aed7efbced9d7edf8cf8286334bd4bd02">driderSDK::TextureResource</a>, and <a class="el" href="classdrider_s_d_k_1_1_sound_core.html#ae0b46ba6a192b7f43bdc2105cf2b228d">driderSDK::SoundCore</a>.</p>
+<p>Reimplemented in <a class="el" href="classdrider_s_d_k_1_1_model.html#adbfafcb17e0b99c6ba11d21c3f64ce6c">driderSDK::Model</a>, <a class="el" href="classdrider_s_d_k_1_1_texture_core.html#a31922110354dccde48eb7d853482b2a0">driderSDK::TextureCore</a>, <a class="el" href="classdrider_s_d_k_1_1_sound_core.html#ae0b46ba6a192b7f43bdc2105cf2b228d">driderSDK::SoundCore</a>, and <a class="el" href="classdrider_s_d_k_1_1_script_core.html#aec0fd1a50961dbb7f20faf4324cf744e">driderSDK::ScriptCore</a>.</p>
 
 </div>
 </div>

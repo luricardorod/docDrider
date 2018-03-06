@@ -67,7 +67,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_octree-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::Octree Class Reference</div>  </div>
@@ -78,39 +79,43 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2036f3ff6d7b59c9bb4ecb016a111e6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_octree.html#a2036f3ff6d7b59c9bb4ecb016a111e6b">Octree</a> ()</td></tr>
 <tr class="separator:a2036f3ff6d7b59c9bb4ecb016a111e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf5a66433916a0924a30163297f8019f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_octree.html#adf5a66433916a0924a30163297f8019f">Octree</a> (<a class="el" href="classdrider_s_d_k_1_1_a_a_b_b.html">AABB</a> &amp;region, std::queue&lt; <a class="el" href="structdrider_s_d_k_1_1_face.html">Face</a> &gt; objects, float minAreaSize)</td></tr>
-<tr class="separator:adf5a66433916a0924a30163297f8019f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b7597d4ac74b41fac99f166d862f5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_octree.html#a45b7597d4ac74b41fac99f166d862f5b">Octree</a> (<a class="el" href="classdrider_s_d_k_1_1_a_a_b_b.html">AABB</a> &amp;region, float minAreaSize)</td></tr>
-<tr class="separator:a45b7597d4ac74b41fac99f166d862f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa606eadd6e606b713146a2e5b9c85c2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_octree.html#aa606eadd6e606b713146a2e5b9c85c2a">~Octree</a> ()</td></tr>
 <tr class="separator:aa606eadd6e606b713146a2e5b9c85c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae52215399ad6047b258c8dd0a647f25f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_octree.html#ae52215399ad6047b258c8dd0a647f25f">BuildTree</a> ()</td></tr>
-<tr class="separator:ae52215399ad6047b258c8dd0a647f25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ee6e47d9207b40edab069486edc036"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_octree.html#ad5ee6e47d9207b40edab069486edc036">Octree</a> (<a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> *nodeSceneGraph, std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> &gt;&gt; *gameObjects, Int32 minFacesArea=10000)</td></tr>
+<tr class="separator:ad5ee6e47d9207b40edab069486edc036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb203e42311f0330d4c2fa2d19e69a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_octree.html#abdb203e42311f0330d4c2fa2d19e69a1">buildTree</a> ()</td></tr>
+<tr class="separator:abdb203e42311f0330d4c2fa2d19e69a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbbe233c7a79d448dcf9037b2bc9e8f7"><td class="memItemLeft" align="right" valign="top">Int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_octree.html#acbbe233c7a79d448dcf9037b2bc9e8f7">getMinFaces</a> ()</td></tr>
+<tr class="separator:acbbe233c7a79d448dcf9037b2bc9e8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a46965556967ad9364b28dda42197efc9"><td class="memItemLeft" align="right" valign="top"><a id="a46965556967ad9364b28dda42197efc9"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>minSize</b></td></tr>
-<tr class="separator:a46965556967ad9364b28dda42197efc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25703f9c8297ea49a987ef3c3e822583"><td class="memItemLeft" align="right" valign="top"><a id="a25703f9c8297ea49a987ef3c3e822583"></a>
-std::queue&lt; <a class="el" href="structdrider_s_d_k_1_1_face.html">Face</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>objectsToReview</b></td></tr>
-<tr class="separator:a25703f9c8297ea49a987ef3c3e822583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9420d1eb6829bd4191e38fb92137c909"><td class="memItemLeft" align="right" valign="top"><a id="a9420d1eb6829bd4191e38fb92137c909"></a>
-std::vector&lt; <a class="el" href="structdrider_s_d_k_1_1_face.html">Face</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>containedObjects</b></td></tr>
-<tr class="separator:a9420d1eb6829bd4191e38fb92137c909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12366d6cbc23e7f93ca9216cd4df9e99"><td class="memItemLeft" align="right" valign="top"><a id="a12366d6cbc23e7f93ca9216cd4df9e99"></a>
-<a class="el" href="classdrider_s_d_k_1_1_a_a_b_b.html">AABB</a>&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRegion</b></td></tr>
-<tr class="separator:a12366d6cbc23e7f93ca9216cd4df9e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5537e23d28c715791676d69b7d7c312"><td class="memItemLeft" align="right" valign="top"><a id="af5537e23d28c715791676d69b7d7c312"></a>
-<a class="el" href="classdrider_s_d_k_1_1_octree.html">Octree</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>father</b></td></tr>
-<tr class="separator:af5537e23d28c715791676d69b7d7c312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d13cebe4caa834d166ab50c583a912"><td class="memItemLeft" align="right" valign="top"><a id="a23d13cebe4caa834d166ab50c583a912"></a>
-std::vector&lt; <a class="el" href="classdrider_s_d_k_1_1_octree.html">Octree</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>childs</b></td></tr>
-<tr class="separator:a23d13cebe4caa834d166ab50c583a912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a81f4abe14b12915b59ae2195c8d24084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_octree.html#a81f4abe14b12915b59ae2195c8d24084">configNode</a> (<a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> *node, <a class="el" href="classdrider_s_d_k_1_1_octree_node.html">OctreeNode</a> *octreeNode)</td></tr>
+<tr class="separator:a81f4abe14b12915b59ae2195c8d24084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67cbdea690fbbe59d59355ae552d9d0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_octree.html#a67cbdea690fbbe59d59355ae552d9d0c">compareMinMax</a> (<a class="el" href="classdrider_s_d_k_1_1_vector4_d.html">Vector4D</a> &amp;position)</td></tr>
+<tr class="separator:a67cbdea690fbbe59d59355ae552d9d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae26cc8898094623abcc967aa9d8d6215"><td class="memItemLeft" align="right" valign="top"><a id="ae26cc8898094623abcc967aa9d8d6215"></a>
+Int32&#160;</td><td class="memItemRight" valign="bottom"><b>m_minFaces</b></td></tr>
+<tr class="separator:ae26cc8898094623abcc967aa9d8d6215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3d4076a7c651408cbccefd37141a94"><td class="memItemLeft" align="right" valign="top"><a id="a7e3d4076a7c651408cbccefd37141a94"></a>
+<a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootSceneGraph</b></td></tr>
+<tr class="separator:a7e3d4076a7c651408cbccefd37141a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4845f019f57e14c04299bc2807662458"><td class="memItemLeft" align="right" valign="top"><a id="a4845f019f57e14c04299bc2807662458"></a>
+<a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_minVertex</b></td></tr>
+<tr class="separator:a4845f019f57e14c04299bc2807662458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8593eff0ca22f4ff93e45436163d3c50"><td class="memItemLeft" align="right" valign="top"><a id="a8593eff0ca22f4ff93e45436163d3c50"></a>
+<a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxVertex</b></td></tr>
+<tr class="separator:a8593eff0ca22f4ff93e45436163d3c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9bace0594e40f0da92adc266730028"><td class="memItemLeft" align="right" valign="top"><a id="abe9bace0594e40f0da92adc266730028"></a>
+<a class="el" href="classdrider_s_d_k_1_1_octree_node.html">OctreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootOctree</b></td></tr>
+<tr class="separator:abe9bace0594e40f0da92adc266730028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2036f3ff6d7b59c9bb4ecb016a111e6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2036f3ff6d7b59c9bb4ecb016a111e6b">&#9670;&nbsp;</a></span>Octree() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2036f3ff6d7b59c9bb4ecb016a111e6b">&#9670;&nbsp;</a></span>Octree() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -124,82 +129,6 @@ std::vector&lt; <a class="el" href="classdrider_s_d_k_1_1_octree.html">Octree</a
       </table>
 </div><div class="memdoc">
 <p>Default constructor </p>
-
-</div>
-</div>
-<a id="adf5a66433916a0924a30163297f8019f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf5a66433916a0924a30163297f8019f">&#9670;&nbsp;</a></span>Octree() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">driderSDK::Octree::Octree </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_a_a_b_b.html">AABB</a> &amp;&#160;</td>
-          <td class="paramname"><em>region</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::queue&lt; <a class="el" href="structdrider_s_d_k_1_1_face.html">Face</a> &gt;&#160;</td>
-          <td class="paramname"><em>objects</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>minAreaSize</em> = <code>1.0f</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">region</td><td>Region to initialize octree</td></tr>
-    <tr><td class="paramname">objects</td><td>list object in region</td></tr>
-    <tr><td class="paramname">minAreaSize</td><td>minimum size of the octree </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a45b7597d4ac74b41fac99f166d862f5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45b7597d4ac74b41fac99f166d862f5b">&#9670;&nbsp;</a></span>Octree() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">driderSDK::Octree::Octree </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_a_a_b_b.html">AABB</a> &amp;&#160;</td>
-          <td class="paramname"><em>region</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>minAreaSize</em> = <code>1.0f</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">region</td><td>Region to initialize octree </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -221,22 +150,147 @@ std::vector&lt; <a class="el" href="classdrider_s_d_k_1_1_octree.html">Octree</a
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae52215399ad6047b258c8dd0a647f25f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae52215399ad6047b258c8dd0a647f25f">&#9670;&nbsp;</a></span>BuildTree()</h2>
+<a id="ad5ee6e47d9207b40edab069486edc036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ee6e47d9207b40edab069486edc036">&#9670;&nbsp;</a></span>Octree() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void driderSDK::Octree::BuildTree </td>
+          <td class="memname">driderSDK::Octree::Octree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> *&#160;</td>
+          <td class="paramname"><em>nodeSceneGraph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>gameObjects</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Int32&#160;</td>
+          <td class="paramname"><em>minFacesArea</em> = <code>10000</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodeSceneGraph</td><td>node where the octree will be created</td></tr>
+    <tr><td class="paramname">std::vector&lt;std::shared_ptr&lt;GameObject&gt;&gt;&amp;</td><td>gameObjects reference to the models that are going to decompose into faces and then form the octree</td></tr>
+    <tr><td class="paramname">minFacesArea</td><td>minimum faces in area</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>decomposes the models into faces and determines the abb that contains them </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abdb203e42311f0330d4c2fa2d19e69a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb203e42311f0330d4c2fa2d19e69a1">&#9670;&nbsp;</a></span>buildTree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void driderSDK::Octree::buildTree </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classdrider_s_d_k_1_1_octree.html">Octree</a> construction </p>
+<p><a class="el" href="classdrider_s_d_k_1_1_octree.html">Octree</a> construction It generates the octree according to the models that were sent to it in the construction </p>
+
+</div>
+</div>
+<a id="a67cbdea690fbbe59d59355ae552d9d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67cbdea690fbbe59d59355ae552d9d0c">&#9670;&nbsp;</a></span>compareMinMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void driderSDK::Octree::compareMinMax </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_vector4_d.html">Vector4D</a> &amp;&#160;</td>
+          <td class="paramname"><em>position</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>check and assign the minimum and maximum vertices for the aabb </p>
+
+</div>
+</div>
+<a id="a81f4abe14b12915b59ae2195c8d24084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f4abe14b12915b59ae2195c8d24084">&#9670;&nbsp;</a></span>configNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void driderSDK::Octree::configNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_game_object.html">GameObject</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdrider_s_d_k_1_1_octree_node.html">OctreeNode</a> *&#160;</td>
+          <td class="paramname"><em>octreeNode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>configure the node for the scenegraph </p>
+
+</div>
+</div>
+<a id="acbbe233c7a79d448dcf9037b2bc9e8f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbbe233c7a79d448dcf9037b2bc9e8f7">&#9670;&nbsp;</a></span>getMinFaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Int32 driderSDK::Octree::getMinFaces </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>returns the minimum number of faces in an octreeNode </dd></dl>
 
 </div>
 </div>

@@ -66,6 +66,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structdrider_s_d_k_1_1_mesh-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -73,6 +75,36 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a9bc719471b6fecf1fe0446b3fedb9483"><td class="memItemLeft" align="right" valign="top"><a id="a9bc719471b6fecf1fe0446b3fedb9483"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>IndexPtrDeleter</b> = std::function&lt; void(<a class="el" href="classdrider_s_d_k_1_1_index_buffer.html">IndexBuffer</a> *)&gt;</td></tr>
+<tr class="separator:a9bc719471b6fecf1fe0446b3fedb9483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe32ac28e0a0905523eab80df798a583"><td class="memItemLeft" align="right" valign="top"><a id="abe32ac28e0a0905523eab80df798a583"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>VertexPtrDeleter</b> = std::function&lt; void(<a class="el" href="classdrider_s_d_k_1_1_vertex_buffer.html">VertexBuffer</a> *)&gt;</td></tr>
+<tr class="separator:abe32ac28e0a0905523eab80df798a583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdbe61a371069bcf65c9ed4ba742f495"><td class="memItemLeft" align="right" valign="top"><a id="acdbe61a371069bcf65c9ed4ba742f495"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>IndexSmartPtr</b> = std::unique_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_index_buffer.html">IndexBuffer</a>, IndexPtrDeleter &gt;</td></tr>
+<tr class="separator:acdbe61a371069bcf65c9ed4ba742f495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823df8cda32cc910e43c929047d8581a"><td class="memItemLeft" align="right" valign="top"><a id="a823df8cda32cc910e43c929047d8581a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>VertexSmartPtro</b> = std::unique_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_vertex_buffer.html">VertexBuffer</a>, VertexPtrDeleter &gt;</td></tr>
+<tr class="separator:a823df8cda32cc910e43c929047d8581a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae1071cd24d76bf200d089fca0cbe232e"><td class="memItemLeft" align="right" valign="top"><a id="ae1071cd24d76bf200d089fca0cbe232e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (<a class="el" href="structdrider_s_d_k_1_1_mesh.html">Mesh</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:ae1071cd24d76bf200d089fca0cbe232e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01160a1e61ab3de1d6c0cdc451fcf582"><td class="memItemLeft" align="right" valign="top"><a id="a01160a1e61ab3de1d6c0cdc451fcf582"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Mesh</b> (const <a class="el" href="structdrider_s_d_k_1_1_mesh.html">Mesh</a> &amp;)=delete</td></tr>
+<tr class="separator:a01160a1e61ab3de1d6c0cdc451fcf582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bccca99eb4c4e67ecbb38d5683bfe80"><td class="memItemLeft" align="right" valign="top"><a id="a8bccca99eb4c4e67ecbb38d5683bfe80"></a>
+<a class="el" href="structdrider_s_d_k_1_1_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="structdrider_s_d_k_1_1_mesh.html">Mesh</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a8bccca99eb4c4e67ecbb38d5683bfe80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab472911982793b8775d7d040ef8e51ff"><td class="memItemLeft" align="right" valign="top"><a id="ab472911982793b8775d7d040ef8e51ff"></a>
+<a class="el" href="structdrider_s_d_k_1_1_mesh.html">Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="structdrider_s_d_k_1_1_mesh.html">Mesh</a> &amp;)=delete</td></tr>
+<tr class="separator:ab472911982793b8775d7d040ef8e51ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a554d86cbaadd6304a2b764169666fa17"><td class="memItemLeft" align="right" valign="top"><a id="a554d86cbaadd6304a2b764169666fa17"></a>
@@ -81,9 +113,19 @@ std::vector&lt; <a class="el" href="structdrider_s_d_k_1_1_vertex.html">Vertex</
 <tr class="memitem:ac4bc60ecc875275e1324bbd9cc94279f"><td class="memItemLeft" align="right" valign="top"><a id="ac4bc60ecc875275e1324bbd9cc94279f"></a>
 std::vector&lt; UInt32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>indices</b></td></tr>
 <tr class="separator:ac4bc60ecc875275e1324bbd9cc94279f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec48f4f890a6fd97a0d5440f440c5bc"><td class="memItemLeft" align="right" valign="top"><a id="adec48f4f890a6fd97a0d5440f440c5bc"></a>
+IndexSmartPtr&#160;</td><td class="memItemRight" valign="bottom"><b>indexBuffer</b></td></tr>
+<tr class="separator:adec48f4f890a6fd97a0d5440f440c5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482b233aca8a3cd1d2320a9dfa15d5c7"><td class="memItemLeft" align="right" valign="top"><a id="a482b233aca8a3cd1d2320a9dfa15d5c7"></a>
+VertexSmartPtro&#160;</td><td class="memItemRight" valign="bottom"><b>vertexBuffer</b></td></tr>
+<tr class="separator:a482b233aca8a3cd1d2320a9dfa15d5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa33c1002a4099ce7869e0c216cc84c2"><td class="memItemLeft" align="right" valign="top"><a id="afa33c1002a4099ce7869e0c216cc84c2"></a>
+std::weak_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>material</b></td></tr>
+<tr class="separator:afa33c1002a4099ce7869e0c216cc84c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>F:/projectsVS2017/Drider-Engine/Core/Include/<a class="el" href="dr__mesh_8h_source.html">dr_mesh.h</a></li>
+<li>F:/projectsVS2017/Drider-Engine/Core/Source/dr_mesh.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

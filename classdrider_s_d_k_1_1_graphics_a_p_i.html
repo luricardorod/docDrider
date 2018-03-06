@@ -67,66 +67,92 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_graphics_a_p_i-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">driderSDK::GraphicsAPI Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">driderSDK::GraphicsAPI Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for driderSDK::GraphicsAPI:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classdrider_s_d_k_1_1_graphics_a_p_i.png" usemap="#driderSDK::GraphicsAPI_map" alt=""/>
-  <map id="driderSDK::GraphicsAPI_map" name="driderSDK::GraphicsAPI_map">
-<area href="classdrider_s_d_k_1_1_d3_d_graphics_a_p_i.html" alt="driderSDK::D3DGraphicsAPI" shape="rect" coords="0,56,173,80"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac7454b0038c8c6797326f5f53829a874"><td class="memItemLeft" align="right" valign="top"><a id="ac7454b0038c8c6797326f5f53829a874"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (UInt32 w, UInt32 h, void *hwnd)=0</td></tr>
-<tr class="separator:ac7454b0038c8c6797326f5f53829a874"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed2e13eb6bf04f1cfed70a7934ab4fef"><td class="memItemLeft" align="right" valign="top"><a id="aed2e13eb6bf04f1cfed70a7934ab4fef"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> ()=0</td></tr>
-<tr class="separator:aed2e13eb6bf04f1cfed70a7934ab4fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fc7930282c282176ec154a57b8ce19c"><td class="memItemLeft" align="right" valign="top"><a id="a9fc7930282c282176ec154a57b8ce19c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()=0</td></tr>
-<tr class="separator:a9fc7930282c282176ec154a57b8ce19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32d94ec9007b93bc8e3ffcf514ef02f6"><td class="memItemLeft" align="right" valign="top"><a id="a32d94ec9007b93bc8e3ffcf514ef02f6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>swapBuffers</b> ()=0</td></tr>
-<tr class="separator:a32d94ec9007b93bc8e3ffcf514ef02f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16bd23505897b1d5d9fc0bd641ec8936"><td class="memItemLeft" align="right" valign="top"><a id="a16bd23505897b1d5d9fc0bd641ec8936"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (UInt32 w, UInt32 h, void *hwnd, DR_GRAPHICS_API::E api=DR_GRAPHICS_API::D3D11)</td></tr>
+<tr class="separator:a16bd23505897b1d5d9fc0bd641ec8936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e56d242d5340ed054a209579010c58"><td class="memItemLeft" align="right" valign="top"><a id="ae3e56d242d5340ed054a209579010c58"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> ()</td></tr>
+<tr class="separator:ae3e56d242d5340ed054a209579010c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac306e7d329f5acb392ecfd8e0da54fed"><td class="memItemLeft" align="right" valign="top"><a id="ac306e7d329f5acb392ecfd8e0da54fed"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="separator:ac306e7d329f5acb392ecfd8e0da54fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b34dc8dd44cbd9bf47a0afeab9325e"><td class="memItemLeft" align="right" valign="top"><a id="a79b34dc8dd44cbd9bf47a0afeab9325e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>swapBuffers</b> ()</td></tr>
+<tr class="separator:a79b34dc8dd44cbd9bf47a0afeab9325e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a177cbd1725bf598fd8414bf17b66f71f"><td class="memItemLeft" align="right" valign="top"><a id="a177cbd1725bf598fd8414bf17b66f71f"></a>
-<a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>device</b></td></tr>
-<tr class="separator:a177cbd1725bf598fd8414bf17b66f71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a099428809ba16a62619897e3740e7e58"><td class="memItemLeft" align="right" valign="top"><a id="a099428809ba16a62619897e3740e7e58"></a>
-<a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>deviceContext</b></td></tr>
-<tr class="separator:a099428809ba16a62619897e3740e7e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e68c37cce7520a097da41d55df71362"><td class="memItemLeft" align="right" valign="top"><a id="a1e68c37cce7520a097da41d55df71362"></a>
-<a class="el" href="classdrider_s_d_k_1_1_swap_chain.html">SwapChain</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>swapChain</b></td></tr>
-<tr class="separator:a1e68c37cce7520a097da41d55df71362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61553c1c08abf47e603d83a5666d9093"><td class="memItemLeft" align="right" valign="top"><a id="a61553c1c08abf47e603d83a5666d9093"></a>
-<a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>backBufferView</b></td></tr>
-<tr class="separator:a61553c1c08abf47e603d83a5666d9093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fbf9ff9ec23235b1c64ed37f8a71d49"><td class="memItemLeft" align="right" valign="top"><a id="a6fbf9ff9ec23235b1c64ed37f8a71d49"></a>
-<a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>depthStencilView</b></td></tr>
-<tr class="separator:a6fbf9ff9ec23235b1c64ed37f8a71d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad6aff7cb927a796d76c6b2fef66d9ac"><td class="memItemLeft" align="right" valign="top"><a id="aad6aff7cb927a796d76c6b2fef66d9ac"></a>
-<a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>depthTexture</b></td></tr>
-<tr class="separator:aad6aff7cb927a796d76c6b2fef66d9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac80f0186818e06b1bf0127d529d33a20"><td class="memItemLeft" align="right" valign="top"><a id="ac80f0186818e06b1bf0127d529d33a20"></a>
-<a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>backBufferTexture</b></td></tr>
-<tr class="separator:ac80f0186818e06b1bf0127d529d33a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a174efe9c820c1a118858c054a6092a69"><td class="memItemLeft" align="right" valign="top"><a id="a174efe9c820c1a118858c054a6092a69"></a>
-<a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html">RasterizerState</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>rasterizeState</b></td></tr>
-<tr class="separator:a174efe9c820c1a118858c054a6092a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae818978e60bad98b7e4b8f07cc6194da"><td class="memItemLeft" align="right" valign="top"><a id="ae818978e60bad98b7e4b8f07cc6194da"></a>
+static <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDevice</b> ()</td></tr>
+<tr class="separator:ae818978e60bad98b7e4b8f07cc6194da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308740c3ab2703d0c30726306aa64e24"><td class="memItemLeft" align="right" valign="top"><a id="a308740c3ab2703d0c30726306aa64e24"></a>
+static <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDeviceContext</b> ()</td></tr>
+<tr class="separator:a308740c3ab2703d0c30726306aa64e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f6467dc5bf303c23502532cbf9bad0a"><td class="memItemLeft" align="right" valign="top"><a id="a0f6467dc5bf303c23502532cbf9bad0a"></a>
+static <a class="el" href="classdrider_s_d_k_1_1_swap_chain.html">SwapChain</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getSwapChain</b> ()</td></tr>
+<tr class="separator:a0f6467dc5bf303c23502532cbf9bad0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ac03cd1b8bf7e7921497f47fb6b11b"><td class="memItemLeft" align="right" valign="top"><a id="a55ac03cd1b8bf7e7921497f47fb6b11b"></a>
+static <a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getBackBufferRT</b> ()</td></tr>
+<tr class="separator:a55ac03cd1b8bf7e7921497f47fb6b11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40902e50174729122f42b003e7e5565e"><td class="memItemLeft" align="right" valign="top"><a id="a40902e50174729122f42b003e7e5565e"></a>
+static <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDepthStencil</b> ()</td></tr>
+<tr class="separator:a40902e50174729122f42b003e7e5565e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156fb399b4b47db813d3db7865121b6d"><td class="memItemLeft" align="right" valign="top"><a id="a156fb399b4b47db813d3db7865121b6d"></a>
+static <a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html">RasterizerState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getRasterizerState</b> ()</td></tr>
+<tr class="separator:a156fb399b4b47db813d3db7865121b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3270d2c9fc7494504d2f3fd30577d784"><td class="memItemLeft" align="right" valign="top"><a id="a3270d2c9fc7494504d2f3fd30577d784"></a>
+static void *&#160;</td><td class="memItemRight" valign="bottom"><b>getWindowHandle</b> ()</td></tr>
+<tr class="separator:a3270d2c9fc7494504d2f3fd30577d784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9314939e3a4932954a1fb0ca69b5dd26"><td class="memItemLeft" align="right" valign="top"><a id="a9314939e3a4932954a1fb0ca69b5dd26"></a>
+static <a class="el" href="classdrider_s_d_k_1_1_blend_state.html">BlendState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getBlendState</b> (DR_BLEND_STATES::E state)</td></tr>
+<tr class="separator:a9314939e3a4932954a1fb0ca69b5dd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc7b48901032a6e069dac0b8d156681"><td class="memItemLeft" align="right" valign="top"><a id="a2fc7b48901032a6e069dac0b8d156681"></a>
+static <a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html">DepthStencilState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDepthStencilState</b> (DR_DEPTH_STENCIL_STATES::E state)</td></tr>
+<tr class="separator:a2fc7b48901032a6e069dac0b8d156681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ae53e263300c00d7754eac63835149be2"><td class="memItemLeft" align="right" valign="top"><a id="ae53e263300c00d7754eac63835149be2"></a>
+GFXUnique&lt; <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_device</b></td></tr>
+<tr class="separator:ae53e263300c00d7754eac63835149be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1629b171780187b8efcd743f535e525"><td class="memItemLeft" align="right" valign="top"><a id="ab1629b171780187b8efcd743f535e525"></a>
+GFXUnique&lt; <a class="el" href="classdrider_s_d_k_1_1_device_context.html">DeviceContext</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_deviceContext</b></td></tr>
+<tr class="separator:ab1629b171780187b8efcd743f535e525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e92076d3064340ededcd3832edc7d4d"><td class="memItemLeft" align="right" valign="top"><a id="a8e92076d3064340ededcd3832edc7d4d"></a>
+GFXUnique&lt; <a class="el" href="classdrider_s_d_k_1_1_swap_chain.html">SwapChain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_swapChain</b></td></tr>
+<tr class="separator:a8e92076d3064340ededcd3832edc7d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74d7fbc6e78855eac1a10a3e772d96e5"><td class="memItemLeft" align="right" valign="top"><a id="a74d7fbc6e78855eac1a10a3e772d96e5"></a>
+GFXUnique&lt; <a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_backBufferView</b></td></tr>
+<tr class="separator:a74d7fbc6e78855eac1a10a3e772d96e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2a1e194581ff71f93bd781a99d8582"><td class="memItemLeft" align="right" valign="top"><a id="abb2a1e194581ff71f93bd781a99d8582"></a>
+GFXUnique&lt; <a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html">DepthStencil</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_depthStencilView</b></td></tr>
+<tr class="separator:abb2a1e194581ff71f93bd781a99d8582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6fabf44e55dc7a70d085cb7668e82e"><td class="memItemLeft" align="right" valign="top"><a id="a7b6fabf44e55dc7a70d085cb7668e82e"></a>
+GFXUnique&lt; <a class="el" href="classdrider_s_d_k_1_1_rasterizer_state.html">RasterizerState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rasterizerState</b></td></tr>
+<tr class="separator:a7b6fabf44e55dc7a70d085cb7668e82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a604a9cade2b259be85d8c761ad2a6d5c"><td class="memItemLeft" align="right" valign="top"><a id="a604a9cade2b259be85d8c761ad2a6d5c"></a>
+std::vector&lt; GFXUnique&lt; <a class="el" href="classdrider_s_d_k_1_1_blend_state.html">BlendState</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_blendSStates</b></td></tr>
+<tr class="separator:a604a9cade2b259be85d8c761ad2a6d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88794b7c08a010169365c0608753859"><td class="memItemLeft" align="right" valign="top"><a id="aa88794b7c08a010169365c0608753859"></a>
+std::vector&lt; GFXUnique&lt; <a class="el" href="classdrider_s_d_k_1_1_depth_stencil_state.html">DepthStencilState</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_depthStencilStates</b></td></tr>
+<tr class="separator:aa88794b7c08a010169365c0608753859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab677a8b5a8342ccf72cab2a8fe7bac"><td class="memItemLeft" align="right" valign="top"><a id="afab677a8b5a8342ccf72cab2a8fe7bac"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_hwnd</b></td></tr>
+<tr class="separator:afab677a8b5a8342ccf72cab2a8fe7bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>F:/projectsVS2017/Drider-Engine/Graphics/Include/<a class="el" href="dr__graphics__api_8h_source.html">dr_graphics_api.h</a></li>
+<li>F:/projectsVS2017/Drider-Engine/Graphics/Source/dr_graphics_api.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

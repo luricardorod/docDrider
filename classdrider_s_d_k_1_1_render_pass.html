@@ -66,18 +66,44 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_render_pass-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">driderSDK::RenderPass Class Reference</div>  </div>
+<div class="title">driderSDK::RenderPass Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for driderSDK::RenderPass:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classdrider_s_d_k_1_1_render_pass.png" usemap="#driderSDK::RenderPass_map" alt=""/>
+  <map id="driderSDK::RenderPass_map" name="driderSDK::RenderPass_map">
+<area href="classdrider_s_d_k_1_1_g_buffer_pass.html" alt="driderSDK::GBufferPass" shape="rect" coords="0,56,148,80"/>
+<area href="classdrider_s_d_k_1_1_s_s_a_o_pass.html" alt="driderSDK::SSAOPass" shape="rect" coords="158,56,306,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ac108c05284f9d2b67889b19555dcd2fe"><td class="memItemLeft" align="right" valign="top"><a id="ac108c05284f9d2b67889b19555dcd2fe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>renderQueue</b> (<a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> *RenderTargetInput, <a class="el" href="classdrider_s_d_k_1_1_render_target.html">RenderTarget</a> *RenderTargetOutput)</td></tr>
-<tr class="separator:ac108c05284f9d2b67889b19555dcd2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4c356706718a54429e4007cadd8c32d6"><td class="memItemLeft" align="right" valign="top"><a id="a4c356706718a54429e4007cadd8c32d6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="structdrider_s_d_k_1_1_pass_init_data.html">PassInitData</a> *initData)=0</td></tr>
+<tr class="separator:a4c356706718a54429e4007cadd8c32d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eab8a60a5593b84976666266e5fa47c"><td class="memItemLeft" align="right" valign="top"><a id="a8eab8a60a5593b84976666266e5fa47c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (<a class="el" href="structdrider_s_d_k_1_1_pass_draw_data.html">PassDrawData</a> *drawData)=0</td></tr>
+<tr class="separator:a8eab8a60a5593b84976666266e5fa47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ac4b269758fbb1f197cc645725bf13209"><td class="memItemLeft" align="right" valign="top"><a id="ac4b269758fbb1f197cc645725bf13209"></a>
+<a class="el" href="classdrider_s_d_k_1_1_shader.html">Shader</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_vertexShader</b></td></tr>
+<tr class="separator:ac4b269758fbb1f197cc645725bf13209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac889c11bb0df5be2268b5630adbdf3ed"><td class="memItemLeft" align="right" valign="top"><a id="ac889c11bb0df5be2268b5630adbdf3ed"></a>
+<a class="el" href="classdrider_s_d_k_1_1_shader.html">Shader</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_fragmentShader</b></td></tr>
+<tr class="separator:ac889c11bb0df5be2268b5630adbdf3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28c54e575d3eb1011c4b1011cd8fed7"><td class="memItemLeft" align="right" valign="top"><a id="ae28c54e575d3eb1011c4b1011cd8fed7"></a>
+<a class="el" href="classdrider_s_d_k_1_1_shader.html">Shader</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_gShader</b></td></tr>
+<tr class="separator:ae28c54e575d3eb1011c4b1011cd8fed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>F:/projectsVS2017/Drider-Engine/RenderManager/Include/<a class="el" href="dr__renderpass_8h_source.html">dr_renderpass.h</a></li>

@@ -69,6 +69,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classdrider_s_d_k_1_1_transform-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::Transform Class Reference</div>  </div>
@@ -77,8 +78,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0df8652634aa52972d9ea95727e15dfe"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_transform.html#a0df8652634aa52972d9ea95727e15dfe">getTransformMatrix</a> ()</td></tr>
-<tr class="separator:a0df8652634aa52972d9ea95727e15dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0b1da47947a98de1d492830c677445"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_transform.html#aaa0b1da47947a98de1d492830c677445">getMatrix</a> () const</td></tr>
+<tr class="separator:aaa0b1da47947a98de1d492830c677445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a204bab615411d2288aaca3deb160ac27"><td class="memItemLeft" align="right" valign="top"><a id="a204bab615411d2288aaca3deb160ac27"></a>
 const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getPosition</b> () const</td></tr>
 <tr class="separator:a204bab615411d2288aaca3deb160ac27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -87,6 +88,8 @@ const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &am
 <tr class="memitem:ae2d6f05f794e21e729aac4781fcfecb2"><td class="memItemLeft" align="right" valign="top"><a id="ae2d6f05f794e21e729aac4781fcfecb2"></a>
 const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getScale</b> () const</td></tr>
 <tr class="separator:ae2d6f05f794e21e729aac4781fcfecb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70eb542ab2cc84dab56ab81f22663dfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_transform.html#a70eb542ab2cc84dab56ab81f22663dfa">getDirection</a> () const</td></tr>
+<tr class="separator:a70eb542ab2cc84dab56ab81f22663dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9654096c05e7fb06b8fc8f49208f360"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_transform.html#ae9654096c05e7fb06b8fc8f49208f360">setPosition</a> (float pos, AXIS::E axis)</td></tr>
 <tr class="separator:ae9654096c05e7fb06b8fc8f49208f360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b2470ec8d956f72881af4cc42e704de"><td class="memItemLeft" align="right" valign="top"><a id="a4b2470ec8d956f72881af4cc42e704de"></a>
@@ -122,19 +125,40 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setScale</b> (const <
 <tr class="memitem:a606c08ebb6d49173b79aebab21b31557"><td class="memItemLeft" align="right" valign="top"><a id="a606c08ebb6d49173b79aebab21b31557"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>scale</b> (const <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;scale)</td></tr>
 <tr class="separator:a606c08ebb6d49173b79aebab21b31557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69e6da97929032348d1b9653aa5e0ee"><td class="memItemLeft" align="right" valign="top"><a id="aa69e6da97929032348d1b9653aa5e0ee"></a>
+<a class="el" href="classdrider_s_d_k_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="classdrider_s_d_k_1_1_transform.html">Transform</a> &amp;other) const</td></tr>
+<tr class="separator:aa69e6da97929032348d1b9653aa5e0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd756050fcfb52d2e2651c808f33d1da"><td class="memItemLeft" align="right" valign="top"><a id="afd756050fcfb52d2e2651c808f33d1da"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classdrider_s_d_k_1_1_transform.html">Transform</a> &amp;other) const</td></tr>
+<tr class="separator:afd756050fcfb52d2e2651c808f33d1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac876c327e1c1ff44967e0e0db462b62c"><td class="memItemLeft" align="right" valign="top"><a id="ac876c327e1c1ff44967e0e0db462b62c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classdrider_s_d_k_1_1_transform.html">Transform</a> &amp;other) const</td></tr>
+<tr class="separator:ac876c327e1c1ff44967e0e0db462b62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a4850ca0eb65a8774550dd562bcafab15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_transform.html#a4850ca0eb65a8774550dd562bcafab15">invalidate</a> ()</td></tr>
 <tr class="separator:a4850ca0eb65a8774550dd562bcafab15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5fba26091af077eaeb63732882a6928"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_transform.html#af5fba26091af077eaeb63732882a6928">update</a> ()</td></tr>
-<tr class="separator:af5fba26091af077eaeb63732882a6928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0ab2a89a941cea271e203e5991af6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_transform.html#a8e0ab2a89a941cea271e203e5991af6a">update</a> () const</td></tr>
+<tr class="separator:a8e0ab2a89a941cea271e203e5991af6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c2f16adccab0066c996c089500c97d9"><td class="memItemLeft" align="right" valign="top"><a id="a5c2f16adccab0066c996c089500c97d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>newFrame</b> ()</td></tr>
+<tr class="separator:a5c2f16adccab0066c996c089500c97d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8457b015a6d41d177513b56948addec"><td class="memItemLeft" align="right" valign="top"><a id="ae8457b015a6d41d177513b56948addec"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>changed</b> () const</td></tr>
+<tr class="separator:ae8457b015a6d41d177513b56948addec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a65534834a5baf45032d28e05a5de3fe4"><td class="memItemLeft" align="right" valign="top"><a id="a65534834a5baf45032d28e05a5de3fe4"></a>
+<a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_transform</b></td></tr>
+<tr class="separator:a65534834a5baf45032d28e05a5de3fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8302fdb39d945622a0981b22965478d9"><td class="memItemLeft" align="right" valign="top"><a id="a8302fdb39d945622a0981b22965478d9"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_outdatedTransform</b></td></tr>
 <tr class="separator:a8302fdb39d945622a0981b22965478d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac2081862995a5ac45f0e190e0b6bd5b"><td class="memItemLeft" align="right" valign="top"><a id="aac2081862995a5ac45f0e190e0b6bd5b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_changed</b></td></tr>
+<tr class="separator:aac2081862995a5ac45f0e190e0b6bd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a277830818e6bcc980cc1ebbb51237d49"><td class="memItemLeft" align="right" valign="top"><a id="a277830818e6bcc980cc1ebbb51237d49"></a>
 <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_position</b></td></tr>
 <tr class="separator:a277830818e6bcc980cc1ebbb51237d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,11 +168,52 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_outdatedTransform</
 <tr class="memitem:a54310dd62127ef023f0488d37dad03c7"><td class="memItemLeft" align="right" valign="top"><a id="a54310dd62127ef023f0488d37dad03c7"></a>
 <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_scale</b></td></tr>
 <tr class="separator:a54310dd62127ef023f0488d37dad03c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65534834a5baf45032d28e05a5de3fe4"><td class="memItemLeft" align="right" valign="top"><a id="a65534834a5baf45032d28e05a5de3fe4"></a>
-<a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_transform</b></td></tr>
-<tr class="separator:a65534834a5baf45032d28e05a5de3fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a00df87c957d8f7ee0fc51f07a0542f4a"><td class="memItemLeft" align="right" valign="top"><a id="a00df87c957d8f7ee0fc51f07a0542f4a"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>GameObject</b></td></tr>
+<tr class="separator:a00df87c957d8f7ee0fc51f07a0542f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a70eb542ab2cc84dab56ab81f22663dfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70eb542ab2cc84dab56ab81f22663dfa">&#9670;&nbsp;</a></span>getDirection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> driderSDK::Transform::getDirection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the current facing direction.</p>
+<dl class="section return"><dt>Returns</dt><dd>Vector with the direction of the camera. </dd></dl>
+
+</div>
+</div>
+<a id="aaa0b1da47947a98de1d492830c677445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0b1da47947a98de1d492830c677445">&#9670;&nbsp;</a></span>getMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Transform::getMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Computes the matrix containing the translation, orientation and scale.</p>
+<dl class="section return"><dt>Returns</dt><dd>The transformation matrix. </dd></dl>
+
+</div>
+</div>
 <a id="a394b3644a8b4b890ad6475173dea06de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a394b3644a8b4b890ad6475173dea06de">&#9670;&nbsp;</a></span>getRotation()</h2>
 
@@ -164,25 +229,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_outdatedTransform</
       </table>
 </div><div class="memdoc">
 <p>Gets the rotation vector containing the X, Y &amp; Z angles in radians. </p>
-
-</div>
-</div>
-<a id="a0df8652634aa52972d9ea95727e15dfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0df8652634aa52972d9ea95727e15dfe">&#9670;&nbsp;</a></span>getTransformMatrix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classdrider_s_d_k_1_1_matrix4x4.html">Matrix4x4</a> &amp; driderSDK::Transform::getTransformMatrix </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Computes the matrix containing the translation, orientation and scale.</p>
-<dl class="section return"><dt>Returns</dt><dd>The transformation matrix. </dd></dl>
 
 </div>
 </div>
@@ -443,8 +489,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_outdatedTransform</
 
 </div>
 </div>
-<a id="af5fba26091af077eaeb63732882a6928"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5fba26091af077eaeb63732882a6928">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a8e0ab2a89a941cea271e203e5991af6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0ab2a89a941cea271e203e5991af6a">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -456,7 +502,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_outdatedTransform</
           <td class="memname">void driderSDK::Transform::update </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>

@@ -68,6 +68,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classdrider_s_d_k_1_1_codec-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::Codec Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -80,8 +81,9 @@ Inheritance diagram for driderSDK::Codec:</div>
   <img src="classdrider_s_d_k_1_1_codec.png" usemap="#driderSDK::Codec_map" alt=""/>
   <map id="driderSDK::Codec_map" name="driderSDK::Codec_map">
 <area href="classdrider_s_d_k_1_1_codec_model.html" alt="driderSDK::CodecModel" shape="rect" coords="0,56,156,80"/>
-<area href="classdrider_s_d_k_1_1_codec_sound.html" alt="driderSDK::CodecSound" shape="rect" coords="166,56,322,80"/>
-<area href="classdrider_s_d_k_1_1_codec_texture.html" alt="driderSDK::CodecTexture" shape="rect" coords="332,56,488,80"/>
+<area href="classdrider_s_d_k_1_1_codec_script.html" alt="driderSDK::CodecScript" shape="rect" coords="166,56,322,80"/>
+<area href="classdrider_s_d_k_1_1_codec_sound.html" alt="driderSDK::CodecSound" shape="rect" coords="332,56,488,80"/>
+<area href="classdrider_s_d_k_1_1_codec_texture.html" alt="driderSDK::CodecTexture" shape="rect" coords="498,56,654,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -105,6 +107,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a908e884ae7b25053940884cd93f15197"><td class="memItemLeft" align="right" valign="top"><a id="a908e884ae7b25053940884cd93f15197"></a>
 virtual CompatibleType::E&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> ()=0</td></tr>
 <tr class="separator:a908e884ae7b25053940884cd93f15197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af4d59740747ae203375659c6478e11de"><td class="memItemLeft" align="right" valign="top"><a id="af4d59740747ae203375659c6478e11de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addResource</b> (std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt; resource, const TString &amp;resourceName)</td></tr>
+<tr class="separator:af4d59740747ae203375659c6478e11de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1148ddad29697d03609e02f2b185a44b"></a>
@@ -139,7 +147,7 @@ virtual CompatibleType::E&#160;</td><td class="memItemRight" valign="bottom"><b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The type of the resource ResourceType::E. </dd></dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_codec_model.html#a75f9f59a97d541b5a598d5f922e3c39b">driderSDK::CodecModel</a>, <a class="el" href="classdrider_s_d_k_1_1_codec_texture.html#a200598baef14e19a0d95deecc5d525b0">driderSDK::CodecTexture</a>, and <a class="el" href="classdrider_s_d_k_1_1_codec_sound.html#a7595963ca27658bb83207e721fac0238">driderSDK::CodecSound</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_codec_model.html#a75f9f59a97d541b5a598d5f922e3c39b">driderSDK::CodecModel</a>, <a class="el" href="classdrider_s_d_k_1_1_codec_texture.html#a200598baef14e19a0d95deecc5d525b0">driderSDK::CodecTexture</a>, <a class="el" href="classdrider_s_d_k_1_1_codec_sound.html#a7595963ca27658bb83207e721fac0238">driderSDK::CodecSound</a>, and <a class="el" href="classdrider_s_d_k_1_1_codec_script.html#ab6b95867cbc09da9c853f221bc6044bb">driderSDK::CodecScript</a>.</p>
 
 </div>
 </div>
@@ -175,7 +183,7 @@ virtual CompatibleType::E&#160;</td><td class="memItemRight" valign="bottom"><b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Shared_ptr to a <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a>. </dd></dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_codec_texture.html#a90e601b631874fd0cdcaf21e38fe4e86">driderSDK::CodecTexture</a>, <a class="el" href="classdrider_s_d_k_1_1_codec_model.html#afa0ccd2828aa874a83e7ff0e630c35e3">driderSDK::CodecModel</a>, and <a class="el" href="classdrider_s_d_k_1_1_codec_sound.html#a2f4054a48356cd77923f380a4914688d">driderSDK::CodecSound</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_codec_texture.html#a90e601b631874fd0cdcaf21e38fe4e86">driderSDK::CodecTexture</a>, <a class="el" href="classdrider_s_d_k_1_1_codec_model.html#afa0ccd2828aa874a83e7ff0e630c35e3">driderSDK::CodecModel</a>, <a class="el" href="classdrider_s_d_k_1_1_codec_sound.html#a2f4054a48356cd77923f380a4914688d">driderSDK::CodecSound</a>, and <a class="el" href="classdrider_s_d_k_1_1_codec_script.html#a1f1432c9f5901d459b45c0e8ee9de09b">driderSDK::CodecScript</a>.</p>
 
 </div>
 </div>
@@ -211,12 +219,13 @@ virtual CompatibleType::E&#160;</td><td class="memItemRight" valign="bottom"><b>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Returns true if the resource is compatible, otherwise return false </dd></dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_codec_texture.html#a11f0a0afe364095b036f9d02319fbb0e">driderSDK::CodecTexture</a>, <a class="el" href="classdrider_s_d_k_1_1_codec_model.html#a9d47a1ed532deab103e0c1e5e00f7088">driderSDK::CodecModel</a>, and <a class="el" href="classdrider_s_d_k_1_1_codec_sound.html#af8876505f50c250a2069ab25da4ce0d8">driderSDK::CodecSound</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_codec_texture.html#a11f0a0afe364095b036f9d02319fbb0e">driderSDK::CodecTexture</a>, <a class="el" href="classdrider_s_d_k_1_1_codec_model.html#a9d47a1ed532deab103e0c1e5e00f7088">driderSDK::CodecModel</a>, <a class="el" href="classdrider_s_d_k_1_1_codec_sound.html#af8876505f50c250a2069ab25da4ce0d8">driderSDK::CodecSound</a>, and <a class="el" href="classdrider_s_d_k_1_1_codec_script.html#a8719bac4e6cd4b15ec8d38bb97c493e1">driderSDK::CodecScript</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>F:/projectsVS2017/Drider-Engine/Engine/Include/<a class="el" href="dr__codec_8h_source.html">dr_codec.h</a></li>
+<li>F:/projectsVS2017/Drider-Engine/Engine/Source/dr_codec.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

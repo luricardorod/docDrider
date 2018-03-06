@@ -98,24 +98,30 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1b5dc968ce770961ee81b26e3d0b7c3e"><td class="memItemLeft" align="right" valign="top"><a id="a1b5dc968ce770961ee81b26e3d0b7c3e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="classdrider_s_d_k_1_1_device.html">driderSDK::Device</a> &amp;device, const driderSDK::TString &amp;filename)</td></tr>
-<tr class="separator:a1b5dc968ce770961ee81b26e3d0b7c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834551c6866e5d6bfbe92b5d44003a36"><td class="memItemLeft" align="right" valign="top"><a id="a834551c6866e5d6bfbe92b5d44003a36"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (const driderSDK::TString &amp;filename)</td></tr>
+<tr class="separator:a834551c6866e5d6bfbe92b5d44003a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef837e0449ad3357cb7087ee325f831b"><td class="memItemLeft" align="right" valign="top"><a id="aef837e0449ad3357cb7087ee325f831b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> ()</td></tr>
 <tr class="separator:aef837e0449ad3357cb7087ee325f831b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79d6ee6cd1666a9a3cbe9dc14d4238d9"><td class="memItemLeft" align="right" valign="top"><a id="a79d6ee6cd1666a9a3cbe9dc14d4238d9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
 <tr class="separator:a79d6ee6cd1666a9a3cbe9dc14d4238d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ed969a94bd10de227331cd2ffac1312"><td class="memItemLeft" align="right" valign="top"><a id="a8ed969a94bd10de227331cd2ffac1312"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (const <a class="el" href="classdrider_s_d_k_1_1_device_context.html">driderSDK::DeviceContext</a> &amp;deviceContext, const <a class="el" href="classdrider_s_d_k_1_1_camera.html">driderSDK::Camera</a> &amp;wvp)</td></tr>
-<tr class="separator:a8ed969a94bd10de227331cd2ffac1312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3561fece2a1f57b10542fc3eea2e2a"><td class="memItemLeft" align="right" valign="top"><a id="a5a3561fece2a1f57b10542fc3eea2e2a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (const <a class="el" href="classdrider_s_d_k_1_1_camera.html">driderSDK::Camera</a> &amp;wvp)</td></tr>
+<tr class="separator:a5a3561fece2a1f57b10542fc3eea2e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af9a3ea97cd0a7a660d92f0ac44083650"><td class="memItemLeft" align="right" valign="top"><a id="af9a3ea97cd0a7a660d92f0ac44083650"></a>
 <a class="el" href="classdrider_s_d_k_1_1_transform.html">driderSDK::Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>transform</b></td></tr>
 <tr class="separator:af9a3ea97cd0a7a660d92f0ac44083650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8827ac3ce01f3d2c77d34572c811b9b0"><td class="memItemLeft" align="right" valign="top"><a id="a8827ac3ce01f3d2c77d34572c811b9b0"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>elapsedTime</b></td></tr>
+<tr class="separator:a8827ac3ce01f3d2c77d34572c811b9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c2e556a90f2b3e629cbd9814a3f270c"><td class="memItemLeft" align="right" valign="top"><a id="a3c2e556a90f2b3e629cbd9814a3f270c"></a>
+<a class="el" href="classdrider_s_d_k_1_1_animator.html">driderSDK::Animator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>animator</b></td></tr>
+<tr class="separator:a3c2e556a90f2b3e629cbd9814a3f270c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -146,12 +152,6 @@ std::vector&lt; <a class="el" href="structdrider_s_d_k_1_1_vertex.html">driderSD
 <tr class="memitem:ac08b7b137e1b5ac7f97b6bebc824b5d6"><td class="memItemLeft" align="right" valign="top"><a id="ac08b7b137e1b5ac7f97b6bebc824b5d6"></a>
 std::vector&lt; driderSDK::UInt32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>indices</b></td></tr>
 <tr class="separator:ac08b7b137e1b5ac7f97b6bebc824b5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8827ac3ce01f3d2c77d34572c811b9b0"><td class="memItemLeft" align="right" valign="top"><a id="a8827ac3ce01f3d2c77d34572c811b9b0"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>elapsedTime</b></td></tr>
-<tr class="separator:a8827ac3ce01f3d2c77d34572c811b9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c2e556a90f2b3e629cbd9814a3f270c"><td class="memItemLeft" align="right" valign="top"><a id="a3c2e556a90f2b3e629cbd9814a3f270c"></a>
-<a class="el" href="classdrider_s_d_k_1_1_animator.html">driderSDK::Animator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>animator</b></td></tr>
-<tr class="separator:a3c2e556a90f2b3e629cbd9814a3f270c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a965090eb7e76bb36a896aa43886afb6d"><td class="memItemLeft" align="right" valign="top"><a id="a965090eb7e76bb36a896aa43886afb6d"></a>
 std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_skeleton.html">driderSDK::Skeleton</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pSkeleton</b></td></tr>
 <tr class="separator:a965090eb7e76bb36a896aa43886afb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>

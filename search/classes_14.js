@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['vec2property',['Vec2Property',['../structdrider_s_d_k_1_1_material_1_1_vec2_property.html',1,'driderSDK::Material']]],
-  ['vec3property',['Vec3Property',['../structdrider_s_d_k_1_1_material_1_1_vec3_property.html',1,'driderSDK::Material']]],
-  ['vec4property',['Vec4Property',['../structdrider_s_d_k_1_1_material_1_1_vec4_property.html',1,'driderSDK::Material']]],
+  ['vec2property',['Vec2Property',['../structdrider_s_d_k_1_1_vec2_property.html',1,'driderSDK']]],
+  ['vec3property',['Vec3Property',['../structdrider_s_d_k_1_1_vec3_property.html',1,'driderSDK']]],
+  ['vec4property',['Vec4Property',['../structdrider_s_d_k_1_1_vec4_property.html',1,'driderSDK']]],
   ['vector2d',['Vector2D',['../classdrider_s_d_k_1_1_vector2_d.html',1,'driderSDK']]],
   ['vector2di',['Vector2DI',['../classdrider_s_d_k_1_1_vector2_d_i.html',1,'driderSDK']]],
   ['vector3d',['Vector3D',['../classdrider_s_d_k_1_1_vector3_d.html',1,'driderSDK']]],

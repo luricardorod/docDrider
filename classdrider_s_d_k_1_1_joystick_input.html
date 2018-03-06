@@ -67,7 +67,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_joystick_input-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -96,31 +95,39 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9db03f9f217496ee8867a42b2aabe9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d66ed4f2d23a10ffb8e7bde0fab7184"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdrider_s_d_k_1_1_joystick_input_state.html">JoystickInputState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_joystick_input.html#a6d66ed4f2d23a10ffb8e7bde0fab7184">getState</a> () const</td></tr>
 <tr class="separator:a6d66ed4f2d23a10ffb8e7bde0fab7184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a334f8f3c23fbc1da38720b25ac046420"><td class="memItemLeft" align="right" valign="top"><a id="a334f8f3c23fbc1da38720b25ac046420"></a>
-std::vector&lt; <a class="el" href="classdrider_s_d_k_1_1_i_joystick_input_listener.html">IJoystickInputListener</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_listeners</b></td></tr>
-<tr class="separator:a334f8f3c23fbc1da38720b25ac046420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classdrider_s_d_k_1_1_input_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdrider_s_d_k_1_1_input_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdrider_s_d_k_1_1_input_object.html">driderSDK::InputObject</a></td></tr>
-<tr class="memitem:ab1706c41b585f84bc9197611cbf94066 inherit pub_attribs_classdrider_s_d_k_1_1_input_object"><td class="memItemLeft" align="right" valign="top"><a id="ab1706c41b585f84bc9197611cbf94066"></a>
-OIS::Object *&#160;</td><td class="memItemRight" valign="bottom"><b>m_obj</b></td></tr>
-<tr class="separator:ab1706c41b585f84bc9197611cbf94066 inherit pub_attribs_classdrider_s_d_k_1_1_input_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa89d25f322f4b1e43f46e1ea192c0e2 inherit pub_attribs_classdrider_s_d_k_1_1_input_object"><td class="memItemLeft" align="right" valign="top"><a id="aaa89d25f322f4b1e43f46e1ea192c0e2"></a>
-InputObjectType::E&#160;</td><td class="memItemRight" valign="bottom"><b>m_type</b></td></tr>
-<tr class="separator:aaa89d25f322f4b1e43f46e1ea192c0e2 inherit pub_attribs_classdrider_s_d_k_1_1_input_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classdrider_s_d_k_1_1_input_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdrider_s_d_k_1_1_input_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdrider_s_d_k_1_1_input_object.html">driderSDK::InputObject</a></td></tr>
+<tr class="memitem:a26b0cdc61a4e825c0179d355563cf28c inherit pub_methods_classdrider_s_d_k_1_1_input_object"><td class="memItemLeft" align="right" valign="top"><a id="a26b0cdc61a4e825c0179d355563cf28c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>InputObject</b> (InputObjectType::E _type)</td></tr>
+<tr class="separator:a26b0cdc61a4e825c0179d355563cf28c inherit pub_methods_classdrider_s_d_k_1_1_input_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a2d23614a50df76010bef9d91fdd5f709"><td class="memItemLeft" align="right" valign="top"><a id="a2d23614a50df76010bef9d91fdd5f709"></a>
+friend&#160;</td><td class="memItemRight" valign="bottom"><b>HelperJoystickListener</b></td></tr>
+<tr class="separator:a2d23614a50df76010bef9d91fdd5f709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a948e3b209077d35e2b484bf078c27653"><td class="memItemLeft" align="right" valign="top"><a id="a948e3b209077d35e2b484bf078c27653"></a>
 <a class="el" href="structdrider_s_d_k_1_1_joystick_input_state.html">JoystickInputState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_state</b></td></tr>
 <tr class="separator:a948e3b209077d35e2b484bf078c27653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e6b509ed6ffd60ad683777f4d32394"><td class="memItemLeft" align="right" valign="top"><a id="aa0e6b509ed6ffd60ad683777f4d32394"></a>
 OIS::JoyStick *&#160;</td><td class="memItemRight" valign="bottom"><b>m_joystick</b></td></tr>
 <tr class="separator:aa0e6b509ed6ffd60ad683777f4d32394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334f8f3c23fbc1da38720b25ac046420"><td class="memItemLeft" align="right" valign="top"><a id="a334f8f3c23fbc1da38720b25ac046420"></a>
+std::vector&lt; <a class="el" href="classdrider_s_d_k_1_1_i_joystick_input_listener.html">IJoystickInputListener</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_listeners</b></td></tr>
+<tr class="separator:a334f8f3c23fbc1da38720b25ac046420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13092ed9620cb6500735f9114cb4c82c"><td class="memItemLeft" align="right" valign="top"><a id="a13092ed9620cb6500735f9114cb4c82c"></a>
 <a class="el" href="classdrider_s_d_k_1_1_helper_joystick_listener.html">HelperJoystickListener</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_helperListener</b></td></tr>
 <tr class="separator:a13092ed9620cb6500735f9114cb4c82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classdrider_s_d_k_1_1_input_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdrider_s_d_k_1_1_input_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdrider_s_d_k_1_1_input_object.html">driderSDK::InputObject</a></td></tr>
+<tr class="memitem:a928504b8ec2b4dfbaffad3eff1951965 inherit pub_attribs_classdrider_s_d_k_1_1_input_object"><td class="memItemLeft" align="right" valign="top"><a id="a928504b8ec2b4dfbaffad3eff1951965"></a>
+OIS::Object *&#160;</td><td class="memItemRight" valign="bottom"><b>obj</b></td></tr>
+<tr class="separator:a928504b8ec2b4dfbaffad3eff1951965 inherit pub_attribs_classdrider_s_d_k_1_1_input_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classdrider_s_d_k_1_1_input_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classdrider_s_d_k_1_1_input_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classdrider_s_d_k_1_1_input_object.html">driderSDK::InputObject</a></td></tr>
+<tr class="memitem:aaa89d25f322f4b1e43f46e1ea192c0e2 inherit pro_attribs_classdrider_s_d_k_1_1_input_object"><td class="memItemLeft" align="right" valign="top"><a id="aaa89d25f322f4b1e43f46e1ea192c0e2"></a>
+InputObjectType::E&#160;</td><td class="memItemRight" valign="bottom"><b>m_type</b></td></tr>
+<tr class="separator:aaa89d25f322f4b1e43f46e1ea192c0e2 inherit pro_attribs_classdrider_s_d_k_1_1_input_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Manager class for input device </p>

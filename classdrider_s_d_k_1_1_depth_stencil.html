@@ -67,6 +67,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_depth_stencil-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::DepthStencil Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -94,10 +95,31 @@ virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObje
 <tr class="separator:a055fa77cc2e3effc81f36e1d168e0877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52d5e9758aac7ee2ba5742e036e243fd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html#a52d5e9758aac7ee2ba5742e036e243fd">~DepthStencil</a> ()</td></tr>
 <tr class="separator:a52d5e9758aac7ee2ba5742e036e243fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c0789da952e708f74d7fe6cca46c15d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html#a1c0789da952e708f74d7fe6cca46c15d">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture)=0</td></tr>
+<tr class="memitem:ab3efb596e56b93d2d8caa7bc93ae67e2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html#ab3efb596e56b93d2d8caa7bc93ae67e2">create</a> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a> &amp;desc)=0</td></tr>
+<tr class="separator:ab3efb596e56b93d2d8caa7bc93ae67e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c0789da952e708f74d7fe6cca46c15d"><td class="memItemLeft" align="right" valign="top"><a id="a1c0789da952e708f74d7fe6cca46c15d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (const <a class="el" href="classdrider_s_d_k_1_1_device.html">Device</a> &amp;device, const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;texture)=0</td></tr>
 <tr class="separator:a1c0789da952e708f74d7fe6cca46c15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a976f1bdf693f8424fec329db44def161"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_depth_stencil.html#a976f1bdf693f8424fec329db44def161">release</a> ()=0</td></tr>
 <tr class="separator:a976f1bdf693f8424fec329db44def161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23e7a1e503df3cd8df5874b81c8a7031"><td class="memItemLeft" align="right" valign="top"><a id="a23e7a1e503df3cd8df5874b81c8a7031"></a>
+const <a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getDescriptor</b> () const</td></tr>
+<tr class="separator:a23e7a1e503df3cd8df5874b81c8a7031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9cd73a334d41264f128756e7a087336"><td class="memItemLeft" align="right" valign="top"><a id="ab9cd73a334d41264f128756e7a087336"></a>
+const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getTexture</b> () const</td></tr>
+<tr class="separator:ab9cd73a334d41264f128756e7a087336"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a05248847626928f25760162e47bf1483"><td class="memItemLeft" align="right" valign="top"><a id="a05248847626928f25760162e47bf1483"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_textureOwner</b> = false</td></tr>
+<tr class="separator:a05248847626928f25760162e47bf1483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528b66720d98b63d679ffcd962c31fa9"><td class="memItemLeft" align="right" valign="top"><a id="a528b66720d98b63d679ffcd962c31fa9"></a>
+<a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_texture</b></td></tr>
+<tr class="separator:a528b66720d98b63d679ffcd962c31fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d069b706623ffc01a3c5e44be371b9"><td class="memItemLeft" align="right" valign="top"><a id="a81d069b706623ffc01a3c5e44be371b9"></a>
+<a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_descriptor</b></td></tr>
+<tr class="separator:a81d069b706623ffc01a3c5e44be371b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for depth stencil</p>
@@ -130,8 +152,8 @@ virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObje
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1c0789da952e708f74d7fe6cca46c15d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c0789da952e708f74d7fe6cca46c15d">&#9670;&nbsp;</a></span>create()</h2>
+<a id="ab3efb596e56b93d2d8caa7bc93ae67e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3efb596e56b93d2d8caa7bc93ae67e2">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,8 +170,8 @@ virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObje
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classdrider_s_d_k_1_1_texture.html">Texture</a> &amp;&#160;</td>
-          <td class="paramname"><em>texture</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdrider_s_d_k_1_1_dr_depth_stencil_desc.html">DrDepthStencilDesc</a> &amp;&#160;</td>
+          <td class="paramname"><em>desc</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -167,13 +189,12 @@ virtual void **&#160;</td><td class="memItemRight" valign="bottom"><b>getAPIObje
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>The device to create the depth stencil</td></tr>
-    <tr><td class="paramname">desc</td><td>The descriptor of the depth stencil</td></tr>
+    <tr><td class="paramname">desc</td><td>The descriptor of the depth stencil </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return a DR_GRAPHICS_ERROR code, ERROR_NONE means all went well </dd></dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_depth_stencil.html#a0b1f7023e27c22a92fb422ef83002561">driderSDK::D3DDepthStencil</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_d3_d_depth_stencil.html#ae0c23661cbaa5202654b8abf2fcda16a">driderSDK::D3DDepthStencil</a>.</p>
 
 </div>
 </div>

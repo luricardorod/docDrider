@@ -90,14 +90,23 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab805f106d606aa8f4e6425a013a4d3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2218345afa5778871897a3c02e92771e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_dr_sound.html#a2218345afa5778871897a3c02e92771e">init</a> (<a class="el" href="classdrider_s_d_k_1_1_sound_system.html">SoundSystem</a> *system, <a class="el" href="classdrider_s_d_k_1_1_dr_channel.html">DrChannel</a> **channel)=0</td></tr>
 <tr class="separator:a2218345afa5778871897a3c02e92771e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf39a65eb4aee465510988380e4c20e"><td class="memItemLeft" align="right" valign="top"><a id="a3cf39a65eb4aee465510988380e4c20e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setSystem</b> (<a class="el" href="classdrider_s_d_k_1_1_sound_system.html">SoundSystem</a> *system)=0</td></tr>
+<tr class="separator:a3cf39a65eb4aee465510988380e4c20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8a654e6b7f6465363fba410dab019e"><td class="memItemLeft" align="right" valign="top"><a id="a0c8a654e6b7f6465363fba410dab019e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setChannel</b> (<a class="el" href="classdrider_s_d_k_1_1_dr_channel.html">DrChannel</a> **channel)=0</td></tr>
+<tr class="separator:a0c8a654e6b7f6465363fba410dab019e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe805f868730d86638f49c0aeae04872"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_dr_sound.html#afe805f868730d86638f49c0aeae04872">getReference</a> ()=0</td></tr>
 <tr class="separator:afe805f868730d86638f49c0aeae04872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dcce505171769317de1aa5e30707561"><td class="memItemLeft" align="right" valign="top">virtual void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_dr_sound.html#a3dcce505171769317de1aa5e30707561">getObjectReference</a> ()=0</td></tr>
 <tr class="separator:a3dcce505171769317de1aa5e30707561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7211b60ca260820aee3781c45d74e2a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_dr_sound.html#aa7211b60ca260820aee3781c45d74e2a">play</a> ()=0</td></tr>
 <tr class="separator:aa7211b60ca260820aee3781c45d74e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bd1f9b87cbe38a23aa9cd28123589b7"><td class="memItemLeft" align="right" valign="top">virtual DR_SOUND_RESULT::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_dr_sound.html#a4bd1f9b87cbe38a23aa9cd28123589b7">setMode</a> (DR_SOUND_MODE::E mode)=0</td></tr>
-<tr class="separator:a4bd1f9b87cbe38a23aa9cd28123589b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af07fc166eba78a1dfbe282962e2432d3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_dr_sound.html#af07fc166eba78a1dfbe282962e2432d3">setMode</a> (DR_SOUND_MODE::E mode)=0</td></tr>
+<tr class="separator:af07fc166eba78a1dfbe282962e2432d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92684bafc596b0dd08fcb4f9762757c"><td class="memItemLeft" align="right" valign="top"><a id="ab92684bafc596b0dd08fcb4f9762757c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set3DMinMaxDistance</b> (float min, float max)=0</td></tr>
+<tr class="separator:ab92684bafc596b0dd08fcb4f9762757c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Sound object to control the sound api object of sound api </p>
@@ -259,8 +268,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4bd1f9b87cbe38a23aa9cd28123589b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bd1f9b87cbe38a23aa9cd28123589b7">&#9670;&nbsp;</a></span>setMode()</h2>
+<a id="af07fc166eba78a1dfbe282962e2432d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af07fc166eba78a1dfbe282962e2432d3">&#9670;&nbsp;</a></span>setMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +278,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual DR_SOUND_RESULT::E driderSDK::DrSound::setMode </td>
+          <td class="memname">virtual void driderSDK::DrSound::setMode </td>
           <td>(</td>
           <td class="paramtype">DR_SOUND_MODE::E&#160;</td>
           <td class="paramname"><em>mode</em></td><td>)</td>
@@ -290,7 +299,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_f_m_o_d_sound.html#abdf8594a4d648ea1d42a5e39cb0303fe">driderSDK::FMODSound</a>.</p>
+<p>Implemented in <a class="el" href="classdrider_s_d_k_1_1_f_m_o_d_sound.html#a1cb5ebca0b4cea731412fa1e58852c9d">driderSDK::FMODSound</a>.</p>
 
 </div>
 </div>

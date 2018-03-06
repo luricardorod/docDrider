@@ -67,7 +67,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classdrider_s_d_k_1_1_codec_sound-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">driderSDK::CodecSound Class Reference</div>  </div>
@@ -85,9 +84,6 @@ Inheritance diagram for driderSDK::CodecSound:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adbd2c5210256959b47a6e9a3f1b07121"><td class="memItemLeft" align="right" valign="top"><a id="adbd2c5210256959b47a6e9a3f1b07121"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CodecSound</b> (<a class="el" href="classdrider_s_d_k_1_1_sound_system.html">SoundSystem</a> *system)</td></tr>
-<tr class="separator:adbd2c5210256959b47a6e9a3f1b07121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7595963ca27658bb83207e721fac0238"><td class="memItemLeft" align="right" valign="top">UniqueVoidPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_codec_sound.html#a7595963ca27658bb83207e721fac0238">decode</a> (TString pathName) override</td></tr>
 <tr class="separator:a7595963ca27658bb83207e721fac0238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f4054a48356cd77923f380a4914688d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_codec_sound.html#a2f4054a48356cd77923f380a4914688d">encode</a> (TString pathName) override</td></tr>
@@ -98,12 +94,6 @@ Public Member Functions</h2></td></tr>
 CompatibleType::E&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> () override</td></tr>
 <tr class="separator:a2dd8ac29a0d6469bf5e5d386f193471f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:acb0eccc5c88beaaa716a3cdfa2491343"><td class="memItemLeft" align="right" valign="top"><a id="acb0eccc5c88beaaa716a3cdfa2491343"></a>
-<a class="el" href="classdrider_s_d_k_1_1_sound_system.html">SoundSystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>soundSystem</b></td></tr>
-<tr class="separator:acb0eccc5c88beaaa716a3cdfa2491343"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classdrider_s_d_k_1_1_codec"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classdrider_s_d_k_1_1_codec')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classdrider_s_d_k_1_1_codec.html">driderSDK::Codec</a></td></tr>
@@ -113,6 +103,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>VoidPtrDeleter</b> =
 <tr class="memitem:a917c30defb2a98946670a81f739284f0 inherit pub_types_classdrider_s_d_k_1_1_codec"><td class="memItemLeft" align="right" valign="top"><a id="a917c30defb2a98946670a81f739284f0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>UniqueVoidPtr</b> = std::unique_ptr&lt; void, VoidPtrDeleter &gt;</td></tr>
 <tr class="separator:a917c30defb2a98946670a81f739284f0 inherit pub_types_classdrider_s_d_k_1_1_codec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classdrider_s_d_k_1_1_codec"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdrider_s_d_k_1_1_codec')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdrider_s_d_k_1_1_codec.html">driderSDK::Codec</a></td></tr>
+<tr class="memitem:af4d59740747ae203375659c6478e11de inherit pro_methods_classdrider_s_d_k_1_1_codec"><td class="memItemLeft" align="right" valign="top"><a id="af4d59740747ae203375659c6478e11de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addResource</b> (std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt; resource, const TString &amp;resourceName)</td></tr>
+<tr class="separator:af4d59740747ae203375659c6478e11de inherit pro_methods_classdrider_s_d_k_1_1_codec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7595963ca27658bb83207e721fac0238"></a>

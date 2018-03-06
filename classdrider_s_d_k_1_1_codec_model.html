@@ -107,24 +107,21 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a9d47a1ed532deab103e0c1e5e00f7088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac93d882778354099c8928c5da8e7db4e"><td class="memItemLeft" align="right" valign="top">CompatibleType::E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdrider_s_d_k_1_1_codec_model.html#ac93d882778354099c8928c5da8e7db4e">getType</a> () override</td></tr>
 <tr class="separator:ac93d882778354099c8928c5da8e7db4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf2f7c3bc44da4c592b77a98f1f54999"><td class="memItemLeft" align="right" valign="top"><a id="acf2f7c3bc44da4c592b77a98f1f54999"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loadVertices</b> (const aiMesh &amp;inMesh, <a class="el" href="structdrider_s_d_k_1_1_mesh_info.html">MeshInfo</a> &amp;outMesh)</td></tr>
-<tr class="separator:acf2f7c3bc44da4c592b77a98f1f54999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e3abd941ccf8df93c80bcc2474b32a"><td class="memItemLeft" align="right" valign="top"><a id="a82e3abd941ccf8df93c80bcc2474b32a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadVertices</b> (const aiMesh &amp;inMesh, <a class="el" href="structdrider_s_d_k_1_1_mesh_info.html">MeshInfo</a> &amp;outMesh, <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;minPos, <a class="el" href="classdrider_s_d_k_1_1_vector3_d.html">Vector3D</a> &amp;maxPos)</td></tr>
+<tr class="separator:a82e3abd941ccf8df93c80bcc2474b32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7763b7640696cf43c7689482a7f67db1"><td class="memItemLeft" align="right" valign="top"><a id="a7763b7640696cf43c7689482a7f67db1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadIndices</b> (const aiMesh &amp;inMesh, <a class="el" href="structdrider_s_d_k_1_1_mesh_info.html">MeshInfo</a> &amp;outMesh)</td></tr>
 <tr class="separator:a7763b7640696cf43c7689482a7f67db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5373fbdd9d7edeed21f9d1be9663bfc7"><td class="memItemLeft" align="right" valign="top"><a id="a5373fbdd9d7edeed21f9d1be9663bfc7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadSkeleton</b> (const aiScene &amp;model, <a class="el" href="structdrider_s_d_k_1_1_model_info.html">ModelInfo</a> &amp;outModel, <a class="el" href="classdrider_s_d_k_1_1_skeleton.html">Skeleton</a> &amp;outSkeleton)</td></tr>
 <tr class="separator:a5373fbdd9d7edeed21f9d1be9663bfc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a706ae499f0bb3a7399584edcee6bb938"><td class="memItemLeft" align="right" valign="top"><a id="a706ae499f0bb3a7399584edcee6bb938"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loadMaterials</b> (const aiScene &amp;model)</td></tr>
-<tr class="separator:a706ae499f0bb3a7399584edcee6bb938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f457c0c32699f9c6bf0a59c94789316"><td class="memItemLeft" align="right" valign="top"><a id="a2f457c0c32699f9c6bf0a59c94789316"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadAnimations</b> (const aiScene &amp;model, <a class="el" href="structdrider_s_d_k_1_1_model_info.html">ModelInfo</a> &amp;outModel)</td></tr>
 <tr class="separator:a2f457c0c32699f9c6bf0a59c94789316"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a820c3e62a8ce9497a495eb0eddc76372"><td class="memItemLeft" align="right" valign="top"><a id="a820c3e62a8ce9497a495eb0eddc76372"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>buildTree</b> (const aiNode *pNodeSrc, <a class="el" href="structdrider_s_d_k_1_1_skeleton_1_1_node_data.html">Skeleton::NodeData</a> *pNode, NodesRefMap &amp;nodesRefs)</td></tr>
-<tr class="separator:a820c3e62a8ce9497a495eb0eddc76372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ee2bdf0fd298b896d02a3d65d97620"><td class="memItemLeft" align="right" valign="top"><a id="a80ee2bdf0fd298b896d02a3d65d97620"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>buildTree</b> (const aiNode *nodeSrc, <a class="el" href="structdrider_s_d_k_1_1_skeleton_1_1_node_data.html">Skeleton::NodeData</a> *node, NodesRefMap &amp;nodesRefs)</td></tr>
+<tr class="separator:a80ee2bdf0fd298b896d02a3d65d97620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -135,6 +132,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>VoidPtrDeleter</b> =
 <tr class="memitem:a917c30defb2a98946670a81f739284f0 inherit pub_types_classdrider_s_d_k_1_1_codec"><td class="memItemLeft" align="right" valign="top"><a id="a917c30defb2a98946670a81f739284f0"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>UniqueVoidPtr</b> = std::unique_ptr&lt; void, VoidPtrDeleter &gt;</td></tr>
 <tr class="separator:a917c30defb2a98946670a81f739284f0 inherit pub_types_classdrider_s_d_k_1_1_codec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classdrider_s_d_k_1_1_codec"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdrider_s_d_k_1_1_codec')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdrider_s_d_k_1_1_codec.html">driderSDK::Codec</a></td></tr>
+<tr class="memitem:af4d59740747ae203375659c6478e11de inherit pro_methods_classdrider_s_d_k_1_1_codec"><td class="memItemLeft" align="right" valign="top"><a id="af4d59740747ae203375659c6478e11de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addResource</b> (std::shared_ptr&lt; <a class="el" href="classdrider_s_d_k_1_1_resource.html">Resource</a> &gt; resource, const TString &amp;resourceName)</td></tr>
+<tr class="separator:af4d59740747ae203375659c6478e11de inherit pro_methods_classdrider_s_d_k_1_1_codec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a126b7cdcc8624592f22903fb2ae1e2e7"></a>

@@ -66,7 +66,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structdrider_s_d_k_1_1_vertex-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -74,11 +76,23 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a4b5919d76a1359356c4de6c1d57a925b"><td class="memItemLeft" align="right" valign="top"><a id="a4b5919d76a1359356c4de6c1d57a925b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>InputLayoutDesc</b> = std::vector&lt; <a class="el" href="structdrider_s_d_k_1_1_dr_input_element_desc.html">DrInputElementDesc</a> &gt;</td></tr>
+<tr class="separator:a4b5919d76a1359356c4de6c1d57a925b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9af20d083574cfc5e9ef230173953cfc"><td class="memItemLeft" align="right" valign="top"><a id="a9af20d083574cfc5e9ef230173953cfc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addBone</b> (Int32 id, float weight)</td></tr>
 <tr class="separator:a9af20d083574cfc5e9ef230173953cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4d0c3a3c8ee85dcfa34f5329cbe6dc11"><td class="memItemLeft" align="right" valign="top"><a id="a4d0c3a3c8ee85dcfa34f5329cbe6dc11"></a>
+static const InputLayoutDesc &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getInputDesc</b> ()</td></tr>
+<tr class="separator:a4d0c3a3c8ee85dcfa34f5329cbe6dc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -88,15 +102,25 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad836a52dd01e6f6a5b9a48642d6e9424"><td class="memItemLeft" align="right" valign="top"><a id="ad836a52dd01e6f6a5b9a48642d6e9424"></a>
 <a class="el" href="classdrider_s_d_k_1_1_vector4_d.html">Vector4D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>normal</b></td></tr>
 <tr class="separator:ad836a52dd01e6f6a5b9a48642d6e9424"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1ba9030dc51ff8638c2990572d7c2b"><td class="memItemLeft" align="right" valign="top"><a id="a9a1ba9030dc51ff8638c2990572d7c2b"></a>
+<a class="el" href="classdrider_s_d_k_1_1_vector4_d.html">Vector4D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>binormal</b></td></tr>
+<tr class="separator:a9a1ba9030dc51ff8638c2990572d7c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f66e08b54adbe1a6f38653549f7512"><td class="memItemLeft" align="right" valign="top"><a id="ae4f66e08b54adbe1a6f38653549f7512"></a>
+<a class="el" href="classdrider_s_d_k_1_1_vector4_d.html">Vector4D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tangent</b></td></tr>
+<tr class="separator:ae4f66e08b54adbe1a6f38653549f7512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45e9f7b0c1322b073acce204e63605c"><td class="memItemLeft" align="right" valign="top"><a id="aa45e9f7b0c1322b073acce204e63605c"></a>
 <a class="el" href="classdrider_s_d_k_1_1_vector4_d.html">Vector4D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bonesWeights</b></td></tr>
 <tr class="separator:aa45e9f7b0c1322b073acce204e63605c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8614838bed478092292ed8dc89347df"><td class="memItemLeft" align="right" valign="top"><a id="ae8614838bed478092292ed8dc89347df"></a>
 Int32&#160;</td><td class="memItemRight" valign="bottom"><b>bonesIDs</b> [4] {-1, -1, -1, -1}</td></tr>
 <tr class="separator:ae8614838bed478092292ed8dc89347df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4dc2e763bd5007802363ca073644808"><td class="memItemLeft" align="right" valign="top"><a id="ad4dc2e763bd5007802363ca073644808"></a>
+<a class="el" href="classdrider_s_d_k_1_1_vector2_d.html">Vector2D</a>&#160;</td><td class="memItemRight" valign="bottom"><b>uv</b></td></tr>
+<tr class="separator:ad4dc2e763bd5007802363ca073644808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>F:/projectsVS2017/Drider-Engine/Core/Include/<a class="el" href="dr__vertex_8h_source.html">dr_vertex.h</a></li>
+<li>F:/projectsVS2017/Drider-Engine/Core/Source/dr_vertex.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
